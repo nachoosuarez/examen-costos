@@ -4,18 +4,19 @@
 
 | Tema | Exámenes en que apareció (hasta ahora) | Frecuencia |
 |---|---|---|
-| Metraje de hormigón (losas/vigas/muros/pilares) | Ene-2026, Dic-2025, Jul-2025, Marzo-2025, Feb-2025 | 5/5 |
-| Consumos unitarios + dosificación de hormigón | Ene-2026, Dic-2025, Jul-2025, Marzo-2025, Feb-2025 | 5/5 |
-| Mano de obra / Ley 14.411 / Convenio Colectivo | Ene-2026, Dic-2025, Jul-2025, Feb-2025 | 4/5 |
-| Costo de equipos | Ene-2026, Feb-2025 | 2/5 |
-| Garantías y Seguros | Ene-2026, Dic-2025, Feb-2025 | 3/5 |
-| Licitaciones (TOCAF, tipos de contrato) | Ene-2026, Jul-2025 | 2/5 |
-| Fórmulas paramétricas | Dic-2025, Marzo-2025 | 2/5 |
-| Costo Financiero / VNA | Jul-2025, Marzo-2025(conceptual) | 2/5 |
-| Movimiento de suelos | Jul-2025 | 1/5 |
-| Suministros / INCOTERMS | Dic-2025, Marzo-2025 | 2/5 |
-| Punto de equilibrio / costos fijos-variables | Marzo-2025 | 1/5 |
-| Estado Económico y Financiero de la obra (Clase 20) | Feb-2025 | 1/5 |
+| Metraje de hormigón (losas/vigas/muros/pilares) | Ene-2026, Dic-2025, Jul-2025, Marzo-2025, Feb-2025, Dic-2024 | 6/6 |
+| Consumos unitarios + dosificación de hormigón | Ene-2026, Dic-2025, Jul-2025, Marzo-2025, Feb-2025, Dic-2024 | 6/6 |
+| Mano de obra / Ley 14.411 / Convenio Colectivo | Ene-2026, Dic-2025, Jul-2025, Feb-2025 | 4/6 |
+| Garantías y Seguros | Ene-2026, Dic-2025, Feb-2025, Dic-2024 | 4/6 |
+| Punto de equilibrio / costos fijos-variables | Marzo-2025, Dic-2024 | 2/6 |
+| Costo de equipos | Ene-2026, Feb-2025 | 2/6 |
+| Licitaciones (TOCAF, tipos de contrato) | Ene-2026, Jul-2025 | 2/6 |
+| Fórmulas paramétricas | Dic-2025, Marzo-2025, Dic-2024(conceptual) | 3/6 |
+| Costo Financiero / VNA | Jul-2025, Marzo-2025(conceptual) | 2/6 |
+| Movimiento de suelos | Jul-2025, Dic-2024(conceptual) | 2/6 |
+| Suministros / INCOTERMS | Dic-2025, Marzo-2025 | 2/6 |
+| Estado Económico y Financiero de la obra (Clase 20) | Feb-2025 | 1/6 |
+| Clasificación de costos por naturaleza | Dic-2024 | 1/6 |
 
 *(Se irá completando a medida que se resuelvan más exámenes — objetivo: que esta tabla diga qué estudiar primero.)*
 

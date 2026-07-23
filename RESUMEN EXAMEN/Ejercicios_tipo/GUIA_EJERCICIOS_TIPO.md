@@ -39,6 +39,15 @@ Vol = 0,6×0,6×0,15×4 = 0,216 m³. Encof (lateral, 4 caras) = perímetro×altu
 
 **Variante "pilar de piso intermedio con espera de empalme"** (visto en Jul-2025): si el pilar está en un piso intermedio de un edificio de varios niveles, la longitud de cada barra debe incluir la **espera para empalmar con el nivel siguiente** (normalmente 50Φ), además del gancho si corresponde en la base. Un pilar de sección muy delgada (ej. 12cm de espesor) da un **tenor de encofrado más alto de lo típico** — no es un error, es esperable porque la relación superficie/volumen crece cuando una dimensión de la sección es chica; hay que decirlo explícitamente si el examen pregunta "¿es esperable el resultado?". Ver desarrollo completo en `Soluciones/202507 Ex Julio/`.
 
+**Variante "losa angosta de corredor/pasillo, encofrado solo inferior"** (visto en Dic-2024): cuando la
+losa está contenida por vigas en sus 4 lados (no hay laterales expuestos), el encofrado es simplemente
+Encof=L×b (el área en planta) y por lo tanto **Tenor = Encof/Vol = (L×b)/(L×b×e) = 1/e** — una
+identidad matemática directa, sin necesidad de calcular nada más: el tenor depende únicamente del
+**espesor** de la losa (a menor espesor, mayor tenor). Útil como atajo para verificar el resultado. Para
+leer las cotas del vano libre cuando el plano da distancias eje-a-eje entre vigas (no cotas corridas como
+en Marzo-2025): vano libre = cota eje-a-eje − ancho de cada viga limítrofe (ej. 170cm−15cm(viga
+izq.)−18cm(viga der.)=137cm). Ver desarrollo completo en `Soluciones/202412 Ex Diciembre/`.
+
 **Variante "muro de contención monolítico en L" (base + pantalla vertical de hormigón armado, sin
 bloques)** (visto en Feb-2025): a diferencia de la variante con bloques (Dic-2025), acá todo el muro es
 hormigón armado macizo. Se separa en Base (zapata: ancho×espesor×longitud, apoya en el suelo →
@@ -175,6 +184,13 @@ a 5 años) en `Soluciones/202502 Ex Febrero/`.
 
 **Mini-ejemplo:** ver desarrollo numérico completo (Fiel Cumplimiento $1.163.885,88 + Buena Ejecución $989.303,00 + Anticipo $617.647,06 = $2.770.835,94, el 0,99% del costo de obra) en `Soluciones/202512 Ex Diciembre 2025/`.
 
+**Segundo ejemplo completo (Dic-2024, mismas 3 garantías con bases distintas por tipo)**: Fiel
+Cumplimiento y Buena Ejecución se calculan sobre el **Precio con IVA y LLSS incluidos**; el Anticipo, si el
+enunciado lo indica así, se calcula sobre el **Precio sin IVA ni LLSS**. Fiel Cumplimiento $793.447 (perfil
+constante) + Buena Ejecución $674.430 (rampa 0→5% durante ejecución + constante al 5% durante el
+plazo de garantía) + Anticipo $588.235 (rampa 20%→0) = **$2.056.112, el 0,65% del precio de venta**.
+Ver desarrollo completo (incluye cómo armar el precio con IVA y LLSS paso a paso) en `Soluciones/202412 Ex Diciembre/`.
+
 **Garantías — tabla rápida (qué, cuándo, cuánto, forma):**
 
 | Garantía | Momento | Monto usual | Plazo típico | Forma de constitución |
@@ -266,6 +282,24 @@ enunciado diga explícitamente que el costo fijo también sube, como una campañ
 CF +10% (costo de la campaña) → `VT2−CT2 = 0,06·CV1+0,16·CF1 > 0` siempre (CV1,CF1>0) → **conviene
 en todos los casos**. Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 
+**Variante "hallar el precio para que el equilibrio se dé a un % dado de la capacidad"** (visto en
+Dic-2024): en vez de pedir el punto de equilibrio en unidades, dan CF, Cvu y una capacidad máxima, y
+piden el **precio unitario** tal que el equilibrio se alcance justo al X% de esa capacidad. Paso a paso:
+(1) `Q_equilibrio = X% × Capacidad_máxima`; (2) en el equilibrio `Pu × Q_equilibrio = CF + Cvu ×
+Q_equilibrio` → despejar `Pu = (CF + Cvu×Q_equilibrio) / Q_equilibrio`. Con ese mismo Pu ya fijado, se
+puede calcular el **beneficio máximo** vendiendo el 100% de la capacidad: `Beneficio = Pu×Cap −
+Cvu×Cap − CF`, y el margen sobre venta = Beneficio/Venta.
+
+**Variante "apalancamiento operativo al agregar un turno"** (visto en Dic-2024): al duplicar la
+capacidad de producción agregando un turno, el CF sube solo por el incremento propio de ese turno
+(ej. +$50.000/mes), NO se duplica. Con el mismo precio unitario, el beneficio total puede crecer mucho
+más que proporcionalmente al volumen (en el ejemplo, el beneficio casi se triplica al duplicar la
+producción) porque cada unidad extra por encima del punto de equilibrio aporta su margen de
+contribución (`Pu−Cvu`) casi íntegro al resultado, mientras el costo fijo adicional es chico en
+comparación — a esto se le llama **apalancamiento operativo**. Ver desarrollo numérico completo
+(precio equilibrio $32,40/u; beneficio 1 turno $3,6M=3,70% s/venta; beneficio 2 turnos $10,2M=5,25%
+s/venta) en `Soluciones/202412 Ex Diciembre/`.
+
 ---
 
 ## 12. Costo Financiero — Valor Neto Actualizado (VNA)
@@ -284,6 +318,14 @@ en todos los casos**. Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 ## 13. Movimiento de suelos (viajes de camión)
 
 **Cuándo aparece:** Parte "Movimiento de Suelos", 10 pts. Dan un corte de terreno con capas (capa vegetal a desechar, capas de suelo natural a excavar, capas de aporte a rellenar/compactar) y piden cantidad de viajes de camión (capacidad dada) para cada material.
+
+**Definiciones formales de los 3 coeficientes** (los tres relativos al mismo volumen de referencia, el
+**volumen en banco** = material en su estado natural, sin remover): **Esponjamiento (Ce)** =
+Vol.suelto/Vol.banco (>1, el material removido ocupa más volumen). **Compactación (Cc)** =
+Vol.compactado/Vol.banco (<1, compactado con rodillo/pisón queda más denso que en su estado
+natural). **Aporte (Ca)** = Vol.compactado/Vol.suelto (el que se usa para pasar de "cuánto compactado
+necesito" a "cuánto suelto transportar", ver paso a paso abajo). **Relación entre los tres: `Ca = Cc/Ce`**
+(ya que Cc = Vol.compactado/Vol.banco = (Vol.compactado/Vol.suelto)×(Vol.suelto/Vol.banco) = Ca×Ce).
 
 **Paso a paso:**
 1. Para cada capa: Volumen "en banco"/compactado = espesor × área.
@@ -307,11 +349,31 @@ en todos los casos**. Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 
 ---
 
+## 15. Clasificación de costos por Naturaleza
+
+**Cuándo aparece:** preguntas teóricas cortas ("Varios"), 5-10 pts (visto en Dic-2024).
+
+Según el criterio usado consistentemente en el material del curso (tabla "Resumen de Insumos" de la
+Clase 20, y las tablas de costo directo de los exámenes de Marzo-2025/Dic-2025), los costos de una obra
+se agrupan por naturaleza en:
+
+**Costos Directos** (imputables a cada tarea/rubro ejecutado): 1) **Mano de Obra**; 2) **Materiales**
+(insumos que quedan incorporados a la obra); 3) **Equipos** (costo horario de la maquinaria propia o
+alquilada); 4) **Suministros y Subcontratos** (provisiones/instalaciones a cargo de terceros); 5)
+**Varios** (insumos menores no clasificables individualmente).
+
+**Costos Indirectos**: gastos no asignables a una tarea específica pero necesarios para la obra en su
+conjunto (dirección de obra, administración, obrador, seguros/garantías, gastos generales de empresa
+prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de Venta.
+
+---
+
 ## Exámenes ya incorporados a esta guía
 - Ene-2026: Costo de equipos (retroexcavadora), teoría de mano de obra/licitaciones/garantías.
 - Dic-2025: Metraje muro de contención con bloques, consumos+dosificación de hormigón, fórmula paramétrica, costo horario de obrero, garantías con perfil temporal, suministros/INCOTERMS.
 - Jul-2025: Metraje de pilar con espera de empalme, dosificación de hormigón (método detallado para sacar la relación volumétrica agua/cemento), costo financiero/VNA, movimiento de suelos (viajes de camión), TOCAF/tipos de contrato, consumo unitario vs. rendimiento, Convenio Colectivo/Fondos Sociales.
 - Marzo-2025: Metraje de losa continua con doble capa de armado (fondo + refuerzo negativo duplicado sobre apoyos), dosificación de hormigón, fórmula paramétrica (criterio para Gastos Indirectos+Beneficio), punto de equilibrio (caso "conviene el cambio"), VNA/TIR (obra vs. inversión), suministros.
 - Feb-2025: Metraje de muro de contención monolítico en L (base+pantalla, armado longitudinal+transversal), dosificación de hormigón, costo de equipo (retroexcavadora, fórmula de interés sobre capital medio) + costo directo de excavación, seguros de obra, régimen salarial/Convenio Colectivo/mercado de la construcción, Estado Económico vs. Financiero de una obra.
+- Dic-2024: Metraje de losa angosta de corredor (encofrado solo inferior, tenor=1/espesor), consumos unitarios, garantías (3 tipos con bases IVA/LLSS distintas), punto de equilibrio (precio para equilibrio a %capacidad + apalancamiento operativo al agregar turno), fórmula paramétrica sin costo financiero, coeficientes de movimiento de tierra (Ce/Cc/Ca), clasificación de costos por naturaleza.
 
 **Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — ver examen Ene-2026 parte I), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
