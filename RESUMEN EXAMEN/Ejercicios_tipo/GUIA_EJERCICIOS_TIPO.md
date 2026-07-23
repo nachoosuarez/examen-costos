@@ -65,6 +65,15 @@ un muro son notablemente más bajos que los de una losa (aquí 3,13 m²/m³ y 60
 relativa a su volumen y menos densidad de armado. Ver desarrollo completo en `Soluciones/202502 Ex
 Febrero/`.
 
+**Avance en la decodificación de la planilla en "cruz"** (visto en Feb-2024, 4º caso): comparando contra
+la solución oficial se confirmó que, en el formato `Φ(dir.2) arriba / Φ(dir.1)—paso1 paso2 / paso3 abajo`,
+al menos dos de los números sueltos corresponden al **paso en cm de cada familia de barras** (ej. "26"
+= 0,26m de paso de la armadura Φ10, "15" = 0,15m de paso de la Φ12) — un tercer número intermedio
+sigue sin explicación clara. Cuando el plano trae también rótulos explícitos tipo "Φ6/30" o "Φ8/25"
+junto a otras armaduras (bordes, barras dobladas), esos SÍ son directos y no tienen ambigüedad — la
+cruz solo afecta a la armadura "de fondo" central del paño. Ver desarrollo completo en `Soluciones/202402
+Ex febrero/`.
+
 **Variante "losa continua de varios paños, doble capa de armado"** (visto en Marzo-2025): cuando el plano muestra **dos capas de armadura** — una de "fondo" (F, positiva, recorre todo el vano en ambas direcciones) y una "de arriba" (A, negativa, refuerzo corto solo sobre los apoyos) — la capa negativa suele estar **duplicada** (una franja junto a cada uno de los dos apoyos de la losa), lo que se ve en la planilla como el doble de barras de lo que daría `ceil(tramo/paso)+1` para una sola franja. Esto es normal en losas continuas con momento negativo importante y produce una **cuantía de acero más alta que en una losa de un solo paño simplemente apoyada** (aquí 167 kg/m³ contra un rango típico de 80-120 kg/m³) — no es error, hay que justificarlo por la doble capa. Para leer las cotas del vano libre en plantas con dimensiones acumuladas ("cotas corridas"): el vano libre entre ejes de viga = diferencia entre la cota mayor y la cota menor de la línea de cotas paralela a esa dirección (ej. 8,53−0,43=8,10 m). Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 
 ---
@@ -177,7 +186,7 @@ a 5 años) en `Soluciones/202502 Ex Febrero/`.
 **Cuándo aparece:** Parte "Garantías", 15 pts. Piden estimar el costo (prima anual %) de garantías cuyo monto a garantizar varía a lo largo de la obra (ej. Fiel Cumplimiento constante, Buena Ejecución creciente y luego constante, Anticipo decreciente).
 
 **Paso a paso:**
-1. Calcular la base sobre la que se aplica cada garantía: Precio con IVA y LLSS incluidos (Fiel Cumplimiento, Buena Ejecución) o Precio sin IVA/LLSS (Anticipo, si así lo indica el enunciado). Para el Monto Imponible de M.O., si no está dado, estimarlo como % del costo (dato u orden de magnitud ~30%) y aplicar el coeficiente de leyes sociales (~75,8% obra de arquitectura).
+1. Calcular la base sobre la que se aplica cada garantía: Precio con IVA y LLSS incluidos (Fiel Cumplimiento, Buena Ejecución) o Precio sin IVA/LLSS (Anticipo, si así lo indica el enunciado). Para el Monto Imponible de M.O., **puede venir dado directamente** en el enunciado (ej. "Costo total de la mano de obra imponible: $30.000.000", visto en Feb-2024 — en ese caso NO hay que aplicar el 80% ficto, se usa el valor tal cual) o, si no está dado, estimarlo como % del costo (dato u orden de magnitud ~30%, o 80% de la M.O. sujeta a ley) y aplicar el coeficiente de leyes sociales (~71,8% obra pública, ~75,8% obra de arquitectura).
 2. Para cada garantía, identificar la **forma en el tiempo** (constante, rampa creciente, rampa decreciente) entre los hitos: Inicio (I), Recepción Provisoria (RP), Recepción Definitiva (RD).
    - Fiel Cumplimiento: monto fijo (% del precio) desde la firma hasta RP.
    - Buena Ejecución: crece linealmente de 0 a su monto máximo entre I y RP (se retiene % de cada certificado, certificación uniforme ⇒ rampa lineal), luego se mantiene constante entre RP y RD (plazo de garantía adicional).
@@ -317,6 +326,14 @@ s/venta) en `Soluciones/202412 Ex Diciembre/`.
 
 **Mini-ejemplo:** deuda $1.000.000, tasa trimestral 20%, alternativa que paga 350+350+350+300+300 (miles $) al final de cada uno de 5 trimestres → VNA = 1.002,5 (miles $) > 1.000 → SÍ compensa el costo del dinero.
 
+**Segundo ejemplo — comparar 3 alternativas y ninguna compensa (Feb-2024):** deuda $1.000.000 (miles $),
+tasa trimestral 25%, 3 alternativas de pago a 5 trimestres. Se calcula el VNA de cada una (Alt.1=813,
+Alt.2=904, Alt.3=655, todas en miles $) y se ordenan de mayor a menor VNA para saber cuál conviene más
+a quien cobra (Alt.2 > Alt.1 > Alt.3) — **ojo que la alternativa con mayor monto nominal total no es
+necesariamente la de mayor VNA** (Alt.3 suma $2.000 pero todo al final del 5º trimestre, así que su VNA
+resulta el más bajo de las tres). Como las 3 VNA quedan por debajo de los $1.000 originales, **ninguna**
+alcanza a indemnizar el costo del dinero. Ver desarrollo completo en `Soluciones/202402 Ex febrero/`.
+
 ---
 
 ## 13. Movimiento de suelos (viajes de camión)
@@ -377,6 +394,7 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 ---
 
 ## Exámenes ya incorporados a esta guía
+- Febrero-2024 (fecha real 30/01/2024): Metraje de losa suspendida en 4 lados (Tenor=1/e, 4º caso de "cruz" con decodificación parcial de 2 de 3 números), consumos con HH/m³ total, costo financiero/VNA (comparar 3 alternativas de pago, ninguna compensa el costo del dinero), garantías (Fiel Cumplimiento+Buena Ejecución+Anticipo, Mano de Obra Imponible dada directamente), punto de equilibrio (precio a %capacidad + beneficio máximo con margen %), régimen salarial/Convenio Colectivo.
 - Marzo-2024 (fecha real 20/02/2024): Metraje de viga de sección compuesta (base+muro+soporte+marco), consumos unitarios, dosificación de hormigón (variante doble aplicación del Coef. de Aporte), costo directo de cuadrilla+equipo aplicado a una tarea (izado de columna con hidrogrúa, rendimiento h/unidad), seguros de obra (teórico), fórmula paramétrica con 4 repartos alternativos válidos para gastos sin insumo físico.
 - Jul-2024: Metraje de losa con bordes de escalón (tercer caso de planilla en "cruz", resuelto usando la planilla de armado ya provista en la solución oficial), movimiento de suelos con terraplén+desmonte del mismo material reutilizado (coeficiente "Compactación" ≠ "Aporte" entre exámenes), garantías (Fiel Cumplimiento + Buena Ejecución con base IVA+LLSS), tipos de subcontrato, etapas de gestión de riesgos, TIR/VNA.
 - Ene-2026: Costo de equipos (retroexcavadora), teoría de mano de obra/licitaciones/garantías.
@@ -386,4 +404,4 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 - Feb-2025: Metraje de muro de contención monolítico en L (base+pantalla, armado longitudinal+transversal), dosificación de hormigón, costo de equipo (retroexcavadora, fórmula de interés sobre capital medio) + costo directo de excavación, seguros de obra, régimen salarial/Convenio Colectivo/mercado de la construcción, Estado Económico vs. Financiero de una obra.
 - Dic-2024: Metraje de losa angosta de corredor (encofrado solo inferior, tenor=1/espesor), consumos unitarios, garantías (3 tipos con bases IVA/LLSS distintas), punto de equilibrio (precio para equilibrio a %capacidad + apalancamiento operativo al agregar turno), fórmula paramétrica sin costo financiero, coeficientes de movimiento de tierra (Ce/Cc/Ca), clasificación de costos por naturaleza.
 
-**Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — visto en Ene-2026, Dic-2024 y Jul-2024, sin decodificar de forma cerrada todavía; cuando el examen trae la planilla de cálculo ya resuelta como en Jul-2024, no bloquea la resolución), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
+**Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — visto en Ene-2026, Dic-2024, Jul-2024 y Feb-2024; en Feb-2024 se logró decodificar el paso de 2 de las 3 familias comparando contra la solución oficial, sigue faltando cerrar el 3er número; cuando el examen trae la planilla de cálculo ya resuelta, no bloquea la resolución), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
