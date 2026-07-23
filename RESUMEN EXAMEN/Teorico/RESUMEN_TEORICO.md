@@ -22,7 +22,7 @@
 
 ---
 
-## 1. Metrajes de hormigones (Clase 3)
+## 1. Metrajes de hormigones (Clase 3 y Clase 4)
 
 **Concepto:** cuantificar para cada estructura (clasificada por tipo — pilares, vigas, losas... — y por nivel — PB, 1er piso...) el volumen de hormigón (m³), el tenor de encofrado (m²/m³) y la cuantía de acero (kg/m³). Existen varios criterios válidos: lo importante es ser coherente.
 
@@ -37,6 +37,22 @@
 - Vigas/losas suspendidas → encofrado inferior salvo indicación contraria. Zapatas/muros de contención → apoyan en el suelo, no se encofra la cara inferior.
 - Tenor = área encofrado/volumen hormigón; Cuantía = kg hierro/volumen hormigón. Conocer rangos esperables por tipo de pieza para detectar errores — un valor fuera de rango no es automáticamente un error, puede haber una justificación (ej. losa apoyada en el suelo → tenor mucho menor).
 - Consumos por m³: no hace falta el total de material, con tenor/cuantía se llega directo. Mano de obra (hs/m³) = 1×(hs/m³ pasta) + tenor×(hs/m² encofrado) + cuantía×(hs/kg hierro). Hormigón (m³/m³)=1×(1+%desp). Hierro (kg/m³)=cuantía. Tabla de pino/chapón (unid/m³) = (tenor×(1+%desp))/(área_unitaria×reúsos).
+
+**Fórmula general de acero (Clase 4):** `kg = Cantidad×(Longitud+Empalmes+Ganchos)×Densidad×(1+%Desperdicio)`, con `Cantidad = redondear.hacia arriba(tramo/paso)+1`.
+
+**Valores de referencia de Tenor y Cuantía por tipo de elemento (Clase 4 — útiles para detectar un resultado fuera de rango):**
+
+| Elemento | Tenor (m²/m³) | Cuantía (kg/m³) |
+|---|---|---|
+| Pilares | 10-14 | 100-180 |
+| Vigas | 8-12 | 70-150 |
+| Losas | 5-10 | 60-80 |
+
+*(Un muro de contención macizo da valores bastante más bajos que estos rangos —ver Guía sección 1, variantes de Feb-2025/Jul-2023— por tener menos superficie de encofrado y menos densidad de armado relativa a su volumen; no es un error, es coherente con la geometría del elemento.)*
+
+**¡Importante! Discrepancia detectada entre el material de Clase 4 (2026) y la planilla oficial de un examen real:** la Clase 4 usa el muro de contención de **Marzo-2020** como ejemplo resuelto en diapositivas, pero llega a un encofrado (117 m², Tenor 4,6) y una cuantía de acero (2.239,2 kg, 88,9 kg/m³) **distintos** a los de la planilla oficial que calificó ese examen real (126 m², Tenor 5,0; 2.177,28 kg, 86,4 kg/m³) — la diferencia está en si la pata del muro se encofra con 1 o 2 caras, y en el desarrollo exacto de la longitud de la barra "horquilla". Ver el detalle completo de ambos cálculos en `Soluciones/202003 Ex Marzo/RESOLUCION.md` y en la Guía de Ejercicios Tipo, sección 1 — ante esta ambigüedad, priorizar el criterio de la Clase 4 (más reciente) salvo que el examen aclare lo contrario.
+
+**Ejemplos que la Clase 4 usa/referencia como casos resueltos:** Marzo 2020 (visto arriba), Julio 2025 (ya resuelto en `Soluciones/`), y **Febrero 2026 / Marzo 2026** — estos 2 últimos NO están todavía en la carpeta `Exámenes/` del repo (son exámenes futuros de este mismo año lectivo, mencionados en la diapositiva como referencia pero sin PDF disponible aún) — revisar si aparecen en corridas futuras.
 
 ---
 
@@ -170,12 +186,13 @@ como pregunta suelta):
 ---
 
 ## Clases ya resumidas
+- Clase 1 (Introducción/administrativa del curso — objetivos, metodología, cronograma del Trabajo Práctico; **sin contenido de examen**, solo logística del curso).
 - Clase 2 (Características históricas de la industria, obra pública/privada, TOCAF, tipos de contrato).
-- Clase 3 (Metrajes de hormigones — criterios de volumen, encofrado, armaduras, planilla tipo).
+- Clase 3 y Clase 4 (Metrajes de hormigones — criterios de volumen, encofrado, armaduras, planilla tipo, valores de referencia de Tenor/Cuantía por elemento, ejemplos resueltos incl. Marzo-2020 con discrepancia frente a la planilla oficial — ver sección 1).
 - Clase 9 (Mano de obra — Ley 14.411, Convenio Colectivo, ítems del jornal, viáticos, aportes, Fondos Sociales).
 - Clase 19 (Riesgos, Garantías, Seguros).
 - Clase 20 (Programa Económico y Financiero de obra, elaboración y comparación de ofertas).
 - Equipos.pdf (Costo horario de equipos, movimiento de suelos con camiones).
 
 ## Clases pendientes (quedan para próximas corridas)
-Clase 1, Clase 4, Clase 5, Clase 6, Clase 7, Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.
+Clase 5, Clase 6, Clase 7, Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.
