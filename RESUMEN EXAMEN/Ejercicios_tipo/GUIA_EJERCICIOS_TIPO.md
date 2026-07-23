@@ -389,6 +389,17 @@ $900.000 (peor mes de caja). Costo financiero con "remunerando excedentes" = −
 beneficio final) vs. "remunerando solo necesidades" = −$172.500 (17,24%) → **conviene la primera**.
 Ver desarrollo completo en `Soluciones/202303 Ex Marzo/`.
 
+**Sub-variante "ajustar un pago para que el VNA sea EXACTAMENTE igual a la deuda" (visto en Feb-2023):**
+en vez de solo comparar/ordenar alternativas ya dadas, piden encontrar qué monto X habría que pagar en
+un trimestre/período determinado para que el VNA de esa alternativa iguale (ni más ni menos) el monto
+nominal de la deuda original. Si el resto de los pagos de esa alternativa es $0 y todo se concentra en un
+único período *t*: despejar de `Deuda = X/(1+i)ᵗ` → **X = Deuda×(1+i)ᵗ** (es directamente la deuda
+llevada a valor futuro con la tasa de interés, en el período *t*). Si la alternativa tiene otros pagos además
+del que se ajusta, primero restar el VNA de esos otros pagos a la deuda y recién ahí despejar X del
+período que falta. Mini-ejemplo: deuda $3.000.000 (miles), tasa trimestral 10%, alternativa que paga todo
+en el trim5 → X = 3.000×(1,1)⁵ = **$4.832 (miles)**. Ver desarrollo completo en `Soluciones/202302 Ex
+Febrero/`.
+
 ---
 
 ## 13. Movimiento de suelos (viajes de camión)
