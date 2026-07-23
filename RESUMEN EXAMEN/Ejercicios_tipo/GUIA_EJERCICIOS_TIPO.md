@@ -99,6 +99,8 @@ Febrero/`.
 
 **Mini-ejemplo (Dic-2025):** relación 3,5:2:1, a/c=0,50, dens. cemento 1.400 kg/m³. Cemento real 0,47 m³ → 0,47×1.400=658 kg → como el coeficiente de aporte ya reparte los 4,24 m³ aparentes en 1 m³ real, el cemento resultante por m³ de hormigón es 330,58 kg = 13,22 bolsas × 220 $/bolsa = 2.909 $. Agregado grueso 0,83 m³ × 1.250 $/m³ = 1.033 $. Total materiales ≈ **4.344 $/m³**.
 
+**Variante "doble aplicación del Coeficiente de Aporte" (visto en Feb/Marzo-2024):** algunas planillas oficiales hacen el camino completo en 3 pasos en vez de ir directo: (1) **Volumen real** de la mezcla dada = cada término de la relación × su Coef. de Aporte (ej. relación 4,5:3:1 → Grueso 4,5×0,55=2,48 m³, Fino 3×0,57=1,71 m³, Cemento 1×0,47=0,47 m³; más el agua = kg cemento×a/c). Sumar todo = volumen real que rinde la mezcla (ej. 5,495 m³). (2) **Normalizar a 1 m³ real** dividiendo cada componente por esa suma (ej. Grueso 2,48/5,495=0,45; deben sumar 1). (3) **Volver a volumen "aparente"/comercial** dividiendo CADA UNO otra vez por su propio Coef. de Aporte (ej. Grueso 0,45/0,55=0,82 m³ — esta es la cantidad que efectivamente se compra/mide suelta). El agua no pasa por el coeficiente de aporte: se prorratea directo del total de la mezcla sobre el volumen real total. **No es un error usar el coeficiente dos veces** — la primera vez convierte "aparente dado → real", la segunda "real normalizado → aparente a comprar"; son direcciones opuestas de la misma conversión. Ver desarrollo completo en `Soluciones/202403 Ex marzo 2024/`.
+
 ---
 
 ## 4. Costo horario de equipos
@@ -124,6 +126,8 @@ Febrero/`.
 **Errores comunes:** no mezclar U$D y $ sin convertir explícitamente con el tipo de cambio dado; H bajo (equipo poco usado) dispara la amortización/seguro/patente por hora — es un resultado esperado, no un error (ilustra por qué conviene alquilar equipos de uso esporádico en vez de comprarlos).
 
 **Mini-ejemplo (Ene-2026, retroexcavadora combinada):** VN=50.000 U$D, VR=15.000 U$D, n=5, H=180 h/año → VU=900h. Amortización=(50.000-15.000)/900=38,89 U$D/h. Con 1U$D=38,5$ → 1.497,2 $/h. Ver desarrollo completo en `Soluciones/202601 Examen Enero 2026/`.
+
+**Variante "costo directo de una tarea = costo horario de cuadrilla+equipo × rendimiento" (visto en Feb-2025 y Feb/Marzo-2024):** cuando piden el costo directo **unitario de una tarea puntual** (ej. "izado de columna", "excavación") en vez del costo horario del equipo en sí, el camino es: (1) armar el **costo horario de la cuadrilla completa** sumando Mano de Obra (jornales×cant., sin LLSS si el enunciado lo pide así) + Materiales de consumo (combustible, etc.) + Costo de Equipo (Interés+Depreciación+Seguro/Patente horarios, fórmulas de la sección de arriba) + Mantenimiento horario (tasa media×VC/horas); (2) obtener el **rendimiento** de la tarea en horas/unidad (dato directo, o derivado de "X unidades cada Y horas" — ej. 30 columnas en 44 hs/semana → 44/30=1,47 h/columna); (3) **Costo directo unitario = Costo horario total de la cuadrilla × rendimiento (h/unidad)**. Ver desarrollo numérico completo (cuadrilla 3 personas + hidrogrúa, 52,65 U$S/h × 1,47 h/columna = 77,40 U$S/columna) en `Soluciones/202403 Ex marzo 2024/`.
 
 **Variante "fórmula del interés horario sobre capital medio"** (visto en Feb-2025): en vez de dar
 directamente "costo financiero = (VN-VR)/2 × i / horas" (forma simplificada de la sección de arriba), a
@@ -373,6 +377,7 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 ---
 
 ## Exámenes ya incorporados a esta guía
+- Marzo-2024 (fecha real 20/02/2024): Metraje de viga de sección compuesta (base+muro+soporte+marco), consumos unitarios, dosificación de hormigón (variante doble aplicación del Coef. de Aporte), costo directo de cuadrilla+equipo aplicado a una tarea (izado de columna con hidrogrúa, rendimiento h/unidad), seguros de obra (teórico), fórmula paramétrica con 4 repartos alternativos válidos para gastos sin insumo físico.
 - Jul-2024: Metraje de losa con bordes de escalón (tercer caso de planilla en "cruz", resuelto usando la planilla de armado ya provista en la solución oficial), movimiento de suelos con terraplén+desmonte del mismo material reutilizado (coeficiente "Compactación" ≠ "Aporte" entre exámenes), garantías (Fiel Cumplimiento + Buena Ejecución con base IVA+LLSS), tipos de subcontrato, etapas de gestión de riesgos, TIR/VNA.
 - Ene-2026: Costo de equipos (retroexcavadora), teoría de mano de obra/licitaciones/garantías.
 - Dic-2025: Metraje muro de contención con bloques, consumos+dosificación de hormigón, fórmula paramétrica, costo horario de obrero, garantías con perfil temporal, suministros/INCOTERMS.
