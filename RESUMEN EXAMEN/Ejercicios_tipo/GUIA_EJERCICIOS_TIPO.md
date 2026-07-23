@@ -77,6 +77,8 @@ Ex febrero/`.
 
 **Variante "losa continua de varios paños, doble capa de armado"** (visto en Marzo-2025): cuando el plano muestra **dos capas de armadura** — una de "fondo" (F, positiva, recorre todo el vano en ambas direcciones) y una "de arriba" (A, negativa, refuerzo corto solo sobre los apoyos) — la capa negativa suele estar **duplicada** (una franja junto a cada uno de los dos apoyos de la losa), lo que se ve en la planilla como el doble de barras de lo que daría `ceil(tramo/paso)+1` para una sola franja. Esto es normal en losas continuas con momento negativo importante y produce una **cuantía de acero más alta que en una losa de un solo paño simplemente apoyada** (aquí 167 kg/m³ contra un rango típico de 80-120 kg/m³) — no es error, hay que justificarlo por la doble capa. Para leer las cotas del vano libre en plantas con dimensiones acumuladas ("cotas corridas"): el vano libre entre ejes de viga = diferencia entre la cota mayor y la cota menor de la línea de cotas paralela a esa dirección (ej. 8,53−0,43=8,10 m). Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 
+**Variante "muro de contención en L con armadura tipo estribo/vertical+pie con estribos transversales"** (visto en Jul-2023): otra forma de nombrar/organizar las mismas 2 familias de barras de un muro monolítico en L (ver variante Feb-2025 arriba), útil para reconocer la nomenclatura cuando el examen usa otros nombres: la armadura vertical de la pantalla (que ancla doblada dentro del pie, funcionando como un "estribo" abierto) es la barra **principal a flexión** de la pantalla (aquí Ø12 c/15, cantidad=redondeo(long.muro/paso)+1=135, sin empalme por ser una pieza corta con gancho ya incluido); la horizontal de repartición de la pantalla (aquí Ø6 c/15) SÍ necesita empalme si su longitud (=long. del muro) supera los 12m de la varilla comercial. El **pie/zapata corrida** lleva su propia armadura: longitudinal superior + inferior (corren los 20m del muro, con empalme) y estribos transversales que las atan (barra corta, sin empalme, cantidad según paso a lo largo del muro). **Ojo con enunciados que llaman "viga" a lo que en realidad es la sección del muro** (visto también en el enunciado de Consumos de este examen) — verificar siempre contra el Anexo qué elemento es el que realmente hay que metrar/consumir, no solo el nombre que usa la letra. Ver desarrollo completo (con verificación fila a fila contra la planilla oficial) en `Soluciones/202307 Ex Julio/`.
+
 ---
 
 ## 2. Consumos unitarios de hormigón armado (mano de obra, materiales, encofrado)
@@ -342,6 +344,13 @@ a quien cobra (Alt.2 > Alt.1 > Alt.3) — **ojo que la alternativa con mayor mon
 necesariamente la de mayor VNA** (Alt.3 suma $2.000 pero todo al final del 5º trimestre, así que su VNA
 resulta el más bajo de las tres). Como las 3 VNA quedan por debajo de los $1.000 originales, **ninguna**
 alcanza a indemnizar el costo del dinero. Ver desarrollo completo en `Soluciones/202402 Ex febrero/`.
+
+**Tercer ejemplo — caso mixto, solo una alternativa compensa (Jul-2023, el mini-ejemplo de arriba es
+justamente esta alternativa 2):** deuda $1.000.000 (miles $), tasa trimestral 20%, 3 alternativas de pago a
+5 trimestres (Alt.1: 400+300+300+200+200; Alt.2: 350+350+350+300+300; Alt.3: 0+0+0+0+2.000). VNA:
+Alt.1=892, Alt.2=1.003, Alt.3=804. Orden de conveniencia Alt.2>Alt.1>Alt.3. Como solo el VNA de la
+**Alt.2 supera los $1.000** originales, es la **única** que compensa el costo del dinero — las otras dos
+pagan la deuda "desvalorizada". Ver desarrollo completo en `Soluciones/202307 Ex Julio/`.
 
 ---
 
