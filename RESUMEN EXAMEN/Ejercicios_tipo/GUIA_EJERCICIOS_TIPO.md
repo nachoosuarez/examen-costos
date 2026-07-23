@@ -29,6 +29,7 @@ Guía acumulativa organizada por tipo de ejercicio. Antes de un examen, repasar 
 | Tanques de agua | volumen exterior − volumen interior |
 | Escaleras | sección del escalón completo × longitud del escalón |
 | General | excepcionalmente se descuenta el volumen del hierro (caso muy particular) |
+| Relleno triangular (haunch/cartela entre dos elementos) | **½×base×altura×longitud** — no es un prisma rectangular, hay que usar el área del triángulo (visto en Dic-2023, viga con alero) |
 
 **Armaduras — criterios generales:** se metra por diámetro; se agrupa por nivel y tipo de elemento; empalmes 50Φ como norma; no se descuentan recubrimientos; usar siempre la misma planilla tipo (columnas: Horm. m³ | Encof. m² | Hierro kg | kg por cada diámetro con su % desperdicio). Desperdicios típicos por diámetro (pueden variar según el enunciado, siempre usar la tabla que da el examen): Φ6-Φ8 → 5%; Φ10-Φ12 → 10%; Φ16-Φ20 → 15%; Φ25+ → 15-20%.
 
@@ -326,6 +327,14 @@ s/venta) en `Soluciones/202412 Ex Diciembre/`.
 
 **Mini-ejemplo:** deuda $1.000.000, tasa trimestral 20%, alternativa que paga 350+350+350+300+300 (miles $) al final de cada uno de 5 trimestres → VNA = 1.002,5 (miles $) > 1.000 → SÍ compensa el costo del dinero.
 
+**Variante "flujo de caja con anticipo + elección de línea de crédito" (visto en Dic-2023):** en vez de comparar alternativas de cobro, dan un **cronograma de ingresos y egresos mes a mes** y piden armar el flujo financiero y elegir entre líneas de crédito disponibles. Paso a paso:
+1. Si hay **anticipo** del cliente (ej. 10% del precio, recibido al inicio y devuelto como quita en cada certificado posterior): armar la fila de ingresos netos = ingresos sin anticipo − quita de cada mes (10% de ese ingreso), sumando el anticipo recibido en el mes 0. El total del anticipo a lo largo de toda la obra da 0 (se devuelve completo).
+2. **Flujo mensual = ingresos netos + egresos** (egresos ya negativos); **Flujo acumulado** = flujo acumulado del mes anterior + flujo mensual del mes actual. El mínimo (más negativo) del acumulado es el **déficit máximo a financiar**.
+3. Para elegir la línea de crédito: **el interés de usar la línea también se acumula y aumenta el déficit** — no alcanza con comparar el déficit "sin intereses" contra el límite de la línea. Recalcular el flujo acumulado **incluyendo el costo financiero mes a mes** (interés = tasa mensual × |déficit acumulado del mes anterior|, restado como un egreso más) y comparar ESE nuevo mínimo contra el límite de cada línea. Una línea puede parecer suficiente sin intereses y no serlo una vez que se sincera el costo de usarla.
+4. El **monto máximo a utilizar de la línea** = el mínimo (peor) valor del flujo acumulado con intereses incluidos. El **total de intereses previstos** = suma de la fila de costo financiero de la línea elegida.
+
+**Mini-ejemplo:** déficit máximo sin intereses $3.930 (miles), por debajo del límite de una línea de $4.000 al 4%/mes → en principio alcanzaría, pero al sumar los intereses mes a mes el déficit acumulado llega a $4.147, **superando el límite de esa línea** → hay que usar una segunda línea de mayor monto (aunque tenga tasa más alta, ej. 5%/mes) → con esa segunda línea, déficit máximo con intereses $4.202 (mes 4), intereses totales $480. Ver desarrollo completo en `Soluciones/202312 Ex diciembre/`.
+
 **Segundo ejemplo — comparar 3 alternativas y ninguna compensa (Feb-2024):** deuda $1.000.000 (miles $),
 tasa trimestral 25%, 3 alternativas de pago a 5 trimestres. Se calcula el VNA de cada una (Alt.1=813,
 Alt.2=904, Alt.3=655, todas en miles $) y se ordenan de mayor a menor VNA para saber cuál conviene más
@@ -394,6 +403,7 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 ---
 
 ## Exámenes ya incorporados a esta guía
+- Diciembre-2023: Metraje de viga con alero y relleno triangular (haunch), consumos (HH/m³ más alto visto hasta ahora), costo financiero con flujo de caja + anticipo + elección entre 2 líneas de crédito (el interés de la línea puede hacerla superar su propio límite), fórmula paramétrica/Ce-Cc-Ca/costos por naturaleza (teórico), identificación/cuantificación/valoración de materiales, régimen salarial.
 - Febrero-2024 (fecha real 30/01/2024): Metraje de losa suspendida en 4 lados (Tenor=1/e, 4º caso de "cruz" con decodificación parcial de 2 de 3 números), consumos con HH/m³ total, costo financiero/VNA (comparar 3 alternativas de pago, ninguna compensa el costo del dinero), garantías (Fiel Cumplimiento+Buena Ejecución+Anticipo, Mano de Obra Imponible dada directamente), punto de equilibrio (precio a %capacidad + beneficio máximo con margen %), régimen salarial/Convenio Colectivo.
 - Marzo-2024 (fecha real 20/02/2024): Metraje de viga de sección compuesta (base+muro+soporte+marco), consumos unitarios, dosificación de hormigón (variante doble aplicación del Coef. de Aporte), costo directo de cuadrilla+equipo aplicado a una tarea (izado de columna con hidrogrúa, rendimiento h/unidad), seguros de obra (teórico), fórmula paramétrica con 4 repartos alternativos válidos para gastos sin insumo físico.
 - Jul-2024: Metraje de losa con bordes de escalón (tercer caso de planilla en "cruz", resuelto usando la planilla de armado ya provista en la solución oficial), movimiento de suelos con terraplén+desmonte del mismo material reutilizado (coeficiente "Compactación" ≠ "Aporte" entre exámenes), garantías (Fiel Cumplimiento + Buena Ejecución con base IVA+LLSS), tipos de subcontrato, etapas de gestión de riesgos, TIR/VNA.
