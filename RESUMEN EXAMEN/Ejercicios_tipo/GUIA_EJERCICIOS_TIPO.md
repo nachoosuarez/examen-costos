@@ -336,6 +336,10 @@ necesito" a "cuánto suelto transportar", ver paso a paso abajo). **Relación en
 
 **Mini-ejemplo:** platea 40×25m=1.000 m²; balasto compactado necesario 30 cm → Vol. compactado=300 m³; Ca=0,9 → Vol. suelto=300/0,9=333,3 m³; camión de 10m³ → 34 viajes (redondeado hacia arriba).
 
+**⚠️ El nombre de la columna del coeficiente varía según el examen** (visto en Jul-2024): a veces la tabla de datos trae 3 columnas separadas (Esponjamiento, Compactación, Aporte) y el coeficiente que efectivamente reproduce `Vol.suelto = Vol.compactado/coeficiente` es el de la columna **"Compactación"**, no el de "Aporte" — mientras que en Jul-2025 ese mismo rol lo cumplía el coeficiente llamado "Ca" (Aporte). **No confiar en la etiqueta**: si el enunciado da un volumen de control (o hay que verificar contra una solución), probar cuál de los coeficientes dados (siempre <1) reproduce el resultado; si no hay forma de verificar, usar el coeficiente conceptualmente correcto según su definición algebraica (Vol.compactado/Vol.suelto), explicitando la elección.
+
+**Variante "terraplén + desmonte del mismo material, con reutilización" (visto en Jul-2024):** cuando el terreno tiene pendiente y hay que nivelarlo antes de colocar las capas de la estructura, en una parte del terreno hay que **rellenar (terraplén)** y en otra hay que **excavar (desmonte)**, ambos del mismo material (ej. arcilla). Si el material desmontado se puede reutilizar como relleno del terraplén, el volumen neto a transportar (import) = (Vol. suelto necesario para el terraplén) − (Vol. suelto que aporta el desmonte), **no** la suma de ambos por separado — sumarlos por separado sobrestima los viajes. Ver desarrollo completo en `Soluciones/202407 Ex julio/`.
+
 ---
 
 ## 14. Suministros
@@ -369,6 +373,7 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 ---
 
 ## Exámenes ya incorporados a esta guía
+- Jul-2024: Metraje de losa con bordes de escalón (tercer caso de planilla en "cruz", resuelto usando la planilla de armado ya provista en la solución oficial), movimiento de suelos con terraplén+desmonte del mismo material reutilizado (coeficiente "Compactación" ≠ "Aporte" entre exámenes), garantías (Fiel Cumplimiento + Buena Ejecución con base IVA+LLSS), tipos de subcontrato, etapas de gestión de riesgos, TIR/VNA.
 - Ene-2026: Costo de equipos (retroexcavadora), teoría de mano de obra/licitaciones/garantías.
 - Dic-2025: Metraje muro de contención con bloques, consumos+dosificación de hormigón, fórmula paramétrica, costo horario de obrero, garantías con perfil temporal, suministros/INCOTERMS.
 - Jul-2025: Metraje de pilar con espera de empalme, dosificación de hormigón (método detallado para sacar la relación volumétrica agua/cemento), costo financiero/VNA, movimiento de suelos (viajes de camión), TOCAF/tipos de contrato, consumo unitario vs. rendimiento, Convenio Colectivo/Fondos Sociales.
@@ -376,4 +381,4 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 - Feb-2025: Metraje de muro de contención monolítico en L (base+pantalla, armado longitudinal+transversal), dosificación de hormigón, costo de equipo (retroexcavadora, fórmula de interés sobre capital medio) + costo directo de excavación, seguros de obra, régimen salarial/Convenio Colectivo/mercado de la construcción, Estado Económico vs. Financiero de una obra.
 - Dic-2024: Metraje de losa angosta de corredor (encofrado solo inferior, tenor=1/espesor), consumos unitarios, garantías (3 tipos con bases IVA/LLSS distintas), punto de equilibrio (precio para equilibrio a %capacidad + apalancamiento operativo al agregar turno), fórmula paramétrica sin costo financiero, coeficientes de movimiento de tierra (Ce/Cc/Ca), clasificación de costos por naturaleza.
 
-**Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — ver examen Ene-2026 parte I), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
+**Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — visto en Ene-2026, Dic-2024 y Jul-2024, sin decodificar de forma cerrada todavía; cuando el examen trae la planilla de cálculo ya resuelta como en Jul-2024, no bloquea la resolución), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.

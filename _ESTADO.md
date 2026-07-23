@@ -1,13 +1,13 @@
-# Estado del trabajo — Costos (actualizado: corrida del 23/07/2026 — 4ª pasada)
+# Estado del trabajo — Costos (actualizado: corrida del 23/07/2026 — 5ª pasada)
 
 ## Resumen ejecutivo (leer esto primero)
-1. Van 6 exámenes con resolución escrita: **Enero 2026** (parcial), **Diciembre 2025**, **Julio 2025**, **Marzo 2025**, **Febrero 2025** y **Diciembre 2024** (los últimos 5 completos y verificados contra solución oficial). Faltan 18 exámenes más viejos (2019-2024).
-2. Lo más urgente para estudiar ya mismo: **`RESUMEN EXAMEN/Ejercicios_tipo/GUIA_EJERCICIOS_TIPO.md`** — 15 tipos de ejercicio con receta paso a paso (metraje —con variantes losa simple/doble capa/muro con bloques/muro monolítico/losa angosta—, consumos, dosificación de hormigón, costo de equipos —con variante de interés sobre capital medio—, costo de mano de obra, Ley 14.411, garantías con perfil temporal, fórmula paramétrica, licitaciones/TOCAF, punto de equilibrio —con variante de apalancamiento operativo—, costo financiero/VNA, movimiento de suelos —con definiciones formales Ce/Cc/Ca—, seguros, suministros, clasificación de costos por naturaleza).
-3. El examen de **Enero 2026** (el más nuevo, sin solución oficial) quedó con la Parte I (Metraje de losas) y Parte II (Consumos) **sin resolver**: el plano usa una notación de armado de losa en "cruz" que no tiene legend clara. Las partes III (equipos), IV, V y VI de ese examen están resueltas. *(Nota: en Dic-2024 apareció una losa con notación de plano similar y SÍ se pudo resolver gracias a tener la solución oficial — si hay tiempo, vale la pena releer Ene-2026 con esa experiencia fresca, aunque la notación específica seguía sin poder confirmarse 100% en Dic-2024 tampoco, solo se infirió por consistencia numérica con la solución oficial).*
-4. **Diciembre 2025, Julio 2025, Marzo 2025, Febrero 2025 y Diciembre 2024** están 100% resueltos y verificados contra solución oficial (encontrada en el propio PDF de la letra de cada examen, en un segundo archivo con la planilla de cálculo ya completada).
-5. **Diciembre 2024** trajo 3 tipos nuevos a la guía: metraje de losa angosta (identidad tenor=1/espesor cuando el encofrado es solo inferior), punto de equilibrio con "precio para alcanzar equilibrio a %capacidad" + apalancamiento operativo al agregar un turno, y clasificación de costos por naturaleza (Mano de Obra/Materiales/Equipos/Suministros y Subcontratos/Varios + Indirectos). También reforzó garantías (mismo tipo, bases IVA/LLSS distintas por garantía) y dio las definiciones formales de Ce/Cc/Ca de movimiento de suelos.
+1. Van 7 exámenes con resolución escrita: **Enero 2026** (parcial), **Diciembre 2025**, **Julio 2025**, **Marzo 2025**, **Febrero 2025**, **Diciembre 2024** y **Julio 2024** (los últimos 6 completos y verificados contra solución oficial). Faltan 17 exámenes más viejos (2019-2024).
+2. Lo más urgente para estudiar ya mismo: **`RESUMEN EXAMEN/Ejercicios_tipo/GUIA_EJERCICIOS_TIPO.md`** — 15 tipos de ejercicio con receta paso a paso (metraje —con variantes losa simple/doble capa/muro con bloques/muro monolítico/losa angosta/losa con bordes de escalón—, consumos, dosificación de hormigón, costo de equipos —con variante de interés sobre capital medio—, costo de mano de obra, Ley 14.411, garantías con perfil temporal, fórmula paramétrica, licitaciones/TOCAF, punto de equilibrio —con variante de apalancamiento operativo—, costo financiero/VNA, movimiento de suelos —con definiciones formales Ce/Cc/Ca y variante terraplén+desmonte reutilizado—, seguros, suministros, clasificación de costos por naturaleza).
+3. El examen de **Enero 2026** (sin solución oficial en el repo) quedó con la Parte I (Metraje de losas) y Parte II (Consumos) **sin resolver**: el plano usa una notación de armado de losa en "cruz" que no tiene legend clara. Las partes III (equipos), IV, V y VI de ese examen están resueltas. Esta misma notación en "cruz" apareció **3 veces** (Ene-2026, Dic-2024, Jul-2024) sin poder decodificarse de forma 100% cerrada — en Jul-2024 no bloqueó la resolución porque el PDF de la letra traía la planilla de cálculo ya resuelta.
+4. **Diciembre 2025, Julio 2025, Marzo 2025, Febrero 2025, Diciembre 2024 y Julio 2024** están 100% resueltos y verificados contra solución oficial (encontrada en el propio PDF de la letra de cada examen, en un segundo archivo con la planilla de cálculo ya completada).
+5. **Julio 2024** trajo a la guía: movimiento de suelos con terraplén+desmonte del mismo material reutilizado (resta los volúmenes en vez de sumarlos), y una advertencia importante — el nombre de la columna del coeficiente de suelos ("Compactación" vs. "Aporte") **no es consistente entre exámenes**, hay que verificar cuál reproduce el resultado en vez de confiar en la etiqueta.
 6. El resumen teórico cubre **5 clases completas** (Clase 2, 3, 9, 19, 20) + Equipos.pdf; quedan 12 clases sin resumir todavía (ver lista abajo).
-7. Prioridad para la próxima corrida: seguir con **Julio 2024** hacia atrás (2024→2019, quedan 18 exámenes); si hay tiempo, sumar clases teóricas pendientes (sugerido: Clase 21 y Clase 23, más cercanas en el temario a lo ya visto — Clase 20 resultó ser "Programa Económico-Financiero + Elaboración/Comparación de Ofertas", puede que Clase 21 solape parcialmente, revisar contenido real al leerla).
+7. Prioridad para la próxima corrida: seguir con **Marzo 2024** hacia atrás (2024→2019, quedan 17 exámenes); si hay tiempo, sumar clases teóricas pendientes (sugerido: Clase 21 y Clase 23, más cercanas en el temario a lo ya visto — Clase 20 resultó ser "Programa Económico-Financiero + Elaboración/Comparación de Ofertas", puede que Clase 21 solape parcialmente, revisar contenido real al leerla).
 
 ## Exámenes — estado (del más nuevo al más viejo)
 
@@ -19,8 +19,8 @@
 | 202503 Marzo 2025 | ✅ Completo | Verificado contra planilla oficial de solución (I-IV, incluida en el propio PDF de la letra). Metraje losa doble capa, dosificación, fórmula paramétrica, punto de equilibrio, VNA/TIR, suministros. |
 | 202502 Feb 2025 | ✅ Completo | Verificado contra planilla oficial de solución (I-III). Metraje muro monolítico en L, dosificación, costo de equipo (retroexcavadora), seguros, régimen salarial, Estado Económico-Financiero. |
 | 202412 Dic 2024 | ✅ Completo | Verificado contra planilla oficial de solución (I,II,IV,V). Metraje losa angosta (tenor=1/e), consumos, garantías (3 tipos), punto de equilibrio (apalancamiento operativo), fórmula paramétrica, Ce/Cc/Ca, clasificación de costos por naturaleza. |
-| 202407 Jul 2024 | ⬜ Pendiente | **Siguiente a resolver.** |
-| 202403 Marzo 2024 | ⬜ Pendiente | |
+| 202407 Jul 2024 | ✅ Completo | Verificado contra solución oficial (planilla en el PDF de la letra). Metraje losa con bordes de escalón (3er caso de "cruz", no bloqueó por tener planilla resuelta), movimiento de suelos (terraplén+desmonte reutilizado), garantías, subcontratos, riesgos, TIR/VNA. |
+| 202403 Marzo 2024 | ⬜ Pendiente | **Siguiente a resolver.** |
 | 202402 Feb 2024 | ⬜ Pendiente | |
 | 202312 Dic 2023 | ⬜ Pendiente | |
 | 202307 Jul 2023 | ⬜ Pendiente | |
@@ -61,7 +61,7 @@
 14. Suministros / INCOTERMS.
 15. Clasificación de costos por Naturaleza.
 
-**Pendientes de agregar** (aparecerán al resolver exámenes más viejos): metraje de tanques/escaleras/zapatas aisladas, planilla de armado de losas en "cruz" (sigue sin legend 100% clara pese a un segundo intento en Dic-2024), Estado Económico-Financiero como ejercicio numérico completo (por ahora solo conceptual, ver Feb-2025).
+**Pendientes de agregar** (aparecerán al resolver exámenes más viejos): metraje de tanques/escaleras/zapatas aisladas, planilla de armado de losas en "cruz" (sigue sin legend 100% clara pese a 3 intentos: Ene-2026, Dic-2024, Jul-2024), Estado Económico-Financiero como ejercicio numérico completo (por ahora solo conceptual, ver Feb-2025).
 
 ## Dónde está cada cosa
 - `Soluciones/<examen>/RESOLUCION.md` — desarrollo paso a paso de cada examen resuelto.
