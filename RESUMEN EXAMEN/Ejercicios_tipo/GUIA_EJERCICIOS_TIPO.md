@@ -234,6 +234,19 @@ Ver desarrollo completo (incluye cómo armar el precio con IVA y LLSS paso a pas
 
 **Mini-ejemplo:** viga 20x50x1000cm, armadura 80kg/m³ (60$/kg), hormigón 6000$/m³, encofrado 12m²/m³ (300$/m²), M.O. 30hs/m³ (550$/h) → Precio total 30.900$/m³ con incidencias Hormigón 20%, Acero 16%, Madera 11%, M.O. 53% → `Precio_n=Precio_0×(0,53·MOn/MO0+0,20·Cementon/Cemento0+0,16·Acero_n/Acero0+0,11·Madera_n/Madera0)`.
 
+**Segundo ejemplo — armar la fórmula desde un presupuesto completo con Indirectos y Beneficio a repartir
+(visto en Dic-2022):** dan Costo Directo desglosado por insumo (Mano de Obra + 5 materiales + "Varios"),
+más Gastos Indirectos (15% del directo) y Beneficio (20% s/directo+indirecto), con la consigna de que
+"Varios" y el Beneficio ajustan por Costo de Vida (CV) y los Indirectos se reparten 50% CV/50% Dólar.
+Método: 1) calcular Venta Total = Directo+Indirecto+Beneficio; 2) expresar cada partida como % de esa
+Venta Total (no del costo directo — el % relevante para la fórmula es sobre el precio final); 3) agrupar los
+materiales afines en un solo índice **M** (ponderando internamente por su propio peso relativo dentro del
+grupo, útil si el organismo pide el índice de materiales desagregado); 4) sumar Varios+Beneficio+mitad
+Indirectos al índice **CV**, y la otra mitad de Indirectos al índice **D** (dólar); 5) Mano de Obra queda como
+índice **J** solo. Con Directo=$1.000.000 (MO 25%, 5 materiales 10-20% c/u, Varios 5%), Indirecto=$150.000,
+Beneficio=$230.000, Venta=$1.380.000 → **Pₙ=P₀×[0,18·Jₙ/J₀ + 0,51·Mₙ/M₀ + 0,26·CVₙ/CV₀ + 0,05·Dₙ/D₀]**.
+Ver desarrollo completo en `Soluciones/202212 Ex Diciembre/`.
+
 ---
 
 ## 9. Licitaciones — TOCAF y tipos de contrato
@@ -315,6 +328,30 @@ contribución (`Pu−Cvu`) casi íntegro al resultado, mientras el costo fijo ad
 comparación — a esto se le llama **apalancamiento operativo**. Ver desarrollo numérico completo
 (precio equilibrio $32,40/u; beneficio 1 turno $3,6M=3,70% s/venta; beneficio 2 turnos $10,2M=5,25%
 s/venta) en `Soluciones/202412 Ex Diciembre/`.
+
+**Variante "extensión de plazo por pedido del comitente — impacto en costo fijo y beneficio"** (visto en
+Dic-2022): el comitente pide extender el plazo de ejecución (ej. de 12 a 18 meses) por motivos propios,
+sin cambiar el alcance/monto de obra. El **costo variable total NO cambia** (las cantidades de tarea y los
+rendimientos son los mismos, solo cambia el ritmo). El **costo fijo SÍ cambia**, porque se sigue pagando
+mes a mes durante más tiempo — el enunciado suele dar un % de reducción posible del costo fijo
+mensual (por eficiencias al bajar el ritmo). Paso a paso: (1) costo fijo mensual nuevo = %reducido ×
+(costo fijo mensual PROMEDIO ORIGINAL, = CF original/plazo original — no el costo fijo mensual ya
+reducido, para no aplicar el % dos veces); (2) costo fijo total nuevo = costo fijo mensual nuevo × plazo
+nuevo; (3) costo total nuevo = costo fijo nuevo + costo variable (sin cambios); (4) si el Beneficio del
+contrato original es % **sobre el costo** (no sobre la venta, leer bien el enunciado — acá Venta=Costo×
+(1+%beneficio), no Costo/(1−%beneficio)), calcular la Venta original una sola vez y no volver a tocarla
+si el comitente "no reconoce" el sobrecosto. (5) **Sin reconocimiento**: Beneficio nuevo = Venta original −
+Costo nuevo → variación % = (Beneficio nuevo−Beneficio original)/Beneficio original. (6) **Con
+reconocimiento** (el comitente acepta mantener el margen % original, pero sobre el costo nuevo): Venta
+con reconocimiento = Costo nuevo×(1+%beneficio) → reconocimiento en $ = Venta con reconocimiento
+− Venta original; reconocimiento % = eso / Venta original.
+
+**Mini-ejemplo:** Costo total=100 (CF=30, CV=70), Beneficio=20% s/costo → Venta=120, plazo=12 meses.
+Comitente extiende a 18 meses; CF mensual nuevo=27% del CF mensual promedio original (30/12×0,90)
+→ CF nuevo total=27%×(30/12)×18=40,50. Costo nuevo=110,50. **Sin reconocimiento:** Beneficio
+nuevo=120−110,50=9,50 → **cae 52,5%** respecto al original. **Con reconocimiento:** Venta
+nueva=110,50×1,20=132,60 → hay que reconocer **+10,5%** sobre la venta original. Ver desarrollo
+completo en `Soluciones/202212 Ex Diciembre/`.
 
 ---
 
@@ -426,6 +463,50 @@ necesito" a "cuánto suelto transportar", ver paso a paso abajo). **Relación en
 **⚠️ El nombre de la columna del coeficiente varía según el examen** (visto en Jul-2024): a veces la tabla de datos trae 3 columnas separadas (Esponjamiento, Compactación, Aporte) y el coeficiente que efectivamente reproduce `Vol.suelto = Vol.compactado/coeficiente` es el de la columna **"Compactación"**, no el de "Aporte" — mientras que en Jul-2025 ese mismo rol lo cumplía el coeficiente llamado "Ca" (Aporte). **No confiar en la etiqueta**: si el enunciado da un volumen de control (o hay que verificar contra una solución), probar cuál de los coeficientes dados (siempre <1) reproduce el resultado; si no hay forma de verificar, usar el coeficiente conceptualmente correcto según su definición algebraica (Vol.compactado/Vol.suelto), explicitando la elección.
 
 **Variante "terraplén + desmonte del mismo material, con reutilización" (visto en Jul-2024):** cuando el terreno tiene pendiente y hay que nivelarlo antes de colocar las capas de la estructura, en una parte del terreno hay que **rellenar (terraplén)** y en otra hay que **excavar (desmonte)**, ambos del mismo material (ej. arcilla). Si el material desmontado se puede reutilizar como relleno del terraplén, el volumen neto a transportar (import) = (Vol. suelto necesario para el terraplén) − (Vol. suelto que aporta el desmonte), **no** la suma de ambos por separado — sumarlos por separado sobrestima los viajes. Ver desarrollo completo en `Soluciones/202407 Ex julio/`.
+
+**Variante "movimiento general de una calle por secciones transversales con peralte" (visto en Dic-2022):**
+cuando piden el volumen de desmonte/terraplén "general" de un tramo de calle (no de una capa
+puntual), y el Anexo trae la sección transversal completa (ancho, peralte/pendiente de calzada,
+espesores del paquete estructural), el método es por **secciones transversales en cada progresiva**:
+1. En cada progresiva (A, B, ...), calcular la **cota de subrasante** en 3 puntos del ancho (borde
+   izquierdo, eje, borde derecho): cota de pavimento terminado en cada punto (afectada por el peralte:
+   ±ancho_media_sección×pendiente en los bordes) **menos el espesor total del paquete estructural**
+   (suma de tratamiento bituminoso+base+sub-base+lo que corresponda).
+2. Calcular la **cota de terreno limpio** = cota de terreno natural (dato) **− espesor de capa vegetal a
+   descartar** (constante en todo el ancho si el terreno se toma plano en esa progresiva).
+3. Diferencia en cada punto = terreno limpio − subrasante: **positiva → sobra terreno → desmonte**;
+   **negativa → falta terreno → terraplén**.
+4. Área de la sección = suma de 2 trapecios (borde-eje y eje-borde), cada uno = ancho_media_sección
+   × (diferencia_borde+diferencia_eje)/2. El signo del área indica si esa progresiva es toda desmonte,
+   toda terraplén, o (si dentro de la misma progresiva unos puntos dan + y otros −) una mezcla — acá,
+   al ser progresivas completas con un signo cada una, el área total ya sale con signo único por
+   progresiva.
+5. Si una progresiva da área de desmonte (+) y la otra de terraplén (−) (como A y B en el ejemplo), en
+   algún punto **entre A y B** la condición cambia de signo — encontrar ese punto por interpolación
+   lineal de las áreas: `X_A = Longitud × |Área_A| / (|Área_A|+|Área_B|)` (y `X_B = Longitud − X_A`).
+6. Volumen de cada tramo parcial (una cuña, área decreciendo linealmente de su valor máximo a 0) =
+   `Área × X /2` (fórmula de una pirámide/cuña, NO área×longitud entero — ese error duplicaría el
+   volumen).
+7. Comparar desmonte parcial vs. terraplén parcial (regla dada en el enunciado, igual que en el mini-
+   ejemplo de arriba): si el desmonte alcanza y sobra, el terraplén se hace íntegro con material propio y
+   el excedente de desmonte se retira; si el desmonte no alcanza, se usa todo como terraplén y el resto
+   se completa con material de préstamo — convertir desmonte(banco)→terraplén(compactado) con el
+   coeficiente correspondiente (ver alerta de abajo sobre qué coeficiente usar).
+
+**Mini-ejemplo:** tramo 25m, ancho media sección 4,50m, peralte 4%, paquete estructural 0,33m, capa
+vegetal 0,15m. Progresiva A: área desmonte=+1,26 m². Progresiva B: área terraplén=−2,34 m². Punto de
+cruce: Xₐ=25×1,26/3,60=8,75m, X_b=16,25m. Volumen desmonte parcial=1,26×8,75/2=**5,51 m³**.
+Volumen terraplén parcial=2,34×16,25/2=**19,01 m³**. Como el desmonte no alcanza, todo se usa como
+terraplén (5,51/1,11=4,97 m³ de terraplén logrado) y el resto (19,01−4,97=**14,05 m³**) es material de
+préstamo. Ver desarrollo completo en `Soluciones/202212 Ex Diciembre/`.
+
+**⚠️ Otra vez la alerta del nombre del coeficiente** (ver arriba, Jul-2024/Jul-2025): en este examen
+(Dic-2022) el llamado "Coeficiente de Aporte" (1,11) se usó como `Vol.banco aportado = Vol.compactado
+÷ Coef.Aporte` — la definición algebraica **inversa** a la que en otros exámenes se llama igual ("Ca=Vol.
+compactado/Vol.suelto"). **Antes de aplicar cualquier coeficiente, verificar con qué otro dato dado es
+consistente** (¿da un volumen mayor o menor al de referencia? ¿el coeficiente es >1 o <1, y eso es
+compatible con la dirección de la conversión que se necesita?) en vez de asumir la misma fórmula usada
+en un examen anterior.
 
 ---
 
