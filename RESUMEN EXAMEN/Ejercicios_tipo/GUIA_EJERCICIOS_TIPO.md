@@ -388,6 +388,22 @@ Mini-ejemplo: Costo=100 (CF=20,CV=80), Beneficio=15% s/costo→Venta=115, plazo 
 revisión de presupuesto). CF nuevo=20×(17/20)=17,00. Costo nuevo=97,00. Beneficio nuevo=115−97=
 18,00 → **aumenta +20,0%**. Ver desarrollo completo en `Soluciones/202203 Ex Marzo/`.
 
+**Variante "extensión de plazo ANTES de iniciar la obra + reconocimiento simple + ahorro propio no
+declarado" (visto en Jul-2020):** otra forma de extensión de plazo, distinta a la de Dic-2022: acá el
+comitente pide extender el plazo (ej. +50%) **antes de empezar la obra** (no hay costo fijo ya incurrido a
+mitad de camino que proteger, todo el costo fijo del nuevo plazo es "nuevo"), y el Beneficio original está
+definido **%sobre venta** (no sobre costo). Con `cfo` = Costo Fijo/Costo Total original, `inc` = %de
+extensión del plazo, y pidiendo que el reconocimiento económico (re) mantenga el mismo %beneficio
+sobre la NUEVA venta: **re = cfo × inc** (fórmula muy simple, notablemente **independiente del plazo
+original y del %beneficio** — solo depende de qué fracción del costo es fija y cuánto se extiende el
+plazo). Si además el contratista logra un **ahorro adicional de costo fijo** (ej. 20%, aprovechando que
+aún no se instaló en obra) que el comitente NO conoce y por tanto no se refleja en el reconocimiento ya
+pactado, el margen REAL final queda por encima del original — el contratista se queda con el ahorro
+como ganancia extra: `Beneficio final = be + [cfo×(1+inc)×ah] / [(1+inc×cfo)/(1−be)]`. Mini-ejemplo:
+cfo=20%, inc=50%, be=15%s/venta, ah=20% → re=10%; Beneficio final=19,64% (sube desde el 15%
+original). Ver desarrollo completo (con tabla "paso a paso" en base 100, verificada contra la fórmula) en
+`Soluciones/202007 Ex Julio/`.
+
 ---
 
 ## 12. Costo Financiero — Valor Neto Actualizado (VNA)
@@ -661,5 +677,6 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 - Febrero-2022 (real 26/01/2022): Metraje de viga T-invertida asimétrica con 3 perfiles de estribo distintos, garantías (Fiel Cumplimiento+Buena Ejecución, Monto Imponible a estimar 80%/75,8% LLSS — mismo patrón que Jul-2022), teórico de VNA/TIR (por qué obra usa margen y no TIR), suministros, fórmula paramétrica.
 - Diciembre-2021: Metraje de conjunto pilar circular+zapata (fuste con ensanche de sección), excavación con talud/tronco de pirámide (mismo volumen en banco respondiendo 3 preguntas con 3 coeficientes distintos: Ce/Ca/Cc), costo horario completo de retroexcavadora (interés sobre capital medio + mantenimiento promediado), régimen salarial (Ley 14.411+Convenio Colectivo), seguros de obra (teórico), VNA/TIR (teórico, mismo enunciado que Feb-2022).
 - Diciembre-2020: Metraje de viga-dintel con pretil y alero (sección compuesta por 3 rectángulos sumados), **consumo de mampostería y revoques (tipo NUEVO: ticholos + 4 morteros con dosificación en partes)**, fórmula paramétrica con elección de índices de un boletín real (Anexo con códigos, incluye advertencia de datos erróneos en la tabla), seguros de obra y Monto Imponible (teórico).
+- Julio-2020 (real 11/08/2020): Metraje de losa suspendida en 4 lados (otra confirmación de Tenor=1/e + doble capa de armado), costo de equipo (retroexcavadora, mismas fórmulas), **punto de equilibrio con extensión de plazo antes de iniciar la obra + reconocimiento económico simple (re=cfo×inc) + ahorro propio de costo fijo no declarado al cliente (tipo NUEVO, distinto del de Dic-2022)**, garantías (tabla completa finalidad/relación con precio/costo/oportunidad/forma por cada tipo), régimen salarial.
 
 **Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — visto en Ene-2026, Dic-2024, Jul-2024 y Feb-2024; en Feb-2024 se logró decodificar el paso de 2 de las 3 familias comparando contra la solución oficial, sigue faltando cerrar el 3er número; cuando el examen trae la planilla de cálculo ya resuelta, no bloquea la resolución), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
