@@ -558,6 +558,22 @@ partir de las definiciones de Ce/Cc/Ca dadas en cada examen. Volumen a transport
 una fracción del material excavado (ej. "50% queda para relleno en obra, 50% va a depósito"), aplicar
 ese % **después** de esponjar, no antes. Ver desarrollo completo en `Soluciones/202207 Ex Julio/`.
 
+**Variante "excavación con talud (batter) + tronco de pirámide, y los 3 coeficientes aplicados a 3
+preguntas distintas del mismo volumen base"** (visto en Dic-2021): cuando la excavación de un pozo
+(para pilar-zapata, por ejemplo) tiene paredes inclinadas por el **talud H/V** dado (ej. talud 1,00 = por
+cada 1m de profundidad el corte se abre 1m a cada lado), el volumen "en banco" a excavar se calcula
+con la fórmula de **tronco de pirámide** (dato del propio enunciado: `V=h/3×(A_BM+A_Bm+√(A_BM·A_Bm))`)
+usando como bases los dos anchos de excavación: `b.exc.inf = ancho zapata + 2×sobre-ancho de trabajo`
+(fondo) y `b.exc.sup = b.exc.inf + 2×(profundidad×talud)` (superficie, más ancho por el talud). Un mismo
+volumen "en banco" (74,13 m³) puede responder **3 preguntas distintas del enunciado con 3 coeficientes
+distintos**, cada uno aplicado según lo que se pide (no hay que usar los 3 coeficientes en cadena):
+volumen a **transportar fuera de obra** = banco×Ce (esponjamiento, da un volumen MAYOR, así se mide en
+camión); volumen de **relleno si se compacta el mismo material en otro lugar** = banco/Ca (aporte, aquí
+definido Vol.banco/Vol.compactado); volumen de **material sobre camión para rellenar la excavación con
+material compactado** (despreciando el volumen del hormigón, si el enunciado lo permite) = banco/Cc
+(compactación). Ver desarrollo completo (con verificación exacta de los 4 resultados) en
+`Soluciones/202112 Ex Diciembre 2021/`.
+
 ---
 
 ## 14. Suministros
@@ -608,5 +624,6 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 - Julio-2022: Metraje de losa "cruz" DECODIFICADA (clave usada luego en Feb-2024), dosificación completa, movimiento de suelos con costeo de 8 tareas (platea circular), garantías (Monto Imponible a estimar, 80%).
 - "Marzo-2022" (real 15/02/2022): Metraje de losa+viga separados, costo de componentes de hormigón (variante de dosificación en $), reducción de plazo (caso espejo de Dic-2022, el beneficio del contratista aumenta), VNA/TIR con interpolación lineal entre dos tasas.
 - Febrero-2022 (real 26/01/2022): Metraje de viga T-invertida asimétrica con 3 perfiles de estribo distintos, garantías (Fiel Cumplimiento+Buena Ejecución, Monto Imponible a estimar 80%/75,8% LLSS — mismo patrón que Jul-2022), teórico de VNA/TIR (por qué obra usa margen y no TIR), suministros, fórmula paramétrica.
+- Diciembre-2021: Metraje de conjunto pilar circular+zapata (fuste con ensanche de sección), excavación con talud/tronco de pirámide (mismo volumen en banco respondiendo 3 preguntas con 3 coeficientes distintos: Ce/Ca/Cc), costo horario completo de retroexcavadora (interés sobre capital medio + mantenimiento promediado), régimen salarial (Ley 14.411+Convenio Colectivo), seguros de obra (teórico), VNA/TIR (teórico, mismo enunciado que Feb-2022).
 
 **Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — visto en Ene-2026, Dic-2024, Jul-2024 y Feb-2024; en Feb-2024 se logró decodificar el paso de 2 de las 3 familias comparando contra la solución oficial, sigue faltando cerrar el 3er número; cuando el examen trae la planilla de cálculo ya resuelta, no bloquea la resolución), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
