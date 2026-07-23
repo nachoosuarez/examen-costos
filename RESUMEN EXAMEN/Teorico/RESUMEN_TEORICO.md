@@ -4,14 +4,16 @@
 
 | Tema | Exámenes en que apareció (hasta ahora) | Frecuencia |
 |---|---|---|
-| Metraje de hormigón (losas/vigas/muros/pilares) | Ene-2026, Dic-2025 | 2/2 |
-| Consumos unitarios + dosificación de hormigón | Ene-2026, Dic-2025 | 2/2 |
-| Costo de equipos | Ene-2026 | 1/2 |
-| Mano de obra / Ley 14.411 / Convenio Colectivo | Ene-2026, Dic-2025 | 2/2 |
-| Garantías y Seguros | Ene-2026, Dic-2025 | 2/2 |
-| Licitaciones (TOCAF, tipos de contrato) | Ene-2026 | 1/2 |
-| Fórmulas paramétricas | Dic-2025 | 1/2 |
-| Suministros / INCOTERMS | Dic-2025 | 1/2 |
+| Metraje de hormigón (losas/vigas/muros/pilares) | Ene-2026, Dic-2025, Jul-2025 | 3/3 |
+| Consumos unitarios + dosificación de hormigón | Ene-2026, Dic-2025, Jul-2025 | 3/3 |
+| Mano de obra / Ley 14.411 / Convenio Colectivo | Ene-2026, Dic-2025, Jul-2025 | 3/3 |
+| Licitaciones (TOCAF, tipos de contrato) | Ene-2026, Jul-2025 | 2/3 |
+| Costo de equipos | Ene-2026 | 1/3 |
+| Garantías y Seguros | Ene-2026, Dic-2025 | 2/3 |
+| Fórmulas paramétricas | Dic-2025 | 1/3 |
+| Costo Financiero / VNA | Jul-2025 | 1/3 |
+| Movimiento de suelos | Jul-2025 | 1/3 |
+| Suministros / INCOTERMS | Dic-2025 | 1/3 |
 
 *(Se irá completando a medida que se resuelvan más exámenes — objetivo: que esta tabla diga qué estudiar primero.)*
 

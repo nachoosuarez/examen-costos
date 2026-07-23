@@ -1,12 +1,13 @@
 # Estado del trabajo — Costos (actualizado: corrida del 23/07/2026)
 
 ## Resumen ejecutivo (leer esto primero)
-1. Van 2 exámenes con resolución escrita: **Enero 2026** (parcial) y **Diciembre 2025** (completo, verificado contra solución oficial). Faltan 22 exámenes más viejos (2019-2025).
-2. Lo más urgente para estudiar ya mismo: **`RESUMEN EXAMEN/Ejercicios_tipo/GUIA_EJERCICIOS_TIPO.md`** — tiene 11 tipos de ejercicio con receta paso a paso (metraje, consumos, dosificación de hormigón, costo de equipos, costo de mano de obra, Ley 14.411, garantías con perfil temporal, fórmula paramétrica, licitaciones/TOCAF, seguros, suministros).
+1. Van 3 exámenes con resolución escrita: **Enero 2026** (parcial), **Diciembre 2025** (completo, verificado) y **Julio 2025** (completo, verificado). Faltan 21 exámenes más viejos (2019-2025).
+2. Lo más urgente para estudiar ya mismo: **`RESUMEN EXAMEN/Ejercicios_tipo/GUIA_EJERCICIOS_TIPO.md`** — tiene 14 tipos de ejercicio con receta paso a paso (metraje, consumos, dosificación de hormigón, costo de equipos, costo de mano de obra, Ley 14.411, garantías con perfil temporal, fórmula paramétrica, licitaciones/TOCAF, costo financiero/VNA, movimiento de suelos, seguros, suministros).
 3. El examen de **Enero 2026** (el más nuevo, sin solución oficial) quedó con la Parte I (Metraje de losas) y Parte II (Consumos) **sin resolver**: el plano usa una notación de armado de losa en "cruz" (Φ8 arriba, Φ8 izquierda, caja con "15|20", "18" abajo) que no tiene legend en ningún material del repo. Antes de arriesgar un número mal, se dejó documentado qué SÍ se puede leer del plano y qué falta. Las partes III (equipos), IV, V y VI de ese examen están resueltas.
 4. El examen de **Diciembre 2025** está 100% resuelto y verificado; se encontró y anotó una inconsistencia menor en la propia solución oficial (fila de "Acero" de la tabla de consumos por m³, ver el archivo de resolución).
-5. El resumen teórico cubre 4 clases completas (Clase 2, 3, 9, 19) + Equipos.pdf; quedan 14 clases sin resumir todavía (ver lista abajo).
-6. Prioridad para la próxima corrida: seguir con **Julio 2025** (examen siguiente en orden descendente, con solución oficial disponible para verificar) y, si hay tiempo, reintentar el metraje de losas de Enero 2026 con más profundidad en la lectura del plano.
+5. El examen de **Julio 2025** está 100% resuelto y verificado: metraje de pilar (con espera de empalme), dosificación de hormigón con el método detallado para sacar agua/cemento, costo financiero (VNA con 3 alternativas de pago), movimiento de suelos, TOCAF/tipos de contrato, régimen salarial (consumo unitario vs. rendimiento, Convenio Colectivo, Fondos Sociales).
+6. El resumen teórico cubre 4 clases completas (Clase 2, 3, 9, 19) + Equipos.pdf; quedan 14 clases sin resumir todavía (ver lista abajo). No se enriqueció más en esta corrida porque Jul-2025 no trajo temas teóricos nuevos fuera de lo ya cubierto.
+7. Prioridad para la próxima corrida: seguir con **Marzo 2025** o **Febrero 2025** (ambos sin solución oficial completa en el repo, requieren resolución propia) y, si hay tiempo, reintentar el metraje de losas de Enero 2026 con más profundidad en la lectura del plano.
 
 ## Exámenes — estado (del más nuevo al más viejo)
 
@@ -14,8 +15,8 @@
 |---|---|---|
 | 202601 Enero 2026 | 🟡 Parcial | III (equipos), IV, V, VI resueltos. I (metraje losas) y II (consumos) pendientes — ver limitación de plano en `Soluciones/202601 Examen Enero 2026/RESOLUCION.md`. Sin solución oficial en el repo. |
 | 202512 Dic 2025 | ✅ Completo | Verificado contra solución oficial. Muro de contención con bloques, fórmula paramétrica, costo horario obrero, garantías, suministros. |
-| 202507 Jul 2025 | ⬜ Pendiente | Tiene solución oficial en el repo ("Solución Rev02"). **Siguiente a resolver.** |
-| 202503 Marzo 2025 | ⬜ Pendiente | Tiene parcial de preguntas (I,II,III,IV) sin solución completa. |
+| 202507 Jul 2025 | ✅ Completo | Verificado contra solución oficial. Metraje de pilar, dosificación, VNA, movimiento de suelos, TOCAF, régimen salarial. |
+| 202503 Marzo 2025 | ⬜ Pendiente | Tiene parcial de preguntas (I,II,III,IV) sin solución completa. **Siguiente a resolver.** |
 | 202502 Feb 2025 | ⬜ Pendiente | Tiene parcial de preguntas (I,II,III) sin solución completa. |
 | 202412 Dic 2024 | ⬜ Pendiente | |
 | 202407 Jul 2024 | ⬜ Pendiente | |
@@ -54,9 +55,11 @@
 8. Fórmula paramétrica.
 9. Licitaciones — TOCAF y tipos de contrato.
 10. Garantías y Seguros (teórico general).
-11. Suministros / INCOTERMS.
+11. Costo Financiero — Valor Neto Actualizado (VNA).
+12. Movimiento de suelos (viajes de camión).
+13. Suministros / INCOTERMS.
 
-**Pendientes de agregar** (aparecerán al resolver exámenes más viejos): punto de equilibrio, costos fijos/variables, movimiento de suelos, costo financiero/VNA, metraje de tanques/escaleras, planilla de armado de losas en "cruz" (pendiente de descifrar notación).
+**Pendientes de agregar** (aparecerán al resolver exámenes más viejos): punto de equilibrio, costos fijos/variables, metraje de tanques/escaleras, planilla de armado de losas en "cruz" (pendiente de descifrar notación).
 
 ## Dónde está cada cosa
 - `Soluciones/<examen>/RESOLUCION.md` — desarrollo paso a paso de cada examen resuelto.

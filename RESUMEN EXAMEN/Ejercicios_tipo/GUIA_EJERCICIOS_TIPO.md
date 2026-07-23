@@ -37,6 +37,8 @@ Guía acumulativa organizada por tipo de ejercicio. Antes de un examen, repasar 
 **Mini-ejemplo (pilar 0,6×0,6×0,15 con 1Φ16 por pilar, 4 pilares iguales):**
 Vol = 0,6×0,6×0,15×4 = 0,216 m³. Encof (lateral, 4 caras) = perímetro×altura×4 = (0,6×4)×0,15×4 = 1,44... (ajustar según criterio de la pieza). Hierro: long=0,6m×4pilares=2,4m sin desperdicio → con 15% desp. → 2,76m × 1,58kg/m = 4,36 kg (orden de magnitud, ver planilla tipo completa en Clase 3 p.119 para el desglose fila a fila).
 
+**Variante "pilar de piso intermedio con espera de empalme"** (visto en Jul-2025): si el pilar está en un piso intermedio de un edificio de varios niveles, la longitud de cada barra debe incluir la **espera para empalmar con el nivel siguiente** (normalmente 50Φ), además del gancho si corresponde en la base. Un pilar de sección muy delgada (ej. 12cm de espesor) da un **tenor de encofrado más alto de lo típico** — no es un error, es esperable porque la relación superficie/volumen crece cuando una dimensión de la sección es chica; hay que decirlo explícitamente si el examen pregunta "¿es esperable el resultado?". Ver desarrollo completo en `Soluciones/202507 Ex Julio/`.
+
 ---
 
 ## 2. Consumos unitarios de hormigón armado (mano de obra, materiales, encofrado)
@@ -185,6 +187,8 @@ Vol = 0,6×0,6×0,15×4 = 0,216 m³. Encof (lateral, 4 caras) = perímetro×altu
 | Licitación Abreviada | hasta $10.000.000 |
 | Licitación Pública | obligatoria por encima de $10.000.000 |
 
+⚠️ **Los montos de Compra Directa y Gobiernos Departamentales se reajustan periódicamente** (en Jul-2025 eran $200.000/$750.000; en el material 2026 figuran $630.000/$987.000) — Concurso de Precios ($1.000.000) y Licitación Abreviada/Pública ($10.000.000) se mantuvieron estables entre esas dos referencias. **Usar siempre los valores que da el enunciado del examen o el material del año en curso**, no memorizar un solo valor fijo.
+
 Excepciones a Licitación Pública (sin importar monto): compras entre organismos estatales, procedimiento desierto, proveedor único, reparación de maquinaria no trasladable, urgencia/emergencia. Contrataciones publicadas en ARCE; control del Tribunal de Cuentas.
 
 **Tipos de contrato:**
@@ -200,7 +204,35 @@ Ver Clase 19 ("Riesgos"): 8 componentes de un seguro (objeto, valor, riesgos, mo
 
 ---
 
-## 11. Suministros
+## 12. Costo Financiero — Valor Neto Actualizado (VNA)
+
+**Cuándo aparece:** Parte "Costo Financiero", 15-20 pts. Suele incluir una pregunta teórica (definir VNA) y un caso de comparar alternativas de pago/cobro en el tiempo.
+
+- **VNA**: suma de los valores presentes de todos los ingresos y egresos de un flujo, descontados a una tasa de interés/descuento dada. `VNA = Σ Flujo_t / (1+i)^t`.
+- Si VNA=0 a la tasa usada, esa tasa ES la TIR del proyecto. Si VNA>0, la inversión rinde más que la tasa de descuento (TIR mayor a la tasa). Si VNA<0, rinde menos (TIR menor).
+- **Comparar alternativas de cobro/pago**: traer cada flujo a valor presente con la tasa dada (ej. 20% trimestral) y comparar. La de mayor VNA es la más conveniente para quien cobra (ej. la empresa constructora que recibe pagos).
+- **¿La indemnización compensa el costo del dinero?** Comparar el VNA de la alternativa contra el monto original de la deuda/obligación: si VNA resultante > monto original, la alternativa compensa (y supera) el costo financiero de esperar el cobro; si es menor, no lo compensa.
+
+**Mini-ejemplo:** deuda $1.000.000, tasa trimestral 20%, alternativa que paga 350+350+350+300+300 (miles $) al final de cada uno de 5 trimestres → VNA = 1.002,5 (miles $) > 1.000 → SÍ compensa el costo del dinero.
+
+---
+
+## 13. Movimiento de suelos (viajes de camión)
+
+**Cuándo aparece:** Parte "Movimiento de Suelos", 10 pts. Dan un corte de terreno con capas (capa vegetal a desechar, capas de suelo natural a excavar, capas de aporte a rellenar/compactar) y piden cantidad de viajes de camión (capacidad dada) para cada material.
+
+**Paso a paso:**
+1. Para cada capa: Volumen "en banco"/compactado = espesor × área.
+2. **Material que se retira** (capa vegetal, suelo natural excavado): pasar a volumen SUELTO usando el coeficiente de **esponjamiento (Ce)**: Vol. suelto = Vol. en banco × Ce (el material esponja al ser removido, por eso ocupa más en el camión).
+3. **Material de aporte que se trae y compacta** (ej. balasto para sub-base): el volumen pedido en el enunciado suele ser el volumen ya **compactado** requerido; para saber cuánto material SUELTO hay que transportar, usar el coeficiente de **aporte (Ca)**: Vol. suelto a transportar = Vol. compactado requerido / Ca.
+4. Viajes = Vol. suelto / capacidad del camión, **redondeado hacia arriba**.
+5. Si el enunciado es ambiguo sobre cuánto suelo natural se retira (ej. "el material de aporte reemplaza a la arcilla" sin precisar si toda la arcilla o solo el espesor que ocupará el aporte), presentar **las dos opciones razonables** y aclarar el supuesto de cada una — no hay una única respuesta "correcta" si el dato es ambiguo.
+
+**Mini-ejemplo:** platea 40×25m=1.000 m²; balasto compactado necesario 30 cm → Vol. compactado=300 m³; Ca=0,9 → Vol. suelto=300/0,9=333,3 m³; camión de 10m³ → 34 viajes (redondeado hacia arriba).
+
+---
+
+## 14. Suministros
 
 **Cuándo aparece:** preguntas teóricas cortas, 10 pts.
 
@@ -211,8 +243,9 @@ Ver Clase 19 ("Riesgos"): 8 componentes de un seguro (objeto, valor, riesgos, mo
 
 ---
 
-## Clases ya incorporadas a esta guía (con sus exámenes fuente)
+## Exámenes ya incorporados a esta guía
 - Ene-2026: Costo de equipos (retroexcavadora), teoría de mano de obra/licitaciones/garantías.
 - Dic-2025: Metraje muro de contención con bloques, consumos+dosificación de hormigón, fórmula paramétrica, costo horario de obrero, garantías con perfil temporal, suministros/INCOTERMS.
+- Jul-2025: Metraje de pilar con espera de empalme, dosificación de hormigón (método detallado para sacar la relación volumétrica agua/cemento), costo financiero/VNA, movimiento de suelos (viajes de camión), TOCAF/tipos de contrato, consumo unitario vs. rendimiento, Convenio Colectivo/Fondos Sociales.
 
-**Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — ver examen Ene-2026 parte I), punto de equilibrio, costos fijos/variables, movimiento de suelos, costo financiero/VNA, más variantes de metraje (pilares, tanques, escaleras) a medida que aparezcan en exámenes más viejos.
+**Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — ver examen Ene-2026 parte I), punto de equilibrio, costos fijos/variables, más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
