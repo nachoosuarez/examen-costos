@@ -352,6 +352,43 @@ Alt.1=892, Alt.2=1.003, Alt.3=804. Orden de conveniencia Alt.2>Alt.1>Alt.3. Como
 **Alt.2 supera los $1.000** originales, es la **única** que compensa el costo del dinero — las otras dos
 pagan la deuda "desvalorizada". Ver desarrollo completo en `Soluciones/202307 Ex Julio/`.
 
+**Variante "Cronograma Económico vs. Financiero + línea de crédito, dos alternativas de remuneración"
+(visto en "Marzo"-2023, real 16/02/2023):** en vez de comparar alternativas de cobro de una deuda ya
+generada, acá se arma **desde cero** el flujo financiero de toda una obra a partir del presupuesto y las
+formas de pago. Paso a paso:
+1. **Precio de venta**: si el beneficio es % **sobre la venta** (no sobre el costo), P = Costo/(1−%beneficio)
+   (no Costo×(1+%beneficio) — error común, ver "Aclaraciones sobre errores comunes").
+2. **Cronograma económico** (devengado): venta y costo repartidos uniformemente en los meses de
+   ejecución → beneficio mensual = venta mensual − costo mensual, acumulado hasta llegar al %
+   beneficio total sobre venta.
+3. **Cronograma financiero** (caja): NO usa las mismas fechas que el económico — hay que correr cada
+   partida según su forma de pago:
+   - Un **anticipo** (ej. 20% de la venta) se cobra todo de una vez en el mes indicado, no repartido.
+   - El resto de la venta (ej. 80%, "sin anticipo") se cobra **con el desfase indicado** (ej. 90 días = 3
+     meses) respecto del mes en que se devengó/certificó cada tramo — no respecto del final de la obra.
+   - Costos con pago **"a 30 días"**: desfasados 1 mes completo respecto del mes en que se incurrieron.
+   - Costos con pago **"convenio colectivo"** (mano de obra): suele modelarse con **medio mes de
+     desfase** (jornales quincenales) — la mitad del gasto de cada mes cae en ese mismo mes y la otra
+     mitad en el siguiente, generando una rampa de entrada y salida (ej. 150k-300k-300k-300k-300k-150k
+     para 5 meses de 300k cada uno).
+4. **Flujo acumulado** = igual que siempre, saldo mensual acumulado; **línea de crédito mínima
+   necesaria = valor absoluto del mínimo (peor) del flujo acumulado**.
+5. **Costo financiero, comparar dos alternativas de remuneración de la línea:**
+   - **"Remunerando excedentes":** el interés se aplica **con signo** al flujo acumulado de cada mes —
+     los meses con saldo **positivo** también generan un ingreso por interés (5%×saldo positivo), no
+     solo los negativos generan costo. El flujo acumulado "con interés" de cada mes = flujo acumulado
+     plano de ese mes + la suma acumulada de todos los intereses hasta ese mes.
+   - **"Remunerando solo necesidades":** el interés **solo se cobra** sobre los meses con saldo negativo
+     (0 en los meses positivos, no hay ingreso por intereses ahí).
+   - La alternativa "remunerando excedentes" da **siempre un costo financiero total menor (o igual)**
+     que "solo necesidades", porque los intereses ganados en los meses de superávit compensan parte
+     del costo de los meses de déficit — hay que elegirla si el enunciado permite comparar y elegir.
+
+**Mini-ejemplo:** Costo $5.000.000, beneficio 20% s/venta → Venta=$6.250.000. Línea de crédito mínima
+$900.000 (peor mes de caja). Costo financiero con "remunerando excedentes" = −$112.500 (18,20% de
+beneficio final) vs. "remunerando solo necesidades" = −$172.500 (17,24%) → **conviene la primera**.
+Ver desarrollo completo en `Soluciones/202303 Ex Marzo/`.
+
 ---
 
 ## 13. Movimiento de suelos (viajes de camión)
