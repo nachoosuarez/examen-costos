@@ -347,6 +347,16 @@ Q_equilibrio` → despejar `Pu = (CF + Cvu×Q_equilibrio) / Q_equilibrio`. Con e
 puede calcular el **beneficio máximo** vendiendo el 100% de la capacidad: `Beneficio = Pu×Cap −
 Cvu×Cap − CF`, y el margen sobre venta = Beneficio/Venta.
 
+**Variante inversa — "¿cuánto hay que reducir el costo fijo para desplazar el equilibrio a otro % de
+capacidad?" (visto en Feb-2020, mismo examen que fija el Pu de la variante anterior):** con el precio
+unitario y el costo variable unitario **ya fijos** (no se revisan), y una nueva Q_equilibrio objetivo (otro %
+de la capacidad), el costo fijo necesario para que el equilibrio caiga justo ahí es **directamente
+proporcional a la cantidad objetivo**: `CF_nuevo = CF_original × (Q_objetivo/Q_original)` — atajo
+inmediato sin rehacer todo el cálculo de costos totales, análogo a la reducción de plazo de "Marzo"-2022
+(sección arriba) pero aplicado a capacidad en vez de a plazo. Mini-ejemplo: PE al 80% con CF=40.000
+USD/mes; se pide bajar el PE al 70% → CF_nuevo=40.000×(70/80)=35.000 USD/mes → **reducción del
+12,5%**. Ver desarrollo completo en `Soluciones/202002 Ex Febrero/`.
+
 **Variante "apalancamiento operativo al agregar un turno"** (visto en Dic-2024): al duplicar la
 capacidad de producción agregando un turno, el CF sube solo por el incremento propio de ese turno
 (ej. +$50.000/mes), NO se duplica. Con el mismo precio unitario, el beneficio total puede crecer mucho
@@ -685,5 +695,6 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 - Diciembre-2020: Metraje de viga-dintel con pretil y alero (sección compuesta por 3 rectángulos sumados), **consumo de mampostería y revoques (tipo NUEVO: ticholos + 4 morteros con dosificación en partes)**, fórmula paramétrica con elección de índices de un boletín real (Anexo con códigos, incluye advertencia de datos erróneos en la tabla), seguros de obra y Monto Imponible (teórico).
 - Julio-2020 (real 11/08/2020): Metraje de losa suspendida en 4 lados (otra confirmación de Tenor=1/e + doble capa de armado), costo de equipo (retroexcavadora, mismas fórmulas), **punto de equilibrio con extensión de plazo antes de iniciar la obra + reconocimiento económico simple (re=cfo×inc) + ahorro propio de costo fijo no declarado al cliente (tipo NUEVO, distinto del de Dic-2022)**, garantías (tabla completa finalidad/relación con precio/costo/oportunidad/forma por cada tipo), régimen salarial.
 - Marzo-2020 (fecha real 18/02/2020): Metraje de muro de contención en horquilla (pata+pantalla como una sola barra doblada, encofrado a una sola cara por trincheras — tipo NUEVO), costo financiero con flujo de caja+anticipo+elección de línea de crédito (atajo: descartar una línea por el déficit sin intereses antes de calcular el interés compuesto), garantías (anticipo con devolución escalonada por tramos discretos, tipo NUEVO), régimen salarial y materiales (teórico).
+- Febrero-2020 (fecha real 29/01/2020): Metraje de pieza prefabricada (viga+ménsula) con croquis rotado ambiguo (uso de planilla oficial), punto de equilibrio con reducción de costo fijo proporcional para desplazar el equilibrio a otro % de capacidad (tipo NUEVO, inverso al de Dic-2024), fórmula paramétrica con 4 repartos válidos, seguros/comparativo de ofertas/costo de equipos (teórico).
 
 **Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — visto en Ene-2026, Dic-2024, Jul-2024 y Feb-2024; en Feb-2024 se logró decodificar el paso de 2 de las 3 familias comparando contra la solución oficial, sigue faltando cerrar el 3er número; cuando el examen trae la planilla de cálculo ya resuelta, no bloquea la resolución), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
