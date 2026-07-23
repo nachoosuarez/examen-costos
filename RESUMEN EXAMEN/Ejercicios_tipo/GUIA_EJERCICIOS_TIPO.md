@@ -260,6 +260,19 @@ Ver desarrollo completo en `Soluciones/202212 Ex Diciembre/`.
 
 ---
 
+**Elección de índices desde un boletín real (Anexo con tabla de códigos, visto en Dic-2020):** cuando el
+examen da directamente una tabla tipo "Boletín de la Cámara de la Construcción / INE" con columnas
+código-denominación-unidad-índice, cada parámetro de la fórmula (J, M1...Mn, CV, D) se identifica citando
+su **código, nombre, unidad y valor base** tal como aparecen en la tabla (ej. M1=C12 "Portland gris en
+bolsa en planta (25kg)", 787,66). **⚠️ Verificar siempre el orden de magnitud de cada valor antes de
+usarlo**: en este examen la propia solución oficial marca que dos valores de la tabla de referencia son
+erróneos (el del Acero Tratado parece estar en dólares en vez de $, y el del Dólar interbancario parece
+multiplicado por 10) — si un índice no es razonable (ej. el dólar a $410 cuando en la época rondaba los
+$41), señalarlo explícitamente en la respuesta en vez de usarlo sin cuestionar. Ver desarrollo completo en
+`Soluciones/202012 Ex Diciembre/`.
+
+---
+
 ## 9. Licitaciones — TOCAF y tipos de contrato
 
 **Cuándo aparece:** Parte "Licitaciones", 15 pts, en exámenes que no traen "Fórmulas Paramétricas".
@@ -606,6 +619,28 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 
 ---
 
+## 16. Consumo de mampostería y revoques (ticholos/bloques + morteros de toma/impermeable/grueso/fino)
+
+**Cuándo aparece:** Parte de Metraje/Consumos (visto en Dic-2020), como segunda mitad junto con una viga/dintel. Dan un corte de muro (Anexo) con varias capas de mortero de distinto espesor, y una tabla de dosificación en partes (arena gruesa/fina, cemento, cal) + Coeficiente de Aporte por material + relación Agua/Otros y (si hay revoque impermeable) Hidrófugo/Agua.
+
+**Paso a paso (repetir para CADA capa: mortero de toma, revoque impermeable, revoque grueso, revoque fino):**
+1. Tomar la relación en **partes** de los componentes sólidos (dato de la tabla) — son volúmenes APARENTES, no reales.
+2. **Agua aparente** = (relación Agua/Otros, dato) × (suma de las partes sólidas de ESA mezcla). **Hidrófugo aparente** (solo revoque impermeable) = (relación Hidrófugo/Agua, dato) × Agua aparente.
+3. **Volumen real** de cada componente = Vol. aparente × su Coeficiente de Aporte (uno por material: arena gruesa, arena fina, cemento, cal — típicamente 0,47-0,57). Agua e Hidrófugo usan coeficiente = 1 (líquidos, no corrigen).
+4. Sumar los volúmenes reales de la mezcla → **rendimiento real** de esa mezcla (NO se normaliza a 1 m³ — misma lógica que la variante de doble aplicación del Coef. de Aporte de la sección 3, el "1 m³" de la relación dada en realidad rinde otra cantidad).
+5. **Dosificación por m³ real** = Vol. aparente de cada componente / rendimiento real (paso 4) — de aquí en más, "por cada m³ de mortero realmente aplicado, cuánto material aparente/bruto se necesitó".
+6. Pasar cemento y cal a **kg** (× densidad aparente de cada uno, dato); agua e hidrófugo a **litros** (×1000); arena queda en m³.
+7. **Consumo /m² de esa capa** = Dosificación por m³ (paso 6) × **espesor de la capa** (dato o a estimar del croquis, en metros).
+8. Repetir 1-7 para las 4 capas y **sumar** el consumo de cada componente entre todas las capas donde aparece → consumo unitario final /m² de muro.
+9. Multiplicar por la **superficie total del muro** (L×h) → consumo total.
+10. **Mampuestos** (ticholos/bloques/ladrillos) se consumen aparte de los morteros: unidades/m² = 1/(área de la cara expuesta del mampuesto, ej. 0,25×0,25=0,0625 m² → **16 unid/m²**), sin descontar juntas para este nivel de aproximación.
+
+**Errores comunes:** no confundir la relación dada (ej. "3,5 arena : 1 cemento : 1,5 cal") con una dosificación ya normalizada a 1 m³ — hay que calcular el rendimiento real (paso 4) antes de expresar todo "por m³". El agua no integra la tabla final de consumo a comprar/valorar (no se compra aparte), solo se usa para dimensionar la mezcla.
+
+**Mini-ejemplo (revoque grueso, espesor 1cm, relación 3,5:1:1,5 arena:cemento:cal, Ca=0,57/0,47/0,54):** agua aparente=0,15×6=0,90. Volumen real: arena=2,00; cemento=0,47; cal=0,81; agua=0,90 → rendimiento=**4,175**. Dosificación/m³: arena=3,5/4,175=0,84 m³; cemento=1/4,175×1410=337,7 kg; cal=1,5/4,175×1400=506,6 kg. Consumo/m² (×0,01m espesor): arena 0,008 m³/m²; cemento 3,38 kg/m²; cal 5,07 kg/m². Ver desarrollo completo (con las 4 capas) en `Soluciones/202012 Ex Diciembre/`.
+
+---
+
 ## Exámenes ya incorporados a esta guía
 - Diciembre-2023: Metraje de viga con alero y relleno triangular (haunch), consumos (HH/m³ más alto visto hasta ahora), costo financiero con flujo de caja + anticipo + elección entre 2 líneas de crédito (el interés de la línea puede hacerla superar su propio límite), fórmula paramétrica/Ce-Cc-Ca/costos por naturaleza (teórico), identificación/cuantificación/valoración de materiales, régimen salarial.
 - Febrero-2024 (fecha real 30/01/2024): Metraje de losa suspendida en 4 lados (Tenor=1/e, 4º caso de "cruz" con decodificación parcial de 2 de 3 números), consumos con HH/m³ total, costo financiero/VNA (comparar 3 alternativas de pago, ninguna compensa el costo del dinero), garantías (Fiel Cumplimiento+Buena Ejecución+Anticipo, Mano de Obra Imponible dada directamente), punto de equilibrio (precio a %capacidad + beneficio máximo con margen %), régimen salarial/Convenio Colectivo.
@@ -625,5 +660,6 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 - "Marzo-2022" (real 15/02/2022): Metraje de losa+viga separados, costo de componentes de hormigón (variante de dosificación en $), reducción de plazo (caso espejo de Dic-2022, el beneficio del contratista aumenta), VNA/TIR con interpolación lineal entre dos tasas.
 - Febrero-2022 (real 26/01/2022): Metraje de viga T-invertida asimétrica con 3 perfiles de estribo distintos, garantías (Fiel Cumplimiento+Buena Ejecución, Monto Imponible a estimar 80%/75,8% LLSS — mismo patrón que Jul-2022), teórico de VNA/TIR (por qué obra usa margen y no TIR), suministros, fórmula paramétrica.
 - Diciembre-2021: Metraje de conjunto pilar circular+zapata (fuste con ensanche de sección), excavación con talud/tronco de pirámide (mismo volumen en banco respondiendo 3 preguntas con 3 coeficientes distintos: Ce/Ca/Cc), costo horario completo de retroexcavadora (interés sobre capital medio + mantenimiento promediado), régimen salarial (Ley 14.411+Convenio Colectivo), seguros de obra (teórico), VNA/TIR (teórico, mismo enunciado que Feb-2022).
+- Diciembre-2020: Metraje de viga-dintel con pretil y alero (sección compuesta por 3 rectángulos sumados), **consumo de mampostería y revoques (tipo NUEVO: ticholos + 4 morteros con dosificación en partes)**, fórmula paramétrica con elección de índices de un boletín real (Anexo con códigos, incluye advertencia de datos erróneos en la tabla), seguros de obra y Monto Imponible (teórico).
 
 **Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — visto en Ene-2026, Dic-2024, Jul-2024 y Feb-2024; en Feb-2024 se logró decodificar el paso de 2 de las 3 familias comparando contra la solución oficial, sigue faltando cerrar el 3er número; cuando el examen trae la planilla de cálculo ya resuelta, no bloquea la resolución), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
