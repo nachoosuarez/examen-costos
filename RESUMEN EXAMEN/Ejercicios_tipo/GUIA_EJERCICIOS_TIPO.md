@@ -66,14 +66,17 @@ un muro son notablemente más bajos que los de una losa (aquí 3,13 m²/m³ y 60
 relativa a su volumen y menos densidad de armado. Ver desarrollo completo en `Soluciones/202502 Ex
 Febrero/`.
 
-**Avance en la decodificación de la planilla en "cruz"** (visto en Feb-2024, 4º caso): comparando contra
-la solución oficial se confirmó que, en el formato `Φ(dir.2) arriba / Φ(dir.1)—paso1 paso2 / paso3 abajo`,
-al menos dos de los números sueltos corresponden al **paso en cm de cada familia de barras** (ej. "26"
-= 0,26m de paso de la armadura Φ10, "15" = 0,15m de paso de la Φ12) — un tercer número intermedio
-sigue sin explicación clara. Cuando el plano trae también rótulos explícitos tipo "Φ6/30" o "Φ8/25"
-junto a otras armaduras (bordes, barras dobladas), esos SÍ son directos y no tienen ambigüedad — la
-cruz solo afecta a la armadura "de fondo" central del paño. Ver desarrollo completo en `Soluciones/202402
-Ex febrero/`.
+**Decodificación de la planilla en "cruz" — RESUELTA (visto en Feb-2024 y confirmada en Jul-2022):**
+comparando contra la solución oficial de ambos exámenes, en el formato `Φ(dir.2) arriba / Φ(dir.1)—paso1
+paso2 / paso3 abajo` los 3 números se leen así: el número de **abajo** es el **paso de la familia
+vertical** (la que aparece arriba de todo en la cruz, ej. Φ10); los **dos números del medio, casi siempre
+IGUALES entre sí**, son el **mismo paso de la familia horizontal repetido dos veces** (no dos pasos
+distintos) — se muestra duplicado porque el paño suele tener armadura simétrica a ambos lados del eje
+central de la cruz. Ej. (Jul-2022): `Φ10 / Φ16—15  15 / 23` → Φ16 horizontal paso 0,15 (repetido), Φ10
+vertical paso 0,23. Cuando el plano trae también rótulos explícitos tipo "Φ6/30", "Φ8/25" o "F:Φ12/12"
+junto a otras armaduras (bordes, capa negativa junto a vigas), esos SIEMPRE son directos y sin
+ambigüedad — la cruz solo afecta a la armadura "de fondo"/positiva central del paño. Ver desarrollo
+completo en `Soluciones/202402 Ex febrero/` y `Soluciones/202207 Ex Julio/`.
 
 **Variante "losa continua de varios paños, doble capa de armado"** (visto en Marzo-2025): cuando el plano muestra **dos capas de armadura** — una de "fondo" (F, positiva, recorre todo el vano en ambas direcciones) y una "de arriba" (A, negativa, refuerzo corto solo sobre los apoyos) — la capa negativa suele estar **duplicada** (una franja junto a cada uno de los dos apoyos de la losa), lo que se ve en la planilla como el doble de barras de lo que daría `ceil(tramo/paso)+1` para una sola franja. Esto es normal en losas continuas con momento negativo importante y produce una **cuantía de acero más alta que en una losa de un solo paño simplemente apoyada** (aquí 167 kg/m³ contra un rango típico de 80-120 kg/m³) — no es error, hay que justificarlo por la doble capa. Para leer las cotas del vano libre en plantas con dimensiones acumuladas ("cotas corridas"): el vano libre entre ejes de viga = diferencia entre la cota mayor y la cota menor de la línea de cotas paralela a esa dirección (ej. 8,53−0,43=8,10 m). Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 
@@ -206,6 +209,12 @@ enunciado lo indica así, se calcula sobre el **Precio sin IVA ni LLSS**. Fiel C
 constante) + Buena Ejecución $674.430 (rampa 0→5% durante ejecución + constante al 5% durante el
 plazo de garantía) + Anticipo $588.235 (rampa 20%→0) = **$2.056.112, el 0,65% del precio de venta**.
 Ver desarrollo completo (incluye cómo armar el precio con IVA y LLSS paso a paso) en `Soluciones/202412 Ex Diciembre/`.
+
+**Ejemplo de Monto Imponible "a estimar" (Jul-2022):** cuando el enunciado da el costo de mano de obra
+sujeta a ley 14.411 (ej. $10.000.000) pero pide "estimar coeficiente para el Monto Imponible" (no lo da
+directo como en Feb-2024), usar el ~80% mencionado en el paso 1 de arriba: Monto Imponible=80%×
+10.000.000=$8.000.000, y sobre ESE valor aplicar el % de leyes sociales (75,8% obra privada de
+arquitectura en este caso). Ver desarrollo completo en `Soluciones/202207 Ex Julio/`.
 
 **Garantías — tabla rápida (qué, cuándo, cuánto, forma):**
 
@@ -507,6 +516,23 @@ compactado/Vol.suelto"). **Antes de aplicar cualquier coeficiente, verificar con
 consistente** (¿da un volumen mayor o menor al de referencia? ¿el coeficiente es >1 o <1, y eso es
 compatible con la dirección de la conversión que se necesita?) en vez de asumir la misma fórmula usada
 en un examen anterior.
+
+**Variante "sustitución de suelo bajo una platea circular, con costeo de cada tarea + leyes sociales"
+(visto en Jul-2022):** en vez de solo pedir el volumen, piden armar una **planilla de costeo completa**:
+para cada tarea (excavación, compra de material de préstamo, excavación del préstamo en cantera,
+tendido, compactación, transporte, recepción en depósito) hay que determinar el **volumen correcto
+según en qué estado se mide esa tarea** (banco / suelto-esponjado / compactado — el enunciado lo
+aclara tarea por tarea, ej. "medido en piso, antes de ser excavado" = banco; "medido luego de
+compactado" = compactado), multiplicar por el costo unitario, y si la tarea tiene mano de obra (dato de
+Monto Imponible por unidad), sumar Leyes Sociales=%×Monto Imponible (obra pública o privada, según
+corresponda). Fórmula explícita para el volumen de material de préstamo necesario (dato que trae la
+propia solución oficial): **V.préstamo(banco) = V.compactado requerido / (Ce×Cc)**, con Ce=esponjamiento
+propio del material de préstamo y Cc=compactación propia del material de préstamo — otra fórmula más,
+distinta de las dos anteriores, reforzando que **no hay una fórmula universal**, siempre construirla a
+partir de las definiciones de Ce/Cc/Ca dadas en cada examen. Volumen a transportar en camión (m³×km)
+= volumen SUELTO (esponjado) del material, multiplicado por la distancia — si solo se retira/transporta
+una fracción del material excavado (ej. "50% queda para relleno en obra, 50% va a depósito"), aplicar
+ese % **después** de esponjar, no antes. Ver desarrollo completo en `Soluciones/202207 Ex Julio/`.
 
 ---
 
