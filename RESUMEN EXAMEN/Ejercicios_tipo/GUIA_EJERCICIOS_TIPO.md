@@ -84,6 +84,17 @@ completo en `Soluciones/202402 Ex febrero/` y `Soluciones/202207 Ex Julio/`.
 
 **Variante "muro de contención en horquilla (pata + pantalla como una sola barra doblada), encofrado a una sola cara por trincheras"** (visto en Marzo-2020): cuando la excavación se hace por trincheras (taludes verticales naturales en cada tramo), **la cara del muro contra el terreno NO se encofra** — solo la cara vista (Encof=altura×longitud, sin multiplicar ×2). La armadura principal de la pantalla puede venir dibujada como **una única barra en "horquilla"**: ancla doblada dentro de la pata (rótulo tipo "2ØA"), sube en vertical por dentro del espesor del muro, y cierra arriba con un gancho/estribo (rótulo tipo "2ØE") — es **una sola barra continua**, no dos armaduras separadas, aunque el plano la etiquete con 2 nombres distintos en sus 2 extremos; su longitud total (ej. 6,28 m para una pata+muro de 2,6 m) sale de recorrer todo ese trayecto doblado, no solo la altura recta. Aparte, la pata lleva su propia armadura longitudinal corrida a lo largo de toda la pieza (empalmada cada 12 m) y el muro su armadura horizontal de repartición (también corrida y empalmada). **Atajo de verificación:** si "cantidad de horquillas" = ceil(longitud_muro/paso)+1 y el total de acero no cierra, revisar si esa cantidad ya incluye el +1 del extremo. Ver desarrollo completo en `Soluciones/202003 Ex Marzo/`.
 
+**Variante "muro de contención en panel aislado (no continuo), encofrado en el perímetro completo"**
+(visto en Dic-2019): a diferencia del muro "por trincheras" (Marzo-2020, donde solo se encofra la cara
+vista porque la excavación genera taludes verticales continuos), acá el muro es un **panel de longitud
+finita** (ej. 6 m) — hay que encofrar **las 2 caras Y los 2 extremos** del panel, no solo 1 o 2 caras
+longitudinales. La fórmula es directamente **perímetro del corte transversal × longitud del panel**:
+`Encof = 2×(ancho+alto)×L`, tanto para la pata como para la pantalla por separado. **Cómo distinguir
+cuál variante aplica:** leer si el enunciado/croquis indica una obra corrida (trinchera, muro perimetral
+largo) o un panel/tramo aislado (croquis con cotas de un tramo cerrado en sus 2 extremos, sin
+continuidad indicada) — el criterio de encofrado cambia sustancialmente el resultado. Ver desarrollo
+completo en `Soluciones/201912 Ex diciembre/`.
+
 **Variante "viga T-invertida asimétrica, 3 perfiles de estribo distintos"** (visto en Feb-2022): cuando la sección de una viga es compuesta por dos rectángulos apilados sin encimarse (ala superior ancha, ej. 0,72×0,80, + alma inferior angosta y descentrada, ej. 0,30×0,70 — el volumen SÍ se reconstruye exacto como suma de las dos áreas × longitud, sin necesidad de descontar solapes), el contorno de encofrado deja de ser un rectángulo simple y por eso el plano trae **3 perfiles de estribo distintos** (de menor a mayor perímetro, ej. 2,12 / 3,20 / 5,70 m), cada uno cerrando una porción distinta del alma+ala — todos con el mismo paso y misma cantidad (ceil(largo/paso)+1), solo cambia el perímetro de cada uno. Cuando el croquis escaneado no permite reconstruir con certeza qué caras exactas se encofran (geometría compuesta ambigua a pixel), usar el valor de tenor/Enc de la planilla oficial tal cual, validando que el volumen si cierre exacto — mismo criterio que en Marzo-2024. Ver desarrollo completo en `Soluciones/202202 Ex Febrero/`.
 
 ---
@@ -117,6 +128,16 @@ completo en `Soluciones/202402 Ex febrero/` y `Soluciones/202207 Ex Julio/`.
 5. Costo = cantidad en unidad comercial × costo unitario; sumar todos los componentes (el agua normalmente no se cobra aparte).
 
 **Mini-ejemplo (Dic-2025):** relación 3,5:2:1, a/c=0,50, dens. cemento 1.400 kg/m³. Cemento real 0,47 m³ → 0,47×1.400=658 kg → como el coeficiente de aporte ya reparte los 4,24 m³ aparentes en 1 m³ real, el cemento resultante por m³ de hormigón es 330,58 kg = 13,22 bolsas × 220 $/bolsa = 2.909 $. Agregado grueso 0,83 m³ × 1.250 $/m³ = 1.033 $. Total materiales ≈ **4.344 $/m³**.
+
+**Atajo algebraico equivalente en 1 paso (visto en Dic-2019):** en vez de normalizar y volver a dividir
+por el coeficiente de aporte (variante de abajo, en 2 pasos), se llega al mismo resultado dividiendo
+directamente el **volumen aparente ORIGINAL de la relación** (ej. 4, el "4" de la relación 4:3:1) entre la
+**Suma de los volúmenes REALES** (ej. 5,08): `Vol. aparente para 1 m³ real = Vol.aparente_relación_i /
+Σ(Vol.real)` — matemáticamente idéntico a "normalizar y dividir por el coeficiente" porque
+Vol.real_i=Vol.aparente_i×Coef_i, pero ahorra un paso intermedio. El agua se suma directo a la Σ de
+reales (coeficiente de aporte=1) y su volumen real sale de `kg cemento en 1 unidad de la relación ×
+relación agua/cemento` (kg cemento = Vol.aparente cemento × densidad aparente). Ver desarrollo
+completo en `Soluciones/201912 Ex diciembre/`.
 
 **Variante "doble aplicación del Coeficiente de Aporte" (visto en Feb/Marzo-2024):** algunas planillas oficiales hacen el camino completo en 3 pasos en vez de ir directo: (1) **Volumen real** de la mezcla dada = cada término de la relación × su Coef. de Aporte (ej. relación 4,5:3:1 → Grueso 4,5×0,55=2,48 m³, Fino 3×0,57=1,71 m³, Cemento 1×0,47=0,47 m³; más el agua = kg cemento×a/c). Sumar todo = volumen real que rinde la mezcla (ej. 5,495 m³). (2) **Normalizar a 1 m³ real** dividiendo cada componente por esa suma (ej. Grueso 2,48/5,495=0,45; deben sumar 1). (3) **Volver a volumen "aparente"/comercial** dividiendo CADA UNO otra vez por su propio Coef. de Aporte (ej. Grueso 0,45/0,55=0,82 m³ — esta es la cantidad que efectivamente se compra/mide suelta). El agua no pasa por el coeficiente de aporte: se prorratea directo del total de la mezcla sobre el volumen real total. **No es un error usar el coeficiente dos veces** — la primera vez convierte "aparente dado → real", la segunda "real normalizado → aparente a comprar"; son direcciones opuestas de la misma conversión. Ver desarrollo completo en `Soluciones/202403 Ex marzo 2024/`.
 
@@ -188,6 +209,7 @@ a 5 años) en `Soluciones/202502 Ex Febrero/`.
 - **Monto Imponible ≈ 80% del salario**. **Leyes Sociales ≈ 71,8% del MI en obra pública/ingeniería o 75,8% en obra de arquitectura** (la diferencia es el CJPPU: 2% obras de ingeniería, 4% obras de arquitectura, Ley 17.738).
 - **Convenio Colectivo**: tripartito entre Empresas, Trabajadores (SUNCA) y MTSS/Poder Ejecutivo (homologa); se renueva cada 3 años; fija laudos y su ajuste (ligado a metas de inflación BCU), categorías, licencias, etc.
 - **4 Fondos Sociales de la Construcción:** FOSVOC (vivienda del obrero), Fondo Social de la Construcción -FSC- (canastas, útiles escolares, odontología, capacitación), FOCAP (cursos de capacitación técnica), FOCER (cuentas individuales de cesantía y retiro, aportes patronales+personales).
+- **Incentivo por Asistencia** (visto en Dic-2019): partida adicional al jornal básico por presentismo/asistencia perfecta del trabajador en el período — integra el monto imponible igual que el resto de la remuneración, junto con FOCER (arriba) como las 2 partidas puntuales que suele pedir el examen "exponer y cuantificar".
 
 ---
 
@@ -219,6 +241,14 @@ sujeta a ley 14.411 (ej. $10.000.000) pero pide "estimar coeficiente para el Mon
 directo como en Feb-2024), usar el ~80% mencionado en el paso 1 de arriba: Monto Imponible=80%×
 10.000.000=$8.000.000, y sobre ESE valor aplicar el % de leyes sociales (75,8% obra privada de
 arquitectura en este caso). Ver desarrollo completo en `Soluciones/202207 Ex Julio/`.
+
+**Variante "Leyes Sociales dadas como monto fijo, no como %/Monto Imponible" (visto en Dic-2019):**
+cuando el enunciado da directamente "Leyes sociales a cargo del cliente: $X" en vez de un Monto
+Imponible + coeficiente a aplicar, simplemente se **suma tal cual** al armar el Precio con IVA y LLSS
+incluidos (`Precio=P+IVA+LLSS`), sin necesidad de estimar el 80% ficto ni el % de aporte unificado — leer
+bien el enunciado antes de asumir que hay que calcularlo. También ojo con el costo anual de constitución
+de la garantía: no siempre es 1,5% (visto en la mayoría de exámenes) — en Dic-2019 el dato explícito era
+**2,0%** anual. Ver desarrollo completo en `Soluciones/201912 Ex diciembre/`.
 
 **Variante "anticipo con devolución escalonada por tramos discretos" (visto en Marzo-2020):** cuando el enunciado no da una rampa continua sino un cronograma de devolución en **tramos** (ej. 4 tramos de 3 meses, garantizando 10%→7,5%→5%→2,5% del precio en cada tramo sucesivo), el monto medio a garantizar es el **promedio simple de los montos de cada tramo** (no el promedio "de punta a punta" que daría 50% del anticipo) — usar SIEMPRE el cronograma de tramos si el enunciado lo da, es más preciso que la simplificación lineal de "monto medio=50% del anticipo" (que solo aplica si no hay más detalle disponible). Ambos métodos dan resultados parecidos pero no iguales ($735.294 escalonado vs. $588.235 simplificado en este examen) — si el examen da el detalle por tramos, usarlo. Ver desarrollo completo en `Soluciones/202003 Ex Marzo/`.
 
@@ -426,6 +456,17 @@ original). Ver desarrollo completo (con tabla "paso a paso" en base 100, verific
 
 - **VNA**: suma de los valores presentes de todos los ingresos y egresos de un flujo, descontados a una tasa de interés/descuento dada. `VNA = Σ Flujo_t / (1+i)^t`.
 - Si VNA=0 a la tasa usada, esa tasa ES la TIR del proyecto. Si VNA>0, la inversión rinde más que la tasa de descuento (TIR mayor a la tasa). Si VNA<0, rinde menos (TIR menor).
+
+**Casos teóricos particulares de TIR (visto en Dic-2019, sin cálculo numérico, solo razonamiento
+conceptual):**
+- **Si el flujo acumulado SIN descontar (suma simple de todos los períodos) da 0:** la TIR de ese flujo es
+  **exactamente 0%** — por definición VNA(i)=Σ Flujo_t/(1+i)^t, y con i=0% el denominador es 1 en todos
+  los términos, así que VNA(0%)=suma simple=0, que es justo la condición que define la TIR.
+- **Si los ingresos superan (o igualan) a los egresos en TODOS los períodos, sin ningún período con flujo
+  neto negativo:** la **TIR no existe (es indefinida)**. Al no haber una "inversión" (flujo negativo) que
+  recuperar, VNA(i) resulta ≥0 para **cualquier** tasa i≥0 — nunca cruza cero, salvo el caso trivial de que
+  todos los flujos sean nulos. Es una pregunta trampa típica: un proyecto sin desembolso neto no tiene
+  una TIR calculable en el sentido usual del término.
 - **Comparar alternativas de cobro/pago**: traer cada flujo a valor presente con la tasa dada (ej. 20% trimestral) y comparar. La de mayor VNA es la más conveniente para quien cobra (ej. la empresa constructora que recibe pagos).
 - **¿La indemnización compensa el costo del dinero?** Comparar el VNA de la alternativa contra el monto original de la deuda/obligación: si VNA resultante > monto original, la alternativa compensa (y supera) el costo financiero de esperar el cobro; si es menor, no lo compensa.
 
@@ -696,5 +737,6 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 - Julio-2020 (real 11/08/2020): Metraje de losa suspendida en 4 lados (otra confirmación de Tenor=1/e + doble capa de armado), costo de equipo (retroexcavadora, mismas fórmulas), **punto de equilibrio con extensión de plazo antes de iniciar la obra + reconocimiento económico simple (re=cfo×inc) + ahorro propio de costo fijo no declarado al cliente (tipo NUEVO, distinto del de Dic-2022)**, garantías (tabla completa finalidad/relación con precio/costo/oportunidad/forma por cada tipo), régimen salarial.
 - Marzo-2020 (fecha real 18/02/2020): Metraje de muro de contención en horquilla (pata+pantalla como una sola barra doblada, encofrado a una sola cara por trincheras — tipo NUEVO), costo financiero con flujo de caja+anticipo+elección de línea de crédito (atajo: descartar una línea por el déficit sin intereses antes de calcular el interés compuesto), garantías (anticipo con devolución escalonada por tramos discretos, tipo NUEVO), régimen salarial y materiales (teórico).
 - Febrero-2020 (fecha real 29/01/2020): Metraje de pieza prefabricada (viga+ménsula) con croquis rotado ambiguo (uso de planilla oficial), punto de equilibrio con reducción de costo fijo proporcional para desplazar el equilibrio a otro % de capacidad (tipo NUEVO, inverso al de Dic-2024), fórmula paramétrica con 4 repartos válidos, seguros/comparativo de ofertas/costo de equipos (teórico).
+- Diciembre-2019: Metraje de muro de contención en panel aislado (tipo NUEVO: encofrado en perímetro completo, no solo 1-2 caras), dosificación de hormigón (atajo algebraico en 1 paso), garantías con Leyes Sociales dadas como monto fijo (tipo NUEVO), TIR en casos teóricos particulares (0% y TIR indefinida, tipo NUEVO), mercado de la construcción, FOCER/Incentivo Asistencia, Cronograma Económico vs. Financiero.
 
 **Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — visto en Ene-2026, Dic-2024, Jul-2024 y Feb-2024; en Feb-2024 se logró decodificar el paso de 2 de las 3 familias comparando contra la solución oficial, sigue faltando cerrar el 3er número; cuando el examen trae la planilla de cálculo ya resuelta, no bloquea la resolución), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
