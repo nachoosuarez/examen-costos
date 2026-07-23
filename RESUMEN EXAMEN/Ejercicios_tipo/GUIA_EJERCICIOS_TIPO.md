@@ -131,6 +131,26 @@ completo en `Soluciones/201912 Ex diciembre/`.
 
 **Mini-ejemplo (Dic-2025):** relación 3,5:2:1, a/c=0,50, dens. cemento 1.400 kg/m³. Cemento real 0,47 m³ → 0,47×1.400=658 kg → como el coeficiente de aporte ya reparte los 4,24 m³ aparentes en 1 m³ real, el cemento resultante por m³ de hormigón es 330,58 kg = 13,22 bolsas × 220 $/bolsa = 2.909 $. Agregado grueso 0,83 m³ × 1.250 $/m³ = 1.033 $. Total materiales ≈ **4.344 $/m³**.
 
+**Tabla de referencia — Coeficiente de Aporte y Peso Específico (Clase 7, valores promedio estadísticos, válidos incluso con material no completamente seco):**
+
+| Material | Coef. de Aporte | Peso específico Vol. Real (kg/m³) | Peso específico Vol. a Granel (kg/m³) |
+|---|---|---|---|
+| Canto rodado | 0,55 | 3.500 | 1.925 |
+| Pedregullo cantera | 0,55 | 2.820 | 1.551 |
+| Piedra Partida | 0,55 | 2.820 | 1.551 |
+| Piedra Bruta | 0,55 | 3.000 | 1.650 |
+| Arena Gruesa | 0,57 | 2.600 | 1.482 |
+| Arena Fina | 0,50 | 2.300 | 1.150 |
+| Cemento Portland | 0,47 | 3.000 | 1.410 |
+| Cal en Pasta | 1,00 | 1.400 | 1.400 |
+| Agua | 1,00 | 1.000 | 1.000 |
+
+*(El "Vol. a Granel" es el peso específico ya afectado por el Coef. de Aporte —Vol.Real×Coef.Aporte— y es el que corresponde usar para convertir m³ aparentes/a comprar en kg, ej. cemento: 1m³ a granel=1.410 kg. Si el examen no da estos valores, usarlos como referencia razonable.)*
+
+**Dosificación de MORTERO con cal (Clase 7, misma lógica que el hormigón, agua distinta):** en morteros (no hormigón), el agua se dosifica como **% sobre el volumen aparente de los demás componentes** (dato del examen, ej. 15%), no como relación agua/cemento. Ejemplo: relación 3 arena : 1 cal : 0,2 cemento (volúmenes aparentes) → agua aparente = 15%×(3+1+0,2)=0,63. Volumen real: arena=3×0,57=1,710; cal=1×1,00=1,000; cemento=0,2×0,47=0,094; agua=0,630×1=0,630 → Suma=3,434 (rinde 3,434 m³ aparentes por cada 1 m³ real de mortero). Dosificación por m³ real (dividiendo cada aparente por la Suma): arena=3/3,434=0,874 m³; cal=1/3,434×1.400=408 kg; cemento=0,2/3,434×1.410=82 kg; agua=0,630/3,434×1000=183 lts. Ver también el desarrollo completo de 4 capas de morteros (toma/impermeable/grueso/fino) en la sección 16 de esta Guía.
+
+**Muros de albañilería con aberturas (Clase 7):** al metrar la superficie de un muro, las aberturas (puertas, ventanas) se tratan así — **menores a 2 m²: NO se descuentan** (se computan como si fueran muro macizo, por la dificultad/desperdicio de encofrar/mamponear alrededor de una abertura chica); **entre 2 y 4 m²: se descuenta el 50%** del área de la abertura; (para aberturas mayores a 4 m², descontar el 100%, coherente con el criterio general de no restar áreas cuando la dificultad constructiva no lo justifica — ver Guía sección 1, criterio de encofrado en voladizos).
+
 **Atajo algebraico equivalente en 1 paso (visto en Dic-2019):** en vez de normalizar y volver a dividir
 por el coeficiente de aporte (variante de abajo, en 2 pasos), se llega al mismo resultado dividiendo
 directamente el **volumen aparente ORIGINAL de la relación** (ej. 4, el "4" de la relación 4:3:1) entre la

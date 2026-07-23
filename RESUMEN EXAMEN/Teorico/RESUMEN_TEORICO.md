@@ -22,7 +22,7 @@
 
 ---
 
-## 1. Metrajes de hormigones (Clase 3 y Clase 4)
+## 1. Metrajes de hormigones y albañilería (Clase 3, Clase 4 y Clase 7)
 
 **Concepto:** cuantificar para cada estructura (clasificada por tipo — pilares, vigas, losas... — y por nivel — PB, 1er piso...) el volumen de hormigón (m³), el tenor de encofrado (m²/m³) y la cuantía de acero (kg/m³). Existen varios criterios válidos: lo importante es ser coherente.
 
@@ -53,6 +53,10 @@
 **¡Importante! Discrepancia detectada entre el material de Clase 4 (2026) y la planilla oficial de un examen real:** la Clase 4 usa el muro de contención de **Marzo-2020** como ejemplo resuelto en diapositivas, pero llega a un encofrado (117 m², Tenor 4,6) y una cuantía de acero (2.239,2 kg, 88,9 kg/m³) **distintos** a los de la planilla oficial que calificó ese examen real (126 m², Tenor 5,0; 2.177,28 kg, 86,4 kg/m³) — la diferencia está en si la pata del muro se encofra con 1 o 2 caras, y en el desarrollo exacto de la longitud de la barra "horquilla". Ver el detalle completo de ambos cálculos en `Soluciones/202003 Ex Marzo/RESOLUCION.md` y en la Guía de Ejercicios Tipo, sección 1 — ante esta ambigüedad, priorizar el criterio de la Clase 4 (más reciente) salvo que el examen aclare lo contrario.
 
 **Ejemplos que la Clase 4 usa/referencia como casos resueltos:** Marzo 2020 (visto arriba), Julio 2025 (ya resuelto en `Soluciones/`), y **Febrero 2026 / Marzo 2026** — estos 2 últimos NO están todavía en la carpeta `Exámenes/` del repo (son exámenes futuros de este mismo año lectivo, mencionados en la diapositiva como referencia pero sin PDF disponible aún) — revisar si aparecen en corridas futuras.
+
+**Albañilería (Clase 7):** se clasifica por tipo de muro (simple/doble, de ticholo/rejillón, tipo de terminación). **Criterio de descuento de aberturas** en la superficie de un muro: aberturas **menores a 2 m² NO se descuentan**; entre **2 y 4 m² se descuenta el 50%** del área; mayores a 4 m² se descuentan completas (criterio inferido, coherente con no restar áreas cuando la dificultad constructiva no lo justifica). Ver también el ejemplo completo de planilla de metraje de muros con revoques/pinturas del Trabajo Práctico 2020 en la diapositiva 149 de la Clase 7.
+
+**Dosificación de hormigones y morteros (Clase 7 — complementa Guía sección 3):** los coeficientes de aporte son promedios estadísticos, válidos con material de humedad baja/normal; por practicidad se dosifica en **volumen**, no en peso. El agua se dosifica distinto según el material: en **hormigones**, por relación agua(lt)/cemento(kg); en **morteros**, como **% sobre el volumen aparente de los demás componentes** (ej. 15%). Los resultados finales se expresan en unidades comerciales: áridos en m³ aparentes, cemento en kg o bolsas de 25kg, cal en kg. Ver la tabla de referencia de Coeficiente de Aporte y Peso Específico por material (canto rodado, pedregullo, piedra partida/bruta, arena gruesa/fina, cemento, cal, agua) en la Guía de Ejercicios Tipo, sección 3.
 
 ---
 
@@ -198,7 +202,7 @@ como pregunta suelta):
 ## Clases ya resumidas
 - Clase 1 (Introducción/administrativa del curso — objetivos, metodología, cronograma del Trabajo Práctico; **sin contenido de examen**, solo logística del curso).
 - Clase 2 (Características históricas de la industria, obra pública/privada, TOCAF, tipos de contrato).
-- Clase 3 y Clase 4 (Metrajes de hormigones — criterios de volumen, encofrado, armaduras, planilla tipo, valores de referencia de Tenor/Cuantía por elemento, ejemplos resueltos incl. Marzo-2020 con discrepancia frente a la planilla oficial — ver sección 1).
+- Clase 3, Clase 4 y Clase 7 (Metrajes de hormigones y albañilería — criterios de volumen, encofrado, armaduras, planilla tipo, valores de referencia de Tenor/Cuantía por elemento, dosificación de hormigones/morteros con tabla de Coef. de Aporte y Peso Específico, descuento de aberturas en muros, ejemplos resueltos incl. Marzo-2020 con discrepancia frente a la planilla oficial — ver sección 1).
 - Clase 5 (Presentación/logística del Trabajo Práctico — proyecto "Complejo Turístico Derrégibus"; **sin contenido de examen**).
 - Clase 6 (Movimiento de suelos — metraje de excavaciones a mano/a máquina, áreas mínimas de trabajo, coeficientes Ce/Cc/Ca formales en cadena de 3 pasos con tabla de valores por tipo de suelo — ver sección 7).
 - Clase 9 (Mano de obra — Ley 14.411, Convenio Colectivo, ítems del jornal, viáticos, aportes, Fondos Sociales).
@@ -207,4 +211,4 @@ como pregunta suelta):
 - Equipos.pdf (Costo horario de equipos, movimiento de suelos con camiones).
 
 ## Clases pendientes (quedan para próximas corridas)
-Clase 7, Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.
+Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.
