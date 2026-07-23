@@ -362,6 +362,17 @@ nuevo=120−110,50=9,50 → **cae 52,5%** respecto al original. **Con reconocimi
 nueva=110,50×1,20=132,60 → hay que reconocer **+10,5%** sobre la venta original. Ver desarrollo
 completo en `Soluciones/202212 Ex Diciembre/`.
 
+**Variante espejo — "reducción de plazo por pedido del comitente" (visto en "Marzo"-2022, real
+15/02/2022):** el caso inverso al de arriba: el comitente pide **acortar** el plazo, y el contratista tiene
+holgura para no aumentar el costo variable ni cambiar el costo fijo mensual — el costo fijo **total** baja
+simplemente porque se paga durante menos meses. Fórmula: **Costo fijo nuevo = Costo fijo original ×
+(plazo nuevo/plazo original)** (proporción directa, sin ningún % de ajuste adicional salvo que el
+enunciado lo pida). Si la venta no se revisa (queda igual), el beneficio **aumenta** porque el costo total
+baja mientras el precio de venta se mantiene — exactamente lo opuesto al caso de extensión de plazo.
+Mini-ejemplo: Costo=100 (CF=20,CV=80), Beneficio=15% s/costo→Venta=115, plazo 20→17 meses (sin
+revisión de presupuesto). CF nuevo=20×(17/20)=17,00. Costo nuevo=97,00. Beneficio nuevo=115−97=
+18,00 → **aumenta +20,0%**. Ver desarrollo completo en `Soluciones/202203 Ex Marzo/`.
+
 ---
 
 ## 12. Costo Financiero — Valor Neto Actualizado (VNA)
@@ -374,6 +385,17 @@ completo en `Soluciones/202212 Ex Diciembre/`.
 - **¿La indemnización compensa el costo del dinero?** Comparar el VNA de la alternativa contra el monto original de la deuda/obligación: si VNA resultante > monto original, la alternativa compensa (y supera) el costo financiero de esperar el cobro; si es menor, no lo compensa.
 
 **Mini-ejemplo:** deuda $1.000.000, tasa trimestral 20%, alternativa que paga 350+350+350+300+300 (miles $) al final de cada uno de 5 trimestres → VNA = 1.002,5 (miles $) > 1.000 → SÍ compensa el costo del dinero.
+
+**Aproximar la TIR por interpolación lineal (visto en "Marzo"-2022):** cuando piden estimar la TIR de un
+flujo sin calculadora financiera, calcular el VNA a **dos tasas distintas** tales que una dé VNA **positivo**
+y la otra **negativo** (la TIR está garantizado que cae entre esas dos tasas, porque el VNA es decreciente
+con la tasa de descuento). Interpolar linealmente: `TIR ≈ tasa_baja + [VNA(tasa_baja)/(VNA(tasa_baja)
+−VNA(tasa_alta))]×(tasa_alta−tasa_baja)`. **Ojo: esto es solo una APROXIMACIÓN**, no el valor exacto —
+el VNA no es lineal en la tasa (es convexo), así que el resultado interpolado se acerca a la TIR real pero
+no coincide exactamente (en el ejemplo, interpolando entre 5% (VNA=+246,57) y 12% (VNA=−217,80) da
+8,72% aproximado, contra 8,34% de TIR real exacta). Aclarar siempre que es una aproximación si el
+enunciado no pide expresamente el método de interpolación. Ver desarrollo completo en `Soluciones/202203
+Ex Marzo/`.
 
 **Variante "flujo de caja con anticipo + elección de línea de crédito" (visto en Dic-2023):** en vez de comparar alternativas de cobro, dan un **cronograma de ingresos y egresos mes a mes** y piden armar el flujo financiero y elegir entre líneas de crédito disponibles. Paso a paso:
 1. Si hay **anticipo** del cliente (ej. 10% del precio, recibido al inicio y devuelto como quita en cada certificado posterior): armar la fila de ingresos netos = ingresos sin anticipo − quita de cada mes (10% de ese ingreso), sumando el anticipo recibido en el mes 0. El total del anticipo a lo largo de toda la obra da 0 (se devuelve completo).
