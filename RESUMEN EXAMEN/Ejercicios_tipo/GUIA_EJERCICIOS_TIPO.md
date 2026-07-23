@@ -594,13 +594,20 @@ completo en `Soluciones/201907 Ex julio/`.
 
 **Cuándo aparece:** Parte "Movimiento de Suelos", 10 pts. Dan un corte de terreno con capas (capa vegetal a desechar, capas de suelo natural a excavar, capas de aporte a rellenar/compactar) y piden cantidad de viajes de camión (capacidad dada) para cada material.
 
-**Definiciones formales de los 3 coeficientes** (los tres relativos al mismo volumen de referencia, el
-**volumen en banco** = material en su estado natural, sin remover): **Esponjamiento (Ce)** =
-Vol.suelto/Vol.banco (>1, el material removido ocupa más volumen). **Compactación (Cc)** =
-Vol.compactado/Vol.banco (<1, compactado con rodillo/pisón queda más denso que en su estado
-natural). **Aporte (Ca)** = Vol.compactado/Vol.suelto (el que se usa para pasar de "cuánto compactado
-necesito" a "cuánto suelto transportar", ver paso a paso abajo). **Relación entre los tres: `Ca = Cc/Ce`**
-(ya que Cc = Vol.compactado/Vol.banco = (Vol.compactado/Vol.suelto)×(Vol.suelto/Vol.banco) = Ca×Ce).
+**Definiciones formales de los 3 coeficientes (Clase 6 del curso — versión "textbook" en 3 pasos encadenados, Vb→Vs→Vc):** **Esponjamiento (Ce) = Vs/Vb** (>1: al excavar, el material suelto ocupa más volumen que en banco). **Compactación (Cc) = Vc/Vs** (<1: al compactar el material suelto en el terraplén, ocupa menos). **Aporte (Ca) = Vb/Vc = 1/(Ce×Cc)** (cuántos m³ en banco —a excavar o comprar— hacen falta por cada m³ final compactado). Mini-ejemplo de la Clase 6: Ce=1,25, Cc=0,72 → Ca=1/(1,25×0,72)=1,11 (con Vb=11,11, Vs=13,89, Vc=10, verificable: Vs/Vb=1,25 ✓, Vc/Vs=0,72 ✓, Vb/Vc=1,11 ✓).
+
+**⚠️ Distinta convención usada en la mayoría de exámenes resueltos de este repo:** en la práctica, varios exámenes (ver Guía debajo) usan una versión de 2 pasos que **salta directo de banco a compactado**, con "Compactación" ya definida como `Vol.compactado/Vol.banco` (equivalente a Ce×Cc de la Clase 6) y "Aporte" como `Vol.compactado/Vol.suelto` (equivalente al Cc de la Clase 6) — el paso a paso de abajo usa ESTA convención práctica porque es la que reproduce los resultados oficiales verificados en los exámenes. **Regla de oro: si el examen no define sus coeficientes con fórmula explícita, no asumir cuál convención usa — verificar cuál coeficiente (siempre <1 para pasar de suelto/banco a compactado) reproduce un resultado conocido, o presentar el razonamiento explícito con las fórmulas Vb/Vs/Vc de la Clase 6** (más seguro si hay que "demostrar" la definición formal en una pregunta teórica, como pidió Dic-2024).
+
+**Tabla de coeficientes de referencia por tipo de suelo (Clase 6 — valores indicativos, cada obra los determina con ensayos):**
+
+| Tipo de suelo | Ce (esponjamiento) | Cc (compactación) | Ca (aporte) |
+|---|---|---|---|
+| Arena | 1,11 | 0,86-1,00 | 1,05 |
+| Tierra Común | 1,25 | 0,72-1,00 | 1,11 |
+| Arcilla | 1,43 | 0,63-1,00 | 1,11 |
+| Piedra | 1,50 | 0,87-1,00 | 0,77 |
+
+**Áreas mínimas de trabajo en excavación "a mano" (pico y pala), según profundidad (Clase 6):** en **pozo**: prof.<0,60m→sección mín. 0,60×0,60m; prof.<1,50m→1,00×1,00m; prof.<2,60m→1,00×1,50m. En **zanja**: prof.<0,80m→ancho mín. 0,40m; prof.<1,20m→1,20m; prof.<1,50m→1,50m. Estas dimensiones son un piso — pueden ser mayores si la sección del elemento, el área de trabajo real o la seguridad lo exigen. Las excavaciones puntuales a mano (cuando el terreno natural está por encima del nivel de fundación) se procuran evitar por encarecer la obra.
 
 **Paso a paso:**
 1. Para cada capa: Volumen "en banco"/compactado = espesor × área.

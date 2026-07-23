@@ -185,14 +185,26 @@ como pregunta suelta):
 
 ---
 
+## 7. Movimiento de suelos (Clase 6)
+
+**Metraje de excavaciones "a mano" (pico y pala):** para pozos y zanjas puntuales (ej. terreno natural por encima del nivel de fundación de cabezales/vigas — se procura evitar por encarecer la obra). Volumen = volumen del elemento a fundar, ajustado por la estabilidad de la excavación y el área mínima de trabajo necesaria (ver tabla de áreas mínimas por profundidad en la Guía sección 13).
+
+**Excavaciones generales "a máquina":** (1) identificar la cota del terreno natural (curvas de nivel/progresivas, **después de retirar la capa vegetal**); (2) identificar la cota de excavación de proyecto (cota de piso terminado/pavimento menos los espesores de capas intermedias — contrapiso, base, etc.); (3) subdividir el terreno en zonas de igual "cota objetivo" (la cota inferior de la base a colocar); (4) dentro de cada zona, ver dónde el terreno limpio queda por encima (desmonte) o por debajo (terraplén) de la cota objetivo, marcando puntos clave y calculando el volumen por secciones transversales (ver método completo con interpolación en Guía sección 13, variante Dic-2022).
+
+**Los 3 coeficientes formales, en cadena Vb→Vs→Vc** (Vb=volumen en banco/sitio, sin remover; Vs=volumen suelto, sobre camión o acopiado; Vc=volumen compactado, en el terraplén final): **Esponjamiento Ce=Vs/Vb** (siempre >1). **Compactación Cc=Vc/Vs** (siempre <1). **Aporte Ca=Vb/Vc=1/(Ce×Cc)** (cuántos m³ en banco hacen falta por cada m³ compactado final). Ver la tabla de valores de referencia por tipo de suelo (Arena/Tierra Común/Arcilla/Piedra) y la advertencia sobre convenciones alternativas usadas en distintos exámenes en la Guía de Ejercicios Tipo, sección 13 — **importante:** varios exámenes reales usan una convención de 2 pasos (banco→compactado directo) con nombres que no siempre coinciden con esta cadena formal de 3 pasos; verificar siempre contra un resultado conocido o presentar el razonamiento explícito si la pregunta es teórica.
+
+---
+
 ## Clases ya resumidas
 - Clase 1 (Introducción/administrativa del curso — objetivos, metodología, cronograma del Trabajo Práctico; **sin contenido de examen**, solo logística del curso).
 - Clase 2 (Características históricas de la industria, obra pública/privada, TOCAF, tipos de contrato).
 - Clase 3 y Clase 4 (Metrajes de hormigones — criterios de volumen, encofrado, armaduras, planilla tipo, valores de referencia de Tenor/Cuantía por elemento, ejemplos resueltos incl. Marzo-2020 con discrepancia frente a la planilla oficial — ver sección 1).
+- Clase 5 (Presentación/logística del Trabajo Práctico — proyecto "Complejo Turístico Derrégibus"; **sin contenido de examen**).
+- Clase 6 (Movimiento de suelos — metraje de excavaciones a mano/a máquina, áreas mínimas de trabajo, coeficientes Ce/Cc/Ca formales en cadena de 3 pasos con tabla de valores por tipo de suelo — ver sección 7).
 - Clase 9 (Mano de obra — Ley 14.411, Convenio Colectivo, ítems del jornal, viáticos, aportes, Fondos Sociales).
 - Clase 19 (Riesgos, Garantías, Seguros).
 - Clase 20 (Programa Económico y Financiero de obra, elaboración y comparación de ofertas).
 - Equipos.pdf (Costo horario de equipos, movimiento de suelos con camiones).
 
 ## Clases pendientes (quedan para próximas corridas)
-Clase 5, Clase 6, Clase 7, Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.
+Clase 7, Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.
