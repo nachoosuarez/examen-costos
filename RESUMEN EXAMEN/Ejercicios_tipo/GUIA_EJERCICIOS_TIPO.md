@@ -556,6 +556,36 @@ período que falta. Mini-ejemplo: deuda $3.000.000 (miles), tasa trimestral 10%,
 en el trim5 → X = 3.000×(1,1)⁵ = **$4.832 (miles)**. Ver desarrollo completo en `Soluciones/202302 Ex
 Febrero/`.
 
+**Variante "comparar alternativas de inversión (plazo fijo vs. flujos irregulares) — TIR y criterio de
+reinversión" (visto en Jul-2019):** en vez de una obra, acá se comparan 4 alternativas de **inversión**
+financiera (ej. depósitos a plazo fijo + flujos de proyecto). Ideas clave:
+1. **La TIR de un depósito a plazo fijo simple es siempre igual a su tasa nominal**, sin importar si los
+   intereses se retiran cada período (simples) o se capitalizan (compuestos) — la forma de pago cambia
+   el monto final nominal y el VNA, pero NO cambia la TIR del depósito en sí (ambas dan el mismo % que
+   la tasa contratada, porque el cálculo de la TIR no asume nada sobre qué se hace con el dinero una vez
+   cobrado).
+2. **Atajo para comparar una alternativa nueva contra la mejor TIR ya conocida, sin resolver su ecuación:**
+   si la mejor TIR de las alternativas ya calculadas es X%, calcular el VNA de la alternativa nueva
+   evaluado justo a esa tasa X%: si da positivo, su TIR es mayor a X% (sin necesidad de resolver la
+   ecuación completa de la TIR); si da negativo, es menor.
+3. **El VNA más alto a la tasa de descuento usada NO garantiza la mejor TIR** — son criterios que pueden
+   discrepar según qué tasa se use para el VNA. Si el enunciado no fija con certeza la tasa de descuento
+   futura, conviene reportar ambos criterios y aclarar bajo qué condición cada uno cambiaría de ganador.
+4. **Variante "sin reinversión del dinero ya cobrado" (cambia todo el criterio de selección):** si se asume
+   que el dinero recibido durante el plazo queda "parado" sin generar ningún rendimiento hasta el final
+   (a diferencia de VNA/TIR, que asumen implícitamente reinversión a la tasa de descuento), el criterio de
+   comparación pasa a ser simplemente el **monto nominal TOTAL recibido al final**, sin importar cuándo
+   se cobró cada parte — en este escenario gana la alternativa que **retiene el dinero invertido el mayor
+   tiempo posible** (ej. la que paga todo capitalizado al final), aunque bajo VNA/TIR con reinversión
+   hubiera perdido frente a otra con flujos más tempranos.
+
+Mini-ejemplo: 4 alternativas de $5.000 (miles USD) a 6 años, 2 depósitos a 8% (uno capitalizado→año6=
+7.934; otro con intereses simples anuales de 400+capital final=5.400) + 2 flujos irregulares dados. TIR:
+8,00%/8,00%/6,00%/8,50% → **con reinversión, conviene la de mayor TIR** (8,50%). Sin reinversión del
+dinero cobrado, el total nominal recibido es 7.934/7.400/6.935/7.725 → **conviene la alternativa
+capitalizada** (7.934, la única que mantiene TODO el dinero invertido hasta el final). Ver desarrollo
+completo en `Soluciones/201907 Ex julio/`.
+
 ---
 
 ## 13. Movimiento de suelos (viajes de camión)
@@ -738,5 +768,6 @@ prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de 
 - Marzo-2020 (fecha real 18/02/2020): Metraje de muro de contención en horquilla (pata+pantalla como una sola barra doblada, encofrado a una sola cara por trincheras — tipo NUEVO), costo financiero con flujo de caja+anticipo+elección de línea de crédito (atajo: descartar una línea por el déficit sin intereses antes de calcular el interés compuesto), garantías (anticipo con devolución escalonada por tramos discretos, tipo NUEVO), régimen salarial y materiales (teórico).
 - Febrero-2020 (fecha real 29/01/2020): Metraje de pieza prefabricada (viga+ménsula) con croquis rotado ambiguo (uso de planilla oficial), punto de equilibrio con reducción de costo fijo proporcional para desplazar el equilibrio a otro % de capacidad (tipo NUEVO, inverso al de Dic-2024), fórmula paramétrica con 4 repartos válidos, seguros/comparativo de ofertas/costo de equipos (teórico).
 - Diciembre-2019: Metraje de muro de contención en panel aislado (tipo NUEVO: encofrado en perímetro completo, no solo 1-2 caras), dosificación de hormigón (atajo algebraico en 1 paso), garantías con Leyes Sociales dadas como monto fijo (tipo NUEVO), TIR en casos teóricos particulares (0% y TIR indefinida, tipo NUEVO), mercado de la construcción, FOCER/Incentivo Asistencia, Cronograma Económico vs. Financiero.
+- Julio-2019 (el más viejo del repo — con este examen se completó la cobertura 2019-2026): Costo directo de materiales de una viga (hormigón+hierro+encofrado combinados con costos unitarios dados), evaluación de 4 alternativas de inversión con VNA/TIR (tipo NUEVO: TIR de un plazo fijo=siempre su tasa nominal, atajo de comparar VNA a la mejor TIR conocida, y variante "sin reinversión del dinero cobrado" que invierte el criterio de selección), industria de la construcción, garantías, fórmula paramétrica/movimiento de suelos/costos por naturaleza (teórico).
 
 **Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — visto en Ene-2026, Dic-2024, Jul-2024 y Feb-2024; en Feb-2024 se logró decodificar el paso de 2 de las 3 familias comparando contra la solución oficial, sigue faltando cerrar el 3er número; cuando el examen trae la planilla de cálculo ya resuelta, no bloquea la resolución), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
