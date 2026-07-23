@@ -39,6 +39,8 @@ Vol = 0,6×0,6×0,15×4 = 0,216 m³. Encof (lateral, 4 caras) = perímetro×altu
 
 **Variante "pilar de piso intermedio con espera de empalme"** (visto en Jul-2025): si el pilar está en un piso intermedio de un edificio de varios niveles, la longitud de cada barra debe incluir la **espera para empalmar con el nivel siguiente** (normalmente 50Φ), además del gancho si corresponde en la base. Un pilar de sección muy delgada (ej. 12cm de espesor) da un **tenor de encofrado más alto de lo típico** — no es un error, es esperable porque la relación superficie/volumen crece cuando una dimensión de la sección es chica; hay que decirlo explícitamente si el examen pregunta "¿es esperable el resultado?". Ver desarrollo completo en `Soluciones/202507 Ex Julio/`.
 
+**Variante "losa continua de varios paños, doble capa de armado"** (visto en Marzo-2025): cuando el plano muestra **dos capas de armadura** — una de "fondo" (F, positiva, recorre todo el vano en ambas direcciones) y una "de arriba" (A, negativa, refuerzo corto solo sobre los apoyos) — la capa negativa suele estar **duplicada** (una franja junto a cada uno de los dos apoyos de la losa), lo que se ve en la planilla como el doble de barras de lo que daría `ceil(tramo/paso)+1` para una sola franja. Esto es normal en losas continuas con momento negativo importante y produce una **cuantía de acero más alta que en una losa de un solo paño simplemente apoyada** (aquí 167 kg/m³ contra un rango típico de 80-120 kg/m³) — no es error, hay que justificarlo por la doble capa. Para leer las cotas del vano libre en plantas con dimensiones acumuladas ("cotas corridas"): el vano libre entre ejes de viga = diferencia entre la cota mayor y la cota menor de la línea de cotas paralela a esa dirección (ej. 8,53−0,43=8,10 m). Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
+
 ---
 
 ## 2. Consumos unitarios de hormigón armado (mano de obra, materiales, encofrado)
@@ -169,6 +171,7 @@ Vol = 0,6×0,6×0,15×4 = 0,216 m³. Encof (lateral, 4 caras) = perímetro×altu
 4. % de incidencia de cada insumo = precio parcial / precio total. Redondear a valores que sumen 100% (ajuste fino de cada %, normalmente conviene redondear el de mayor peso para cuadrar la suma).
 5. Armar la fórmula: `Precio_n = Precio_0 × Σ (%insumo × índice_n/índice_0)`, eligiendo el índice de referencia más parecido a cada insumo (si no hay un ítem exacto para el hormigón, se puede usar el de cemento, o una combinación cemento+áridos — explicitando el razonamiento).
 6. No incluir insumos que no estén especificados en el enunciado (ej. si no dan combustible, no armar un término para combustible).
+7. **Gastos Indirectos + Beneficio** (cuando el enunciado deja el criterio "a proponer por el estudiante"): al no tener un insumo físico asociado, se ajustan con un **índice general de la economía** — típicamente el **Índice de Precios al Consumo (IPC)** y/o el **dólar interbancario**, nunca con el índice de un insumo puntual de obra. No hay una única combinación correcta: lo que se evalúa es que el criterio sea razonable y quede explícito.
 
 **Mini-ejemplo:** viga 20x50x1000cm, armadura 80kg/m³ (60$/kg), hormigón 6000$/m³, encofrado 12m²/m³ (300$/m²), M.O. 30hs/m³ (550$/h) → Precio total 30.900$/m³ con incidencias Hormigón 20%, Acero 16%, Madera 11%, M.O. 53% → `Precio_n=Precio_0×(0,53·MOn/MO0+0,20·Cementon/Cemento0+0,16·Acero_n/Acero0+0,11·Madera_n/Madera0)`.
 
@@ -201,6 +204,40 @@ Excepciones a Licitación Pública (sin importar monto): compras entre organismo
 ## 10. Garantías y Seguros (teórico general, sin perfil temporal)
 
 Ver Clase 19 ("Riesgos"): 8 componentes de un seguro (objeto, valor, riesgos, monto, prima, deducible, plazo, deberes/exclusiones). 5 seguros de obra: Accidentes de Trabajo (Ley 16.074, monopolio BSE; incluido en aporte unificado para obreros Ley 14.411), Vehículos y maquinaria (~2%/año del valor del equipo), Todo Riesgo de Construcción -TRC- (0,3%-0,5% obras comunes), Responsabilidad Civil -RC- (~0,3% anual sobre el contrato, a veces ya incluido en el TRC), Otros (diseño, plazos, demanda).
+
+---
+
+## 11. Punto de Equilibrio y costos fijos/variables
+
+**Cuándo aparece:** Parte "Punto de Equilibrio", 15 pts. Suele traer una pregunta conceptual (definir el
+punto de equilibrio) y un caso de evaluar un cambio de escenario (campaña de publicidad, cambio de
+precio, cambio de mezcla de productos) preguntando si conviene o no.
+
+**Concepto:** el Punto de Equilibrio es el nivel de producción/venta donde **Ingresos Totales = Costos
+Totales** (CF+CV), es decir, resultado nulo. `Q_equilibrio = CF / (Pu − Cvu)`.
+
+**Paso a paso para casos de "¿conviene el cambio?" (no piden el punto de equilibrio numérico, piden
+comparar dos escenarios):**
+1. Partir de la situación base. Si dice que la empresa "no gana ni pierde", ya está en su punto de
+   equilibrio → `Ventas1 = Costos1 = CF1 + CV1` (útil como identidad para simplificar todo en función
+   de CF1 y CV1, sin necesitar sus valores absolutos).
+2. Expresar el escenario nuevo (Ventas2, Costos2) como variaciones porcentuales sobre CF1/CV1: ojo
+   que un cambio de **cantidad** afecta tanto a Ventas como al Costo Variable (son proporcionales a
+   la cantidad); un cambio de **precio unitario** solo afecta a Ventas; un gasto extra fijo (ej. campaña
+   de publicidad) solo afecta al Costo Fijo.
+3. Plantear la desigualdad `Ventas2 > Costos2`, sustituir y simplificar — normalmente los términos en
+   CV1 y CF1 se factorizan y, como ambos son siempre positivos, el signo de sus coeficientes finales
+   determina si conviene siempre, nunca, o depende de la proporción CF1/CV1 de la empresa.
+4. Concluir con palabras, no solo con el álgebra: explicar la intuición (ej. "el aumento combinado de
+   cantidad y precio supera al aumento de costos, así que conviene sin importar la estructura de
+   costos de la empresa").
+
+**Errores comunes:** confundir qué aumenta con la cantidad (CV y Ventas) y qué no (CF, salvo que el
+enunciado diga explícitamente que el costo fijo también sube, como una campaña de publicidad).
+
+**Mini-ejemplo (Marzo-2025):** ventas +20% en cantidad y +5% en precio (`VT2=1,26·VT1`), CV +20%,
+CF +10% (costo de la campaña) → `VT2−CT2 = 0,06·CV1+0,16·CF1 > 0` siempre (CV1,CF1>0) → **conviene
+en todos los casos**. Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 
 ---
 
@@ -247,5 +284,6 @@ Ver Clase 19 ("Riesgos"): 8 componentes de un seguro (objeto, valor, riesgos, mo
 - Ene-2026: Costo de equipos (retroexcavadora), teoría de mano de obra/licitaciones/garantías.
 - Dic-2025: Metraje muro de contención con bloques, consumos+dosificación de hormigón, fórmula paramétrica, costo horario de obrero, garantías con perfil temporal, suministros/INCOTERMS.
 - Jul-2025: Metraje de pilar con espera de empalme, dosificación de hormigón (método detallado para sacar la relación volumétrica agua/cemento), costo financiero/VNA, movimiento de suelos (viajes de camión), TOCAF/tipos de contrato, consumo unitario vs. rendimiento, Convenio Colectivo/Fondos Sociales.
+- Marzo-2025: Metraje de losa continua con doble capa de armado (fondo + refuerzo negativo duplicado sobre apoyos), dosificación de hormigón, fórmula paramétrica (criterio para Gastos Indirectos+Beneficio), punto de equilibrio (caso "conviene el cambio"), VNA/TIR (obra vs. inversión), suministros.
 
-**Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — ver examen Ene-2026 parte I), punto de equilibrio, costos fijos/variables, más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
+**Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — ver examen Ene-2026 parte I), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.
