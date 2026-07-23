@@ -2,6 +2,12 @@
 
 Fuente: `Exámenes/202003 Ex Marzo/Examen costos 03-2020 con Anexo y Cuadro CF.pdf` (letra + Anexo I) + `Examen Costos Mar-2020 I,II,III.pdf` (planilla oficial ya resuelta de I, II y III, usada como solución oficial). **Partes I, II y III verificadas exactas contra la planilla oficial. Partes IV y V son teóricas, sin solución oficial en el repo (respondidas con el criterio de la Guía).**
 
+> **¡IMPORTANTE — discrepancia detectada con el material del curso 2026!** La Clase 4 (`CLASES TEORICAS/Clase 4 (3).pdf`, diapositivas 125-128) usa este MISMO ejercicio (muro de contención Marzo-2020) como ejemplo de clase, pero llega a números de encofrado y acero **distintos** a los de la planilla oficial de la Parte I de abajo:
+> - **Encofrado:** la Clase 4 calcula `E=(0,2+2,4)×45=117 m²` (una sola cara CONTINUA para pata+muro juntos, como si fuera un único perfil vertical de 2,6m de alto encofrado de un solo lado) → Tenor=117/25,2=**4,6 m²/m³**. La planilla oficial del examen (usada abajo) da **126,00 m²** (pata con 2 caras=18,00 + muro con 1 cara=108,00) → Tenor=**5,00 m²/m³**.
+> - **Acero (barra "horquilla" Ø12 c/20):** la Clase 4 usa una longitud unitaria de **6,56 m** (con un desarrollo explícito: 0,4+0,2+0,4+2,6+0,2+2,6+2×10Ø) → 226×6,56×0,89×1,10=**1.451,4 kg**, dando un Total de acero=**2.239,2 kg** y Cuantía=**88,9 kg/m³**. La planilla oficial (abajo) usa L=6,28m → Total=**2.177,28 kg**, Cuantía=**86,4 kg/m³**.
+>
+> **Ambos son legítimos** (la planilla oficial es la que efectivamente se usó para calificar el examen real de 2020; la Clase 4 es la forma en que el equipo docente ACTUAL explica el mismo ejercicio en 2026, con el criterio de "encofrado a una sola cara continua, incluida la pata" que puede ser el que se espera aplicar en el examen de este año). **Ante esta discrepancia, priorizar el criterio de la Clase 4 (más reciente) si el examen no aclara el criterio de encofrado de la pata**, pero tener presente que una planilla oficial de examen real puede diferir. La resolución completa de abajo sigue la planilla oficial (para poder verificar cada paso); ver la nota de la Guía sección 1 con el detalle de ambos números.
+
 ## Enunciado resumido
 
 - **I. Metraje de Hormigón (25 pts):** volumen, cuantía de acero y tenor de encofrado de un muro de contención (croquis Anexo I): pata de fundación + muro vertical, longitud 45 m.
