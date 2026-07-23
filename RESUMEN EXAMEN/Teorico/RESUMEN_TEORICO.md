@@ -199,16 +199,29 @@ como pregunta suelta):
 
 ---
 
+## 8. Clasificación de costos: Fijos/Variables, Directos/Indirectos, por Naturaleza (Clase 8)
+
+**Costo Fijo:** independiente de que se ejecuten o no tareas, y del volumen de ejecución (ej. capataz, ingeniero, alquiler de oficina, UTE). **Costo Variable:** aumenta/disminuye en el mismo sentido que el volumen de tareas ejecutadas; si no se trabaja, no existe. **Relación práctica con Directo/Indirecto** (clasificación distinta, no siempre coincidente): mayoritariamente los Costos Directos son Variables y los Indirectos son Fijos, pero no es una regla absoluta — Directo/Indirecto depende de si el gasto se puede **imputar a una tarea** específica (y de qué tareas se listaron), mientras que Fijo/Variable depende de si **reacciona al volumen** de obra ejecutado. Ver tabla cruzada de ejemplos (mano de obra, equipos, materiales, varios) en la Guía sección 15.
+
+**Punto de Equilibrio:** volumen de producción a partir del cual los ingresos (venta) superan el costo total (fijo+variable) — por debajo, pérdida; por encima, beneficio (ver desarrollo completo en Guía sección 11).
+
+**Variante "ampliación/reducción del alcance de una obra" (apalancamiento operativo, 3ª forma):** cuando cambia la CANTIDAD de obra contratada (no el plazo ni un turno adicional), el Costo Variable escala proporcionalmente al cambio, el Costo Fijo NO cambia, y la Venta también escala proporcionalmente (mismos precios unitarios) — el margen mejora al ampliar y empeora al reducir, pudiendo llegar a pérdida. Ver el ejemplo numérico completo (ampliar 50%→margen 25,0%; reducir 50%→margen −8,3%, pérdida) en la Guía sección 11.
+
+**Clasificación de Costos por Naturaleza, 8 grupos formales:** Mano de Obra, Equipos, Materiales, Suministros (+subcontratos), Varios (gastos generales de obra, garantías/seguros, fletes, proyectos), Gastos Generales (de oficina central), Imprevistos (análisis/valoración de riesgos, no siempre considerados en obras chicas), Costos Financieros. Ver el detalle completo con qué insumos integran cada grupo en la Guía sección 15.
+
+---
+
 ## Clases ya resumidas
 - Clase 1 (Introducción/administrativa del curso — objetivos, metodología, cronograma del Trabajo Práctico; **sin contenido de examen**, solo logística del curso).
 - Clase 2 (Características históricas de la industria, obra pública/privada, TOCAF, tipos de contrato).
 - Clase 3, Clase 4 y Clase 7 (Metrajes de hormigones y albañilería — criterios de volumen, encofrado, armaduras, planilla tipo, valores de referencia de Tenor/Cuantía por elemento, dosificación de hormigones/morteros con tabla de Coef. de Aporte y Peso Específico, descuento de aberturas en muros, ejemplos resueltos incl. Marzo-2020 con discrepancia frente a la planilla oficial — ver sección 1).
 - Clase 5 (Presentación/logística del Trabajo Práctico — proyecto "Complejo Turístico Derrégibus"; **sin contenido de examen**).
 - Clase 6 (Movimiento de suelos — metraje de excavaciones a mano/a máquina, áreas mínimas de trabajo, coeficientes Ce/Cc/Ca formales en cadena de 3 pasos con tabla de valores por tipo de suelo — ver sección 7).
+- Clase 8 (Clasificación de costos — Fijos/Variables, Directos/Indirectos y su relación, apalancamiento operativo por ampliación/reducción de alcance, 8 grupos de Costos por Naturaleza — ver sección 8).
 - Clase 9 (Mano de obra — Ley 14.411, Convenio Colectivo, ítems del jornal, viáticos, aportes, Fondos Sociales).
 - Clase 19 (Riesgos, Garantías, Seguros).
 - Clase 20 (Programa Económico y Financiero de obra, elaboración y comparación de ofertas).
 - Equipos.pdf (Costo horario de equipos, movimiento de suelos con camiones).
 
 ## Clases pendientes (quedan para próximas corridas)
-Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.
+Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.

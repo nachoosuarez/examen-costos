@@ -391,6 +391,21 @@ enunciado diga explícitamente que el costo fijo también sube, como una campañ
 CF +10% (costo de la campaña) → `VT2−CT2 = 0,06·CV1+0,16·CF1 > 0` siempre (CV1,CF1>0) → **conviene
 en todos los casos**. Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 
+**Variante "ampliación/reducción del ALCANCE de una obra ya contratada" (Clase 8):** tercera forma de
+apalancamiento operativo (distinta de agregar un turno —Dic-2024— y de extender/reducir el PLAZO
+—Dic-2022/"Marzo"-2022—): acá lo que cambia es la **cantidad de obra** (metros², rubros) sobre el mismo
+contrato, manteniendo los mismos precios unitarios. Paso a paso: (1) el **Costo Variable/Directo escala
+proporcionalmente** al % de cambio de alcance; (2) el **Costo Fijo/Indirecto NO cambia** (por definición,
+es independiente del volumen ejecutado); (3) la **Venta también escala proporcionalmente** al % de
+cambio (mismos precios unitarios aplicados a la nueva cantidad); (4) el margen resultante = (Venta
+nueva−Costo nuevo)/Venta nueva. El resultado es el mismo patrón de apalancamiento ya visto: ampliar
+mejora el margen (los costos fijos se diluyen sobre más venta) y reducir lo empeora (pueden incluso
+generar pérdida) — más pronunciado cuanto mayor sea el peso relativo del costo fijo/indirecto en la
+obra original. Mini-ejemplo: obra base Costo=100 (CV=70, CF=30 fijo), Venta=120, margen=16,7%(+20).
+**Ampliada 50%:** CV=105, CF=30 (sin cambio), Costo=135, Venta=180 → margen=**25,0%** (+45).
+**Reducida 50%:** CV=35, CF=30 (sin cambio), Costo=65, Venta=60 → margen=**−8,3%** (−5, pérdida). Ver
+`CLASES TEORICAS/Clase 8 (2).pdf`, diapositiva 162.
+
 **Variante "hallar el precio para que el equilibrio se dé a un % dado de la capacidad"** (visto en
 Dic-2024): en vez de pedir el punto de equilibrio en unidades, dan CF, Cvu y una capacidad máxima, y
 piden el **precio unitario** tal que el equilibrio se alcance justo al X% de esa capacidad. Paso a paso:
@@ -748,6 +763,28 @@ alquilada); 4) **Suministros y Subcontratos** (provisiones/instalaciones a cargo
 **Costos Indirectos**: gastos no asignables a una tarea específica pero necesarios para la obra en su
 conjunto (dirección de obra, administración, obrador, seguros/garantías, gastos generales de empresa
 prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de Venta.
+
+**Clasificación formal en 8 grupos (Clase 8, más detallada):** 1) **Mano de Obra** (directa+indirecta+cargas
+sociales); 2) **Equipos** (propios+alquilados); 3) **Materiales**; 4) **Suministros** (suministros+
+subcontratos); 5) **Varios** (gastos generales de obra, garantías y seguros, fletes, proyectos, otros); 6)
+**Gastos Generales** (de oficina central, etc. — indirectos de la empresa, no de la obra puntual); 7)
+**Imprevistos** (análisis/valoración de riesgos — usualmente no se consideran en proyectos menores
+simples); 8) **Costos Financieros**. Los grupos 1-5 (salvo la parte de Gastos Generales de Obra) suelen
+ser Costos Directos; los grupos 5 (gastos generales de obra)-8 suelen ser Indirectos.
+
+**Costos Fijos vs. Variables (otra clasificación, ortogonal a Directo/Indirecto — Clase 8):** **Costo Fijo**
+= independiente de que se ejecuten o no tareas, y del volumen ejecutado (ej. capataz, ingeniero,
+alquiler de oficina, UTE). **Costo Variable** = aumenta/disminuye en el mismo sentido que el volumen de
+tareas ejecutadas; si no se trabaja, no existe (ej. oficial/peón a destajo u horas efectivamente
+trabajadas, cemento, arena, hierro consumidos). **Relación práctica (no es una regla absoluta, hay
+excepciones):** mayoritariamente los Costos **Directos son Variables** y los **Indirectos son Fijos** —
+pero la clasificación Directo/Indirecto depende de qué tareas se listaron (a qué tarea se puede imputar
+cada insumo), mientras que Fijo/Variable depende de si el gasto reacciona al volumen de obra. Tabla de
+ejemplo (Clase 8): Mano de Obra → oficial/peón = Directo+Variable; capataz/ingeniero/administrativo =
+Indirecto+Fijo. Equipos → retroexcavadora/camión volcador (afectados a una tarea) = Directo+Variable;
+auto de inspección/camioneta del capataz = Indirecto+Fijo. Materiales/Suministros de la obra propiamente
+dicha = Directo+Variable; materiales de instalaciones provisorias = Indirecto+Fijo. Alquiler de oficina, UTE
+= Indirecto+Fijo.
 
 ---
 
