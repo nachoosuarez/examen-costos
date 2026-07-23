@@ -39,6 +39,23 @@ Vol = 0,6×0,6×0,15×4 = 0,216 m³. Encof (lateral, 4 caras) = perímetro×altu
 
 **Variante "pilar de piso intermedio con espera de empalme"** (visto en Jul-2025): si el pilar está en un piso intermedio de un edificio de varios niveles, la longitud de cada barra debe incluir la **espera para empalmar con el nivel siguiente** (normalmente 50Φ), además del gancho si corresponde en la base. Un pilar de sección muy delgada (ej. 12cm de espesor) da un **tenor de encofrado más alto de lo típico** — no es un error, es esperable porque la relación superficie/volumen crece cuando una dimensión de la sección es chica; hay que decirlo explícitamente si el examen pregunta "¿es esperable el resultado?". Ver desarrollo completo en `Soluciones/202507 Ex Julio/`.
 
+**Variante "muro de contención monolítico en L" (base + pantalla vertical de hormigón armado, sin
+bloques)** (visto en Feb-2025): a diferencia de la variante con bloques (Dic-2025), acá todo el muro es
+hormigón armado macizo. Se separa en Base (zapata: ancho×espesor×longitud, apoya en el suelo →
+no se encofra la cara inferior, solo las 2 caras laterales) y Muro/pantalla (espesor×altura×longitud,
+elemento libre → se encofran ambas caras). La armadura tiene dos familias con lógica de conteo
+distinta: (a) barras **"longitudinales"** que corren a lo largo de toda la longitud del muro dentro de la
+sección transversal (espaciadas verticalmente cada "paso"; cantidad=redondeo hacia arriba(altura del
+elemento/paso)+1; si la longitud del muro supera los 12 m de la barra comercial, cada barra lleva 2
+empalmes de 50Φ por unidad de longitud continua); y (b) barras **"transversales"** que son la
+armadura propia del corte (leída directamente del plano de detalle, con su gancho/anclaje incluido),
+repetida cada "paso" a lo largo de toda la longitud del muro (cantidad=redondeo hacia
+arriba(longitud_muro/paso)+1, sin empalme porque cada barra individual es corta). Tenor y cuantía de
+un muro son notablemente más bajos que los de una losa (aquí 3,13 m²/m³ y 60,31 kg/m³, contra
+6,67/167,20 de una losa) — es esperable, un elemento macizo tiene menos superficie de encofrado
+relativa a su volumen y menos densidad de armado. Ver desarrollo completo en `Soluciones/202502 Ex
+Febrero/`.
+
 **Variante "losa continua de varios paños, doble capa de armado"** (visto en Marzo-2025): cuando el plano muestra **dos capas de armadura** — una de "fondo" (F, positiva, recorre todo el vano en ambas direcciones) y una "de arriba" (A, negativa, refuerzo corto solo sobre los apoyos) — la capa negativa suele estar **duplicada** (una franja junto a cada uno de los dos apoyos de la losa), lo que se ve en la planilla como el doble de barras de lo que daría `ceil(tramo/paso)+1` para una sola franja. Esto es normal en losas continuas con momento negativo importante y produce una **cuantía de acero más alta que en una losa de un solo paño simplemente apoyada** (aquí 167 kg/m³ contra un rango típico de 80-120 kg/m³) — no es error, hay que justificarlo por la doble capa. Para leer las cotas del vano libre en plantas con dimensiones acumuladas ("cotas corridas"): el vano libre entre ejes de viga = diferencia entre la cota mayor y la cota menor de la línea de cotas paralela a esa dirección (ej. 8,53−0,43=8,10 m). Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 
 ---
@@ -98,6 +115,16 @@ Vol = 0,6×0,6×0,15×4 = 0,216 m³. Encof (lateral, 4 caras) = perímetro×altu
 **Errores comunes:** no mezclar U$D y $ sin convertir explícitamente con el tipo de cambio dado; H bajo (equipo poco usado) dispara la amortización/seguro/patente por hora — es un resultado esperado, no un error (ilustra por qué conviene alquilar equipos de uso esporádico en vez de comprarlos).
 
 **Mini-ejemplo (Ene-2026, retroexcavadora combinada):** VN=50.000 U$D, VR=15.000 U$D, n=5, H=180 h/año → VU=900h. Amortización=(50.000-15.000)/900=38,89 U$D/h. Con 1U$D=38,5$ → 1.497,2 $/h. Ver desarrollo completo en `Soluciones/202601 Examen Enero 2026/`.
+
+**Variante "fórmula del interés horario sobre capital medio"** (visto en Feb-2025): en vez de dar
+directamente "costo financiero = (VN-VR)/2 × i / horas" (forma simplificada de la sección de arriba), a
+veces el examen da la fórmula exacta del interés sobre saldo con depreciación lineal:
+`IH = [(n+1)·VN + (n-1)·VR] / (2n) · i / (horas trabajadas por año)`. Da el mismo tipo de resultado
+(interés sobre el capital medio invertido) pero con una expresión algebraica distinta — usar la fórmula
+que dé el enunciado, no memorizar una sola. Mini-ejemplo: VN=100.000, VR=20.000, n=5, i=6%,
+2.880 h/año → capital medio=[(6×100.000)+(4×20.000)]/10=68.000 → IH=68.000×0,06/2.880=**1,42
+U$S/h**. Ver desarrollo completo (incluye también mantenimiento con tasa creciente por año, promediada
+a 5 años) en `Soluciones/202502 Ex Febrero/`.
 
 ---
 
@@ -285,5 +312,6 @@ en todos los casos**. Ver desarrollo completo en `Soluciones/202503 Ex Marzo/`.
 - Dic-2025: Metraje muro de contención con bloques, consumos+dosificación de hormigón, fórmula paramétrica, costo horario de obrero, garantías con perfil temporal, suministros/INCOTERMS.
 - Jul-2025: Metraje de pilar con espera de empalme, dosificación de hormigón (método detallado para sacar la relación volumétrica agua/cemento), costo financiero/VNA, movimiento de suelos (viajes de camión), TOCAF/tipos de contrato, consumo unitario vs. rendimiento, Convenio Colectivo/Fondos Sociales.
 - Marzo-2025: Metraje de losa continua con doble capa de armado (fondo + refuerzo negativo duplicado sobre apoyos), dosificación de hormigón, fórmula paramétrica (criterio para Gastos Indirectos+Beneficio), punto de equilibrio (caso "conviene el cambio"), VNA/TIR (obra vs. inversión), suministros.
+- Feb-2025: Metraje de muro de contención monolítico en L (base+pantalla, armado longitudinal+transversal), dosificación de hormigón, costo de equipo (retroexcavadora, fórmula de interés sobre capital medio) + costo directo de excavación, seguros de obra, régimen salarial/Convenio Colectivo/mercado de la construcción, Estado Económico vs. Financiero de una obra.
 
 **Pendiente para próximas corridas:** metraje de losas con planilla de armado en "cruz" (notación Φ/paso sin legend clara — ver examen Ene-2026 parte I), más variantes de metraje (tanques, escaleras, zapatas aisladas) a medida que aparezcan en exámenes más viejos.

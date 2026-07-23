@@ -4,16 +4,18 @@
 
 | Tema | Exámenes en que apareció (hasta ahora) | Frecuencia |
 |---|---|---|
-| Metraje de hormigón (losas/vigas/muros/pilares) | Ene-2026, Dic-2025, Jul-2025 | 3/3 |
-| Consumos unitarios + dosificación de hormigón | Ene-2026, Dic-2025, Jul-2025 | 3/3 |
-| Mano de obra / Ley 14.411 / Convenio Colectivo | Ene-2026, Dic-2025, Jul-2025 | 3/3 |
-| Licitaciones (TOCAF, tipos de contrato) | Ene-2026, Jul-2025 | 2/3 |
-| Costo de equipos | Ene-2026 | 1/3 |
-| Garantías y Seguros | Ene-2026, Dic-2025 | 2/3 |
-| Fórmulas paramétricas | Dic-2025 | 1/3 |
-| Costo Financiero / VNA | Jul-2025 | 1/3 |
-| Movimiento de suelos | Jul-2025 | 1/3 |
-| Suministros / INCOTERMS | Dic-2025 | 1/3 |
+| Metraje de hormigón (losas/vigas/muros/pilares) | Ene-2026, Dic-2025, Jul-2025, Marzo-2025, Feb-2025 | 5/5 |
+| Consumos unitarios + dosificación de hormigón | Ene-2026, Dic-2025, Jul-2025, Marzo-2025, Feb-2025 | 5/5 |
+| Mano de obra / Ley 14.411 / Convenio Colectivo | Ene-2026, Dic-2025, Jul-2025, Feb-2025 | 4/5 |
+| Costo de equipos | Ene-2026, Feb-2025 | 2/5 |
+| Garantías y Seguros | Ene-2026, Dic-2025, Feb-2025 | 3/5 |
+| Licitaciones (TOCAF, tipos de contrato) | Ene-2026, Jul-2025 | 2/5 |
+| Fórmulas paramétricas | Dic-2025, Marzo-2025 | 2/5 |
+| Costo Financiero / VNA | Jul-2025, Marzo-2025(conceptual) | 2/5 |
+| Movimiento de suelos | Jul-2025 | 1/5 |
+| Suministros / INCOTERMS | Dic-2025, Marzo-2025 | 2/5 |
+| Punto de equilibrio / costos fijos-variables | Marzo-2025 | 1/5 |
+| Estado Económico y Financiero de la obra (Clase 20) | Feb-2025 | 1/5 |
 
 *(Se irá completando a medida que se resuelvan más exámenes — objetivo: que esta tabla diga qué estudiar primero.)*
 
@@ -118,12 +120,61 @@ Aportes patronales de referencia: FSC/FOCAP 1,2691%, FOSVOC 0,025%, FOCER 5,00% 
 
 ---
 
+## 6. Programa Económico y Financiero de una Obra (Clase 20)
+
+**Estado Económico** = `Ventas − Costos = Utilidad`. Mide la **rentabilidad** del negocio en su conjunto,
+sin importar cuándo ocurren los cobros/pagos. Objetivo: **economicidad/viabilidad económica** (utilidad
+positiva) — el punto de equilibrio solo no alcanza, hace falta ver el margen/beneficio real.
+
+**Estado Financiero** = `Ingresos − Egresos = Disponibilidad`. Mide si hay **caja suficiente en todo
+momento** durante la obra (estudio del flujo de dinero en el tiempo). Objetivo: **viabilidad
+financiera/equilibrio financiero**. De acá surge el **Costo Financiero**: interés sobre el capital que la
+empresa debe adelantar mientras espera cobrar (por el desfasaje entre cuándo paga insumos/mano de
+obra y cuándo cobra los certificados).
+
+**Cómo se arma el ejemplo tipo (ver mini-ejemplo numérico completo en `Soluciones/202502 Ex
+Febrero/`):**
+1. Resumen de insumos (Mano de Obra, Equipos, Materiales, Suministros y Subcontratos, Varios) con
+   su costo total e incidencia %, más Costo Indirecto y Beneficio (%s/venta) → Venta Total (pasaje de
+   costo a venta = 1/(1−%beneficio)).
+2. Cronograma físico de avance por rubro y por mes (% de avance de cada rubro en cada mes, suma
+   100% por rubro) → Previsión de Costos por mes (costo total del rubro × % de avance de ese mes) y
+   Previsión de Ventas Mensuales (venta total del rubro × % de avance) → **Estado Económico Mensual**
+   (Utilidad = Venta−Costo de cada mes, y su acumulado, que converge al beneficio total).
+3. **Flujo de Fondos Mensual**: cada insumo se cobra/paga con su propio desfasaje (ej. Mano de Obra
+   50% en el mes, 50% al mes siguiente; Equipos y Materiales a 30 días; Suministros a 60 días;
+   Ingresos de venta a 60 días) → Flujo de Fondos sin Costo Financiero y su acumulado (puede dar
+   negativo en los primeros meses → necesidad de financiación).
+4. **Costo Financiero** = interés mensual (`i_mensual=(1+I_anual)^(1/12)-1`) aplicado sobre el saldo
+   acumulado negativo de cada mes → se resta del flujo de fondos, dando el Beneficio real (algo menor
+   al 15% "de catálogo", en el ejemplo del curso 15,00%→14,46%). También se puede calcular
+   actualizando todo el flujo a valor presente: `Margen = VNA(Cobros−Pagos)/VNA(Cobros)`.
+5. **Un anticipo del cliente al inicio de la obra reduce fuertemente la necesidad de financiación** (en el
+   ejemplo del curso, con 20% de anticipo el costo financiero baja de 0,54% a 0,03% de la venta) —
+   acerca la obra a la "autofinanciación".
+
+**Elaboración y comparación de ofertas** (Clase 20, segunda mitad — teórico corto, puede aparecer
+como pregunta suelta):
+- Proceso: Oportunidades → Selección → Viabilidad Económica/Contractual/Técnica → Oferta → Contrato.
+- **Precalificación** (obra pública/grandes obras): etapa previa donde se evalúa capacidad técnica,
+  económica-financiera y legal de las empresas interesadas, para admitir solo a las habilitadas a ofertar.
+- Contenido de una oferta: carta de presentación, memoria, cumplimiento del pliego, propuesta
+  económica, resumen ejecutivo, documentación complementaria.
+- **Criterios de comparación de ofertas** (deben fijarse ANTES de abrir las ofertas y no modificarse
+  después): precio, plazo de ejecución, flujo financiero (VNA de los pagos), proyecto (si está a cargo
+  del oferente), personal y equipos, calidad de materiales, rendimientos, antecedentes/capacidad de
+  la empresa. Mejor no considerar un criterio que considerarlo mal; en licitación pública, las
+  aclaraciones solicitadas a un oferente no pueden usarse para que modifique/ajuste su oferta.
+
+---
+
 ## Clases ya resumidas
 - Clase 2 (Características históricas de la industria, obra pública/privada, TOCAF, tipos de contrato).
 - Clase 3 (Metrajes de hormigones — criterios de volumen, encofrado, armaduras, planilla tipo).
 - Clase 9 (Mano de obra — Ley 14.411, Convenio Colectivo, ítems del jornal, viáticos, aportes, Fondos Sociales).
 - Clase 19 (Riesgos, Garantías, Seguros).
+- Clase 20 (Programa Económico y Financiero de obra, elaboración y comparación de ofertas).
 - Equipos.pdf (Costo horario de equipos, movimiento de suelos con camiones).
 
 ## Clases pendientes (quedan para próximas corridas)
-Clase 1, Clase 4, Clase 5, Clase 6, Clase 7, Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 20 (Programa Económico y Financiero de obra), Clase 21 (Estudio Comparativo de Ofertas), Clase 23.
+Clase 1, Clase 4, Clase 5, Clase 6, Clase 7, Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.
