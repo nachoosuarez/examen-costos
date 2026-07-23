@@ -9,8 +9,8 @@
 6. **Diciembre 2019** trajo 3 tipos **NUEVOS**: en Metraje, un muro de contención en **panel aislado** (no continuo) donde se encofra el **perímetro completo** (2 caras + 2 extremos), a diferencia del muro "por trincheras" de Marzo-2020 que solo encofra 1 cara; en Garantías, Leyes Sociales dadas como **monto fijo**; y en teoría de VNA/TIR, **TIR=0%** cuando el flujo acumulado sin descontar da 0, y **TIR indefinida** cuando nunca hay un período con flujo neto negativo. Ver Guía secciones 1, 7 y 12.
 7. **Febrero 2020** trajo un tipo **NUEVO** en Punto de Equilibrio: la variante inversa a la de Dic-2024 — hallar el % de reducción del costo fijo necesario para DESPLAZAR el equilibrio de un % de capacidad a otro (manteniendo precio y costo variable fijos), directamente proporcional: `CF_nuevo=CF×(Q_objetivo/Q_original)`. Ver Guía sección 11.
 8. **Marzo 2020** trajo dos tipos **NUEVOS**: un muro de contención en "horquilla" (pata+pantalla en una sola barra doblada) con encofrado a una sola cara (trincheras), y un anticipo con devolución escalonada en 4 tramos discretos. Ver Guía secciones 1, 7 y 12.
-9. El resumen teórico cubre **9 clases** (Clase 1, 2, 3, 4, 5, 6, 9, 19, 20) + Equipos.pdf (Clase 1 y 5 son administrativas, sin contenido de examen); quedan 8 clases con contenido por revisar (Clase 7, 8, 11, 12, 17, 18, 21, 23) — **esta sigue siendo la prioridad #1**, ya que los exámenes están agotados.
-10. Prioridad para la próxima corrida: seguir enriqueciendo el resumen teórico con las clases pendientes (Clase 7, 8, 11, 12, 17, 18, 21, 23 — revisar siempre si trae ejemplos resueltos de exámenes reales, como pasó con Clase 4 y Clase 6, y comparar contra la solución oficial correspondiente si la hay, para detectar discrepancias como la de Marzo-2020 arriba); si se agotan las clases, pulir/revisar la guía de ejercicios tipo de punta a punta buscando inconsistencias o huecos, y reintentar Enero 2026 Parte I/II con la clave de la planilla en "cruz" ya decodificada (aunque sin solución oficial para verificar, se puede al menos dejar una resolución razonada).
+9. El resumen teórico cubre **11 clases** (Clase 1, 2, 3, 4, 5, 6, 7, 8, 9, 19, 20) + Equipos.pdf (Clase 1 y 5 son administrativas, sin contenido de examen); quedan 6 clases con contenido por revisar (Clase 11, 12, 17, 18, 21, 23) — **esta sigue siendo la prioridad #1**, ya que los exámenes están agotados. Clase 7 sumó una tabla de referencia de Coeficiente de Aporte/Peso Específico por material y el criterio de descuento de aberturas en muros (Guía sección 3); Clase 8 sumó la clasificación formal de costos (Fijos/Variables, 8 grupos por Naturaleza) y una 3ª variante de apalancamiento operativo por ampliación/reducción del ALCANCE de la obra (Guía secciones 11 y 15).
+10. Prioridad para la próxima corrida: seguir enriqueciendo el resumen teórico con las clases pendientes (Clase 11, 12, 17, 18, 21, 23 — revisar siempre si trae ejemplos resueltos de exámenes reales, como pasó con Clase 4 y Clase 6, y comparar contra la solución oficial correspondiente si la hay, para detectar discrepancias como la de Marzo-2020 arriba); si se agotan las clases, pulir/revisar la guía de ejercicios tipo de punta a punta buscando inconsistencias o huecos, y reintentar Enero 2026 Parte I/II con la clave de la planilla en "cruz" ya decodificada (aunque sin solución oficial para verificar, se puede al menos dejar una resolución razonada).
 
 ## Exámenes — estado (del más nuevo al más viejo)
 
@@ -43,9 +43,9 @@
 
 ## Clases teóricas — resumidas vs. pendientes
 
-**Resumidas:** Clase 1 (administrativa), Clase 2, Clase 3, Clase 4, Clase 5 (administrativa), Clase 6, Clase 9, Clase 19, Clase 20, Equipos.pdf.
+**Resumidas:** Clase 1 (administrativa), Clase 2, Clase 3, Clase 4, Clase 5 (administrativa), Clase 6, Clase 7, Clase 8, Clase 9, Clase 19, Clase 20, Equipos.pdf.
 
-**Pendientes:** Clase 7, Clase 8, Clase 11, Clase 12, Clase 17, Clase 18, Clase 21, Clase 23.
+**Pendientes:** Clase 11, Clase 12, Clase 17, Clase 18, Clase 21, Clase 23.
 
 ## Tipos de ejercicio ya cubiertos en la guía
 1. Metraje de hormigón armado (losas simples/con doble capa/angostas, vigas, pilares, zapatas, muros con bloques, muros monolíticos en L).
