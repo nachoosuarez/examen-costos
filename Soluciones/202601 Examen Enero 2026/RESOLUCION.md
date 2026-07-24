@@ -4,33 +4,111 @@ No hay solución oficial en el repositorio para este examen (es el más nuevo). 
 
 ---
 
-## I – Metraje (20 pts) — **PENDIENTE / parcial**
+## I – Metraje (20 pts) — **RESUELTO CON SUPUESTOS EXPLÍCITOS** (sin solución oficial para verificar)
 
-El Anexo 1 muestra una planta con Losa 1 y Losa 2 (apoyadas en vigas V151 a V158, V112, V115, V118, V121 y pilares P51/P52/P60/P61/P68/P69) más una planilla de armado de vigas (V151 a V155).
+**⚠️ Nivel de confianza, léase antes de usar estos números para estudiar:**
+- **Alto:** geometría (vanos de losas y longitud de vigas) — se validó por dar números redondos "limpios" (6,00m / 4,80m / 4,00m) al aplicar el método de decodificación de cotas explicado abajo, lo cual es una fuerte señal de que la lectura es correcta.
+- **Alto:** volumen/encofrado/tenor de Vigas 152 y 153 (no dependen del espesor de losa, que es el único dato faltante).
+- **Medio-alto:** decodificación de la notación en "cruz" del armado de losa (extiende un patrón ya confirmado contra planillas oficiales en Feb-2024/Jul-2022, con un número extra sin explicar — ver abajo).
+- **Medio:** kg de acero de vigas (arranque/gancho de las barras "A"/"E" y la lectura exacta del bastón "F der" son una interpretación razonable de la planilla de armado, no 100% verificable sin la solución oficial).
+- **Bajo / con supuesto fuerte:** volumen y tenor de las LOSAS, y cuantía de acero — el plano **no trae el espesor de la losa en ningún lado** (se revisó el Anexo 1 completo, el enunciado y la planilla de vigas; no hay ninguna nota "e=..."). Se usa un espesor ilustrativo de 0,15 m solo para dar un número completo — **reemplazar por el valor correcto en cuanto se consiga** (ej. de los apuntes de clase o preguntando).
 
-**Lo que se puede afirmar con certeza del plano:**
-- Vigas 152 y 153: sección 20x55 (b=20cm, h=55cm) para ambas.
-- Planilla de hierros de vigas (armadura inferior "A", superior "E", bastón "F der", estribos):
-  - V152: A = 2Φ12, E = 2Φ20+1Φ16, estribos Φ8/25.
-  - V153: A = 2Φ16, E = 2Φ10, F der = 2Φ12 (long. 120/120), estribos Φ8/25.
-- Losa 1 y Losa 2: armadura de base (mostrada en cruces al centro de cada paño) con diámetros Φ8/Φ6 y separaciones 15/18/20 cm, más refuerzos superiores sobre apoyos indicados como "F:1Φ8/18", "F:1Φ10/20", "F:1Φ10/16" con tramos de 80/100 cm.
-- Reglas generales a aplicar (de "Aclaraciones sobre errores comunes"): volumen de losa entre vigas (sin incluir vigas), encofrado de losa solo cara inferior fuera de vigas, cantidad de barras = redondear.hacia arriba(tramo/paso)+1, ganchos 10Φ donde no se especifican, empalmes 50Φ, varillas de 12 m.
+### Decodificación de las cotas del plano (método nuevo, no visto en exámenes anteriores)
 
-**Por qué queda pendiente:** para completar a)/c)/d)/e)/f) hace falta decodificar las cotas acumuladas del plano (pares de números como 4065,9/4005,9; 1108,7/1088,7; 608,7/588,7; 188,7/168,7; 3400,5/3380,5; 3371,4/3281,4, etc.) que fijan los tramos exactos de losas y vigas, y para b) la notación en cruz de armado de losa (Φ8 arriba, Φ8 a la izquierda, caja con "15|20", "18" abajo) no tiene un legend explícito en el repo (se revisaron todas las Clases Teóricas y los exámenes con solución anteriores sin encontrar la misma convención). Antes de dar un número en negrita se prefiere dejarlo marcado como pendiente a resolver con más tiempo/una consulta al legajo del curso, en vez de arriesgar un resultado engañoso para el estudio.
+El Anexo 1 usa un sistema de **cotas acumuladas** (no cotas de tramo): cada línea de referencia (vertical u horizontal) tiene escrito, una sola vez a lo largo de toda su longitud, un número que es su posición en un eje de coordenadas del proyecto (parecido a un replanteo topográfico), **no** la distancia a la línea vecina. Para obtener cualquier distancia hay que **restar dos cotas de la misma familia de líneas**.
 
-**Próximo paso sugerido:** releer el Anexo 1 a alta resolución tramo por tramo (los pares de cotas probablemente son "cara de columna" vs "eje de columna" o "inicio/fin de barra"), y si es posible, contrastar la notación de la cruz de armado con el docente o con un ejemplo de clase que la explique.
+Se identificaron dos "familias" superpuestas en cada columna de líneas verticales: una junto a cada **pilar** (da el ancho del pilar) y otra junto al **tramo de viga** entre pilares (da el ancho de la viga) — por eso a veces se repite un par de números idéntico en varios pilares de la misma línea (P51/P60/P68 comparten sección 60x20, entonces los 3 repiten "4065,9 / 4005,9", Δ=60,0 ✓) y aparece un par distinto a lo largo del tramo de viga entre ellos ("4020,5 / 4000,5", Δ=20,0 ✓, coincide con el ancho de V153/V152).
+
+**Verificación cruzada (todas las Δ dan exactamente el ancho conocido del elemento, buena señal de que la lectura es correcta):**
+
+| Par de cotas | Δ | Elemento que confirma |
+|---|---|---|
+| 4065,9 / 4005,9 (junto a P51, P60, P68) | 60,0 | Ancho de pilar P51/P60/P68 (60x20) |
+| 4020,5 / 4000,5 (tramo de V153, V152) | 20,0 | Ancho de viga V153/V152 (20x55) |
+| 1108,7 / 1088,7 (junto a P51/V112) | 20,0 | Ancho de viga V112 (20x55) |
+| 608,7 / 588,7 (junto a V115) | 20,0 | Ancho de viga V115 (20x55) |
+| 188,7 / 168,7 (junto a V118) | 20,0 | Ancho de viga V118 (20x55) |
+| 3400,5 / 3370,5 (junto a P52) | 30,0 | Ancho de pilar P52 (30x90) |
+| 3400,5 / 3380,5 (tramo de V158, V157) | 20,0 | Ancho de viga V158/V157 (20x55) |
+| 3371,4 / 3281,4 (junto a P61/P69) | 90,0 | Ancho de pilar P61 (90x20) / P69 (90x35) |
+
+**Vano libre de cada losa = diferencia entre la cota de la cara de viga más cercana al paño, en cada dirección** (usando las cotas de tramo de viga, no las de pilar, porque son las que realmente delimitan el paño de losa):
+- Dirección X (ancho, Este-Oeste): cara este de V153/V152 (4000,5) − cara oeste de V158/V157 (3400,5) = **600,0 cm = 6,00 m** (igual para Losa 1 y Losa 2, comparten la misma línea de pilares).
+- Dirección Y (largo, Norte-Sur) Losa 1: cara sur de V112 (1088,7) − cara norte de V115 (608,7) = **480,0 cm = 4,80 m**.
+- Dirección Y Losa 2: cara sur de V115 (588,7) − cara norte de V118 (188,7) = **400,0 cm = 4,00 m**.
+
+*(Los tres resultados dan exactos en centímetros, sin decimales sueltos — a pesar de que las cotas originales sí tienen decimales — lo cual es una validación fuerte de que el método de lectura es el correcto.)*
+
+**Áreas:** Losa 1 = 6,00×4,80 = **28,80 m²**. Losa 2 = 6,00×4,00 = **24,00 m²**.
+
+**Longitud de Vigas 152 y 153** (edge beams del lado Oeste, apoyadas en V112/V115/V118 igual que la losa que bordean): V153 (borde oeste de Losa 1) = 4,80 m. V152 (borde oeste de Losa 2) = 4,00 m — mismas longitudes que el vano Y de la losa que bordean, porque están acotadas por los mismos ejes V112/V115/V118.
+
+### d), e), f) — Vigas 152 y 153 (20x55, b=0,20m h=0,55m)
+
+Datos de armado tomados de la planilla de vigas del Anexo 1 (página aparte del examen): V152 → A(inferior)=2Φ12, E(superior)=2Φ20+1Φ16, estribos Φ8/25. V153 → A=2Φ16, E=2Φ10, F der(bastón)=2Φ12 (long. 120/120), estribos Φ8/25. **Supuesto:** barras A/E se consideran de largo=longitud de viga + 2×gancho 10Φ en cada extremo (no se especifica en la planilla si continúan a otro tramo); estribos con gancho de cierre 2×10Φ8; F der tratado como bastón de 2,40m total (120+120cm) por barra.
+
+| Viga | L (m) | Vol (m³) | Encof (m²) | Tenor (m²/m³) |
+|---|---|---|---|---|
+| V152 | 4,00 | **0,440** | **5,20** | **11,82** |
+| V153 | 4,80 | **0,528** | **6,24** | **11,82** |
+
+*(Encof=(b+2h)×L, viga suspendida con las 2 caras laterales + cara inferior encofradas, cara superior libre para hormigonar; Tenor dentro del rango típico de vigas 8-12 m²/m³ ✓.)*
+
+**Acero (kg, por diámetro):**
+
+| Viga | Φ8 (estribos) | Φ10 | Φ12 | Φ16 | Φ20 | Total |
+|---|---|---|---|---|---|---|
+| V152 | 11,56 | — | 8,30 | 7,85 | 25,00 | **52,71 kg** |
+| V153 | 14,28 | 6,82 | 4,70 | 18,61 | — | **44,40 kg** |
+
+### b) Decodificación de la notación en "cruz" del armado de losa
+
+El símbolo al centro de cada paño tiene forma `Φ(arriba) / Φ(izq.) [caja: nº1] nº2 / nº3(abajo)`. Ej. Losa 1: `Φ8 arriba / Φ8 izq. — [15] 20 / 18 abajo`; Losa 2: `Φ8 arriba / Φ6 izq. — [15] 18 / 18 abajo`.
+
+Extiende el patrón ya confirmado contra planilla oficial en Feb-2024/Jul-2022 (ver Guía sección 1): **diámetro de ARRIBA + paso de ABAJO** = una familia de barras (acá siempre Φ8/18 en las 3 losas del plano); **diámetro de IZQUIERDA + paso ENCERRADO EN LA CAJA** = la otra familia. El número que queda SUELTO fuera de la caja (20 en Losa 1, 18 en Losa 2) **no se pudo explicar** — mismo fenómeno ya documentado en Feb-2024 (ahí sobraba un "16" sin poder emparejarlo con nada de la planilla oficial), así que se lo descarta siguiendo el mismo criterio que validó ese examen.
+
+Con esa lectura: Losa 1 → familia "arriba" Φ8/paso 0,18m (barras corriendo Este-Oeste, largo=vano X=6,00m); familia "izquierda" Φ8/paso 0,15m (barras Norte-Sur, largo=vano Y=4,80m). Losa 2 → familia "arriba" Φ8/0,18m (E-O, largo 6,00m); familia "izquierda" Φ6/0,15m (N-S, largo 4,00m).
+
+Además el plano trae refuerzo negativo explícito (sin ambigüedad, rotulado directo) sobre los 3 ejes de viga: **F:1Φ8/18** sobre V112 (tramo 0,80m hacia el interior de Losa 1) y **F:1Φ10/20** sobre V115 y V118 (tramo 1,00m hacia cada losa adyacente).
+
+**a) Volumen y c) Tenor de encofrado (dependen del espesor "e", NO dado en el plano):**
+
+`Vol = Área × e`. Losa contenida por vigas en los 4 lados (igual que Feb-2024/Dic-2024) → **Tenor = 1/e** (atajo, Encof=Área directamente sin necesidad de e). Encofrado: Losa 1 = 28,80 m²; Losa 2 = 24,00 m².
+
+Con un espesor **ilustrativo e=0,15m** (supuesto, no dado — ajustar si se consigue el valor real):
+
+| Losa | Área (m²) | Vol (m³, e=0,15) | Encof (m²) | Tenor (m²/m³) |
+|---|---|---|---|---|
+| Losa 1 | 28,80 | 4,32 | 28,80 | 6,67 |
+| Losa 2 | 24,00 | 3,60 | 24,00 | 6,67 |
+
+**b) Acero (kg), cruz + refuerzo negativo F:**
+
+| Losa | Φ6 | Φ8 | Φ10 | Total |
+|---|---|---|---|---|
+| Losa 1 | — | 149,39 (cruz) + 12,61 (F/V112) = **162,00** | 23,26 (F/V115) | **185,26 kg** |
+| Losa 2 | 37,88 (cruz) | 58,97 (cruz) | 23,26 (F/V115) + 23,26 (F/V118) = **46,51** | **143,36 kg** |
+
+*(Cuantía con e=0,15 ilustrativo: Losa 1 ≈ 185,26/4,32 = 42,9 kg/m³; Losa 2 ≈ 143,36/3,60 = 39,8 kg/m³ — algo por debajo del rango típico 60-80 kg/m³ de la tabla de referencia, coherente con ser una losa de vanos grandes (6,00m) con armado relativamente espaciado (15-20cm); si el espesor real fuera menor a 0,15m la cuantía subiría proporcionalmente.)*
 
 ---
 
-## II – Consumos — **PENDIENTE** (depende de los metrajes de I)
+## II – Consumos (10 pts) — **RESUELTO** (usa los mismos supuestos/espesor ilustrativo de la Parte I)
 
-La receta general (ver Guía de ejercicios tipo → "Consumos unitarios de hormigón armado") es:
-- Mano de obra (hs/m³) = 1×(hs/m³ pasta) + tenor×(hs/m² encofrado) + cuantía×(hs/kg hierro), por oficio.
-- Hormigón (m³/m³) = 1×(1+desperdicio%).
-- Hierro (kg/m³) = cuantía (kg hierro / m³ hormigón).
-- Chapón fenólico (unid/m³) = (tenor×(1+desperdicio%)) / (área_unitaria × reúsos).
+Fórmulas (ver Guía → "Consumos unitarios de hormigón armado"): Mano de obra (hs/m³)=1×(hs/m³ pasta)+tenor×(hs/m² encof)+cuantía×(hs/kg hierro); Hormigón (m³/m³)=1×(1+5%); Hierro (kg/m³)=cuantía; Chapón fenólico (unid/m³)=(tenor×(1+15%))/(1,22×2,44×7).
 
-Con los datos de mano de obra dados (Losa: pasta 1,50 Of.Carp / 3,00 Ayud hs/m³; encofrado 0,80/0,80 hs/m²; hierro 0,04/0,04 hs/kg — Viga: pasta 2,00/3,50; encofrado 1,10/1,10; hierro 0,04/0,04) y chapón fenólico 1,22m x 2,44m, desperdicio 15%, reúsos 7, esto se resuelve en cuanto se tenga el tenor y la cuantía de Losas/Vigas de la parte I.
+Usando los valores **combinados** (Losa 1+Losa 2 juntas, y V152+V153 juntas, ya que la planilla de mano de obra del enunciado da un solo consumo genérico "Losa"/"Viga", no por elemento individual): Losa combinada → Vol=7,92 m³ (e=0,15 ilustrativo), Tenor=6,67 m²/m³, Cuantía≈41,5 kg/m³. Viga combinada → Vol=0,968 m³, Tenor=11,82 m²/m³, Cuantía≈100,3 kg/m³.
+
+| Insumo | Cálculo Losa | Losa | Cálculo Viga | Viga |
+|---|---|---|---|---|
+| Of. Carpintero (hs/m³) | 1,50×1 + 0,80×6,67 | **6,84** | 2,00×1 + 1,10×11,82 | **15,00** |
+| Ayudante (hs/m³) | 3,00×1 + 0,80×6,67 + 0,04×41,5 | **10,00** | 3,50×1 + 1,10×11,82 + 0,04×100,3 | **20,51** |
+| Of. Herrero (hs/m³) | 0,04×41,5 | **1,66** | 0,04×100,3 | **4,01** |
+| Hormigón premezclado (m³/m³) | 1×1,05 | **1,05** | 1×1,05 | **1,05** |
+| Acero (kg/m³) | =cuantía | **41,5** | =cuantía | **100,3** |
+| Chapón fenólico (unid/m³) | (6,67×1,15)/(2,9768×7) | **0,367** | (11,82×1,15)/(2,9768×7) | **0,650** |
+
+*(Estos valores heredan la incertidumbre del espesor ilustrativo de la Parte I — recalcular con el espesor real en cuanto se consiga; el resto de la receta no cambia.)*
 
 ---
 
