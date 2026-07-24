@@ -1,24 +1,29 @@
 # Resumen Teórico — Costos (ingeniería de costos de obra)
 
-## Índice de temas por frecuencia en exámenes (se actualiza con cada examen resuelto)
+## Índice de temas por frecuencia en exámenes (recalculado sobre los 24 exámenes 2019-2026, cobertura completa)
 
-| Tema | Exámenes en que apareció (hasta ahora) | Frecuencia |
+**Metodología:** conteo por búsqueda de palabras clave sobre los 24 `Soluciones/<examen>/RESOLUCION.md`, verificado a mano en los casos ambiguos (ej. "Metraje" de Dic-2022 es en realidad movimiento de suelos, no hormigón — se contó en la categoría correcta). Ordenado de mayor a menor frecuencia: **estudiar primero lo de arriba**.
+
+| Tema | Frecuencia | Sección de la Guía |
 |---|---|---|
-| Metraje de hormigón (losas/vigas/muros/pilares) | Ene-2026, Dic-2025, Jul-2025, Marzo-2025, Feb-2025, Dic-2024 | 6/6 |
-| Consumos unitarios + dosificación de hormigón | Ene-2026, Dic-2025, Jul-2025, Marzo-2025, Feb-2025, Dic-2024 | 6/6 |
-| Mano de obra / Ley 14.411 / Convenio Colectivo | Ene-2026, Dic-2025, Jul-2025, Feb-2025 | 4/6 |
-| Garantías y Seguros | Ene-2026, Dic-2025, Feb-2025, Dic-2024 | 4/6 |
-| Punto de equilibrio / costos fijos-variables | Marzo-2025, Dic-2024 | 2/6 |
-| Costo de equipos | Ene-2026, Feb-2025 | 2/6 |
-| Licitaciones (TOCAF, tipos de contrato) | Ene-2026, Jul-2025 | 2/6 |
-| Fórmulas paramétricas | Dic-2025, Marzo-2025, Dic-2024(conceptual) | 3/6 |
-| Costo Financiero / VNA | Jul-2025, Marzo-2025(conceptual) | 2/6 |
-| Movimiento de suelos | Jul-2025, Dic-2024(conceptual) | 2/6 |
-| Suministros / INCOTERMS | Dic-2025, Marzo-2025 | 2/6 |
-| Estado Económico y Financiero de la obra (Clase 20) | Feb-2025 | 1/6 |
-| Clasificación de costos por naturaleza | Dic-2024 | 1/6 |
+| Metraje de hormigón armado (losas/vigas/muros/pilares/zapatas) | **23/24** | Guía §1 |
+| Costo Financiero — VNA/TIR | **20/24** | Guía §12 |
+| Mano de obra / Ley 14.411 / Convenio Colectivo / Leyes Sociales | **20/24** | Guía §5-6 |
+| Garantías (con o sin perfil temporal) | **17/24** | Guía §7 |
+| Consumos unitarios de hormigón armado | **15/24** | Guía §2 |
+| Fórmulas paramétricas | **12/24** | Guía §8 |
+| Suministros / Subcontratos / INCOTERMS | **10/24** | Guía §14 |
+| Seguros de obra (TRC, RC, Ley 16.074) | **10/24** | Guía §10 |
+| Dosificación de hormigón (agregados+cemento+agua) | **8/24** | Guía §3 |
+| Costo horario de equipos | **8/24** | Guía §4 |
+| Movimiento de suelos (Ce/Cc/Ca, viajes de camión) | **8/24** | Guía §13 |
+| Punto de Equilibrio / costos fijos-variables | **8/24** | Guía §11 |
+| Clasificación de costos por naturaleza | **7/24** | Guía §15 |
+| Costo horario de mano de obra (jornalero/obrero) | **5/24** | Guía §5 |
+| Licitaciones (TOCAF, tipos de contrato) | **4/24** | Guía §9 |
+| Consumo de mampostería y revoques | **2/24** | Guía §16 |
 
-*(Se irá completando a medida que se resuelvan más exámenes — objetivo: que esta tabla diga qué estudiar primero.)*
+*(Un examen puede aportar a varios temas a la vez — ej. Metraje + Consumos + Dosificación suelen ir juntos en la Parte I-II. La tabla se recalcula cuando se detecten inconsistencias o se sumen exámenes nuevos al repo.)*
 
 ---
 
