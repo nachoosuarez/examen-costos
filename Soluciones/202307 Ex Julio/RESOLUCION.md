@@ -97,7 +97,7 @@ Verificado contra solución oficial (planilla de cálculo incluida en `Examen Co
 | **b) Buena ejecución — TOTAL** | | | | | **$383.756** |
 | **c) Anticipo** | 15% de $113.636.364 (sin IVA ni llss), se devuelve linealmente mes a mes durante la ejecución | $17.045.455 | 10 meses (I→RP) | $8.522.727 (promedio triangular decreciente) | **$177.557** |
 
-**Costo Total de garantías = 333.701 + 383.756 + 177.557 = $895.014**
+**Costo Total de garantías = 333.701 + 383.756 + 177.557 = $895.014** *(la planilla oficial da $895.013; diferencia de $1 por redondeo interno de la planilla al sumar sus propios parciales — la suma de los tres parciales de arriba, tal como están, da exactamente 895.014)*
 
 *(Perfiles temporales: fiel cumplimiento = escalón constante que cae a cero en RP; buena ejecución = rampa ascendente durante la ejecución que se mantiene plana hasta RD; anticipo = rampa descendente desde el Inicio hasta RP. Ver Guía sección 7.)*
 
