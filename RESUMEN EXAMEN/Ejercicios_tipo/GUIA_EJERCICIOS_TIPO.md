@@ -15,6 +15,16 @@ Guía acumulativa organizada por tipo de ejercicio. Antes de un examen, repasar 
 4. **Longitud de barra** = tramo/longitud real de la pieza + ganchos (10Φ donde no esté especificado) + empalmes (50Φ) si la longitud supera los 12 m de varilla comercial.
 5. **Tenor** = área de encofrado / volumen de hormigón. **Cuantía** = kg de hierro / volumen de hormigón. Cada elemento tiene un rango esperable (una losa apoyada en el suelo tendrá tenor mucho menor a una losa suspendida, por ejemplo) — si el resultado se aleja del rango, revisar antes de concluir que hay error; puede haber una justificación geométrica.
 
+**Valores de referencia de tenor/cuantía (de "Aclaraciones sobre errores comunes"), para detectar errores gruesos de cálculo:**
+
+| Elemento | Tenor (m²/m³) | Cuantía (kg/m³) |
+|---|---|---|
+| Pilares | 10-14 | 100-180 |
+| Vigas | 8-12 | 70-150 |
+| Losas | 5-10 | 60-80 |
+
+Para piezas que no son losas/vigas/pilares (zapatas, muros, etc.) analizar a cuál rango se asemeja más — ej. una zapata apoyada en el suelo tiene un tenor esperable menor al de una losa.
+
 **Criterios de volumen por tipo de elemento (Clase 3 — Metrajes de Hormigones):**
 
 | Elemento | Criterio de volumen |
