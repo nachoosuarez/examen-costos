@@ -116,6 +116,8 @@ completo en `Soluciones/201912 Ex diciembre/`.
 
 **Mini-ejemplo:** Encofrado 3,08 m²/m³, desperdicio tabla 15%, reúsos 3, tabla de 3,30m×0,15m (área unitaria 0,495 m²) → (3,08×1,15)/3 = 1,18 m²/m³ equivalente → 1,18/0,495 = **2,38 unidades de tabla /m³**.
 
+**Si el examen pregunta por qué el consumo puede variar entre obras (teórico, Clase 17):** el consumo unitario parte de un **Consumo Estándar** (bajo condiciones climáticas/horarias/de emplazamiento/personal de referencia) y se ajusta por coeficientes de desvío (ic, ih, ie, ip — normalmente ≥1, salvo el de personal/repetitividad que puede ser <1 si mejora el rendimiento). Ver tabla completa en `RESUMEN EXAMEN/Teorico/RESUMEN_TEORICO.md`, sección 10.
+
 ---
 
 ## 3. Dosificación y costo de un m³ de hormigón (agregados + cemento + agua)
@@ -316,6 +318,8 @@ Ver desarrollo completo en `Soluciones/202212 Ex Diciembre/`.
 
 ---
 
+**Fórmula oficial y fuentes de cada índice (Clase 18 — útil si el examen pide nombrar/justificar el índice, no solo calcular):** `P₁=P₀×(j×J₁/J₀+m×M₁/M₀+cv×CV₁/CV₀+d×D₁/D₀)`, con `j+m+cv+d=1`. Subíndice "0"=mes anterior a la oferta; "1"=mes anterior al del ajuste (1 mes de desfasaje siempre). J=mano de obra, Índice de traslado a precios del Grupo N°37 (Industria de la Construcción), fuente **MTSS**. M=canasta de materiales, fuente **Boletín mensual Cámara de la Construcción (CCU) o MTOP**. CV=costo de vida/gastos generales, fuente **IPC — INE**. D=variación cambiaria, fuente **dólar interbancario vendedor, último día hábil del mes — BCU**. Si la canasta de materiales se desagrega en varios ítems representativos: `M₁/M₀=m₁×M₁₁/M₁₀+m₂×M₂₁/M₂₀+...+mₙ×Mₙ₁/Mₙ₀` con Σmᵢ=1 (misma lógica de ponderación, aplicada dentro del grupo). Ver también la variante de alta inflación (factor de costo financiero adicional, infrecuente en el país) en `RESUMEN EXAMEN/Teorico/RESUMEN_TEORICO.md`, sección 11.
+
 **Elección de índices desde un boletín real (Anexo con tabla de códigos, visto en Dic-2020):** cuando el
 examen da directamente una tabla tipo "Boletín de la Cámara de la Construcción / INE" con columnas
 código-denominación-unidad-índice, cada parámetro de la fórmula (J, M1...Mn, CV, D) se identifica citando
@@ -350,6 +354,8 @@ Excepciones a Licitación Pública (sin importar monto): compras entre organismo
 - **Precio Global**: precio fijo total, riesgo de sobrecosto en el contratista. Ideal cuando el alcance está bien definido (ej. vivienda con proyecto cerrado).
 - **Precio Unitario**: precio por unidad de partida, se paga según cantidad ejecutada. Ideal cuando las cantidades no se pueden fijar de antemano (ej. obras viales, saneamiento).
 - **Por Administración**: se pagan costos reales + % de gestión. Ideal cuando no se conoce el alcance real al inicio (ej. reparación tras un siniestro).
+
+**Estudio Comparativo de Ofertas (Clase 21, complementa Clase 20 — puede aparecer como pregunta teórica dentro de "Licitaciones"):** documentación previa a entregar a oferentes (pliego, rubros globales/unitarios, criterios de comparación fijados de antemano), contenido exigido de la oferta (apertura de precios, cronograma económico-financiero, apartamientos técnicos/comerciales), y procedimiento de comparación en 4 pasos (filtrar por requisitos mínimos → cuadro comparativo → aclaraciones sin permitir que el oferente ajuste su oferta → informe de adjudicación ordenado). Ver desarrollo completo en `RESUMEN EXAMEN/Teorico/RESUMEN_TEORICO.md`, sección 12.
 
 ---
 
@@ -738,12 +744,30 @@ material compactado** (despreciando el volumen del hormigón, si el enunciado lo
 
 ## 14. Suministros
 
-**Cuándo aparece:** preguntas teóricas cortas, 10 pts.
+**Cuándo aparece:** preguntas teóricas cortas, 10 pts (visto en Dic-2025, Marzo-2025; ampliado con Clase 12).
 
+**Materiales, Suministros y Subcontratos se identifican/cuantifican/valoran con el mismo esquema de 3 pasos** (Materiales=insumos que se transforman en obra con valor agregado propio; Suministros=bienes con bajo valor agregado, ej. ascensores/equipamiento; Subcontratos=tareas de una especialidad a cargo de un tercero, ej. instalación eléctrica):
 - **Identificados**: especificaciones técnicas claras (normas/memorias), incumplimientos explicitados y valorados, proveedores potenciales, ensayos exigibles, lugar de entrega (flete/carga/descarga), necesidad de contrato.
-- **Cuantificados**: unidad de medida clara, criterio de desperdicio, cantidad total y plazo de entrega.
-- **Valorados**: precio unitario acorde a la unidad definida, con cotización vigente.
-- **INCOTERMS**: términos de compraventa internacional que fijan obligaciones/riesgos entre exportador e importador (EXW, FOB, CIF, CFR, FCA, DAP, DDP, etc.).
+- **Cuantificados**: unidad de medida clara (ej. cemento por kg o bolsa, arena por m³ o bolsa, carpeta por m² o m³), criterio de desperdicio, cantidad total y plazo de entrega.
+- **Valorados**: condición de entrega (INCOTERM), forma/plazo de pago (anticipo/contado/60 días...), plazo de validez de la oferta, garantía si corresponde, ajuste de precios (paramétrica); conviene discriminar del precio los costos asociados (flete, introducción, ensayos) y registrar la fuente/proveedor de referencia. **Fuentes válidas para el Trabajo Práctico/examen:** consultas en plaza (barracas, fabricantes, estaciones de servicio) o publicaciones (Lista Oficial de Precios MTOP vigente, Revistas de la Construcción de fecha similar); por practicidad se asume que todos los precios son a 30 días de entrega.
+
+**INCOTERMS — tabla completa** (términos de compraventa internacional que fijan obligaciones/riesgos entre vendedor y comprador; ordenados de menor a mayor responsabilidad del vendedor):
+
+| Grupo | Incoterm | Significado | Quién hace qué |
+|---|---|---|---|
+| E | EXW | Ex Works (en fábrica) | Comprador retira en la fábrica del vendedor — máxima responsabilidad del comprador. |
+| F | FCA | Free Carrier (franco transportista) | Vendedor entrega al transportista que designa el comprador. |
+| F | FAS | Free Alongside Ship (libre al costado del buque) | Vendedor deja la carga al costado del barco; comprador la carga y sigue desde ahí. |
+| F | FOB | Free On Board (libre a bordo) | Vendedor carga la mercadería en el barco. |
+| C | CFR | Cost and Freight (costo y flete) | Vendedor paga el transporte marítimo hasta destino (no el seguro). |
+| C | CIF | Cost, Insurance and Freight | Igual a CFR + seguro a cargo del vendedor. |
+| C | CPT | Carriage Paid To (transporte pagado hasta) | Vendedor paga transporte hasta destino (terrestre/aéreo también). |
+| C | CIP | Carriage and Insurance Paid To | Igual a CPT + seguro a cargo del vendedor. |
+| D | DAP | Delivered At Place (entregado en lugar) | Vendedor entrega en destino final, sin descargar. |
+| D | DPU | Delivered at Place Unloaded | Vendedor entrega Y descarga en destino. |
+| D | DDP | Delivered Duty Paid (entregado con derechos pagados) | Vendedor se hace cargo de todo, incluidos impuestos de importación. |
+
+**Subcontratos — puntos específicos a mencionar si el examen pregunta:** el **contratista nunca se libera de responsabilidad** frente al cliente por lo que haga el subcontratista (control estricto, sobre todo en seguridad laboral — **Ley de Tercerizaciones**: responsabilidad solidaria laboral del contratista frente al trabajador subcontratado). Si el rubro cae dentro de la **Ley 14.411**, la cotización del subcontratista debe incluir su propio Monto Imponible, para sumarlo al Monto Imponible total del presupuesto del contratista principal. Motivos usuales para subcontratar: falta de experiencia/especialidad propia, competitividad (precio/plazo), limitación de recursos, reducción de riesgo.
 
 ---
 
@@ -762,7 +786,11 @@ alquilada); 4) **Suministros y Subcontratos** (provisiones/instalaciones a cargo
 
 **Costos Indirectos**: gastos no asignables a una tarea específica pero necesarios para la obra en su
 conjunto (dirección de obra, administración, obrador, seguros/garantías, gastos generales de empresa
-prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de Venta.
+prorrateados). Costo Directo + Costo Indirecto + Beneficio (margen) = Precio de Venta. **Incidencia
+típica: 15%-25% del costo total de la obra** (menor cuanto mayor el peso de suministros/subcontratos,
+que traen su propio indirecto incorporado — Clase 17). **Concepto de "Afectación":** si un recurso
+indirecto no está 100% dedicado a esta obra (ej. un Jefe de Obra a cargo de 2 obras a la vez), se le
+imputa solo el % de afectación correspondiente (ej. 50%) sobre su costo mensual total.
 
 **Clasificación formal en 8 grupos (Clase 8, más detallada):** 1) **Mano de Obra** (directa+indirecta+cargas
 sociales); 2) **Equipos** (propios+alquilados); 3) **Materiales**; 4) **Suministros** (suministros+

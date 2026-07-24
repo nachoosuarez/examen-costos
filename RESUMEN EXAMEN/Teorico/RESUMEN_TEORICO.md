@@ -211,6 +211,88 @@ como pregunta suelta):
 
 ---
 
+## 9. Materiales, Suministros y Subcontratos — Costos por Naturaleza en detalle (Clase 12)
+
+**Concepto:** profundiza los grupos "Materiales" y "Suministros/Subcontratos" de la clasificación por Naturaleza (ver sección 8) — qué información hay que relevar de cada insumo antes de poder presupuestarlo correctamente. Aplica a los 3: **identificar, cuantificar y valorar**.
+
+**Materiales** (materias primas que se transforman en obra vía mano de obra/equipos — valor agregado):
+- **Identificados**: especificaciones técnicas claras (normas/memorias del cliente), incumplimientos explicitados y valorados si los hay, proveedor(es) potencial(es), ensayos a exigir al proveedor, lugar de entrega (flete/carga/descarga incluidos o no), necesidad de contrato.
+- **Cuantificados**: unidad de medida clara (ej. cemento por kg o bolsa; arena por m³ o bolsa), criterio de desperdicio, cantidad total y plazo de entrega.
+- **Valorados**: condición de entrega (INCOTERM), forma/plazo de pago, plazo de validez de la oferta, garantía si corresponde, ajuste de precios (paramétrica); conviene discriminar del precio los costos asociados (flete, introducción, ensayos) y registrar el proveedor de referencia.
+
+**INCOTERMS completos y consideraciones prácticas de precios (fuentes válidas, plazo estándar de 30 días):** ver tabla completa y detalle en la Guía de Ejercicios Tipo, sección 14.
+
+**Suministros** (bienes con bajo valor agregado en obra) y **Subcontratos** (tareas de una especialidad a cargo de un tercero): mismos 3 pasos que Materiales pero con evaluación técnico-económica más rigurosa. El **contratista nunca se libera de responsabilidad** frente al cliente por lo que haga el subcontratista (control estricto, en especial en seguridad laboral — **Ley de Tercerizaciones**: responsabilidad solidaria laboral del contratista frente al trabajador subcontratado). Si el rubro subcontratado cae dentro de la **Ley 14.411**, la cotización del subcontratista debe incluir su propio Monto Imponible, para sumarlo al Monto Imponible total del presupuesto del contratista principal. Motivos usuales para subcontratar: falta de experiencia/especialidad propia, competitividad, limitación de recursos, reducción de riesgo.
+
+---
+
+## 10. Consumos unitarios, rendimientos y Costos Indirectos de obra (Clase 17)
+
+**Consumo Unitario vs. Rendimiento:** el **Consumo Unitario** es la cantidad de un recurso que se usa para ejecutar una unidad de tarea (ej. 14 bolsas de cemento/m³ de hormigón — base de la Planilla de Consumos, ver sección 1 y Guía secciones 2-3). El **Rendimiento** es la cantidad de trabajo que ejecuta una unidad de recurso en un tiempo dado (ej. un oficial coloca 12 m²/día de muro; una retroexcavadora excava 45 m³/hora) — sirve para planificar tiempos/costos y comparar alternativas de ejecución.
+
+**Consumo Estándar:** consumo de un insumo bajo condiciones de referencia fijas; el consumo real de una obra concreta se obtiene ajustando el estándar por los **desvíos** respecto de esas condiciones, con coeficientes multiplicadores:
+
+| Factor de desvío | Condición Estándar (coef.=1) | Efecto de un desvío | Rango típico |
+|---|---|---|---|
+| Climático (ic) | Clima moderado sin lluvia, 5°C-38°C, viento <30km/h, altitud <1.500m | Siempre EMPEORA (temperaturas extremas, viento, altura) | >1 (1,1 / 1,2 / 1,3) |
+| Horario (ih) | Horario diurno, horas extra acotadas | Siempre EMPEORA (trabajo nocturno a la intemperie, exceso de horas seguidas) | >1 |
+| Emplazamiento (ie) | Suelo nivelado y seco, sin obstáculos, <150m desde el ingreso, sin restricciones de seguridad | Siempre EMPEORA (traslados largos, restricciones de seguridad) | >1 (1,2 / 1,3) |
+| Personal — capacitación/incentivo (ip) | Personal capacitado, jornal por hora o a destajo, sin conflictividad | Puede MEJORAR o EMPEORAR (incentivos/premios, conflictividad, falta de capacitación) | 0,8 a 1,3 |
+| Repetitividad/secuencialidad (ip) | Volumen de tarea continuo, sin "producción en serie" que distorsione | Puede MEJORAR o EMPEORAR (tareas muy discretas/aisladas, o repetición a gran escala) | 0,8 a 1,3 |
+
+Antes de aplicar un coeficiente >1 sin más, conviene evaluar si se puede mejorar la condición real (acercarla al estándar) o ajustar el procedimiento constructivo.
+
+**Costos Indirectos de Obra ("Costos Generales de Obra"):** no se pueden asignar a una tarea puntual pero hacen falta para el conjunto de la obra (analogía del curso: "un restaurante no puede servir sin luz, mozos ni un lugar limpio, aunque esos gastos no estén en cada plato"). Principalmente mano de obra de supervisión (Jefe de Obra, capataz, administrativos), equipos de traslado y "varios" (obrador, energía, baños químicos, herramientas compartidas, teléfono/internet). Mayormente intangibles y **Costos Fijos**. **Incidencia típica: 15%-25% del costo total** en obras civiles (menor cuanto mayor el peso de suministros/subcontratos, que traen su propio indirecto incorporado). **Concepto de "Afectación":** cuando un recurso indirecto no está 100% dedicado a la obra (ej. un Jefe de Obra a cargo de 2 obras), se le imputa solo el % de afectación correspondiente (ej. 50%) sobre su costo mensual total.
+
+---
+
+## 11. Ajuste de precios — fórmula paramétrica oficial (Clase 18)
+
+*(Formaliza y complementa la Guía de Ejercicios Tipo, sección 8, con la fórmula y fuentes oficiales.)*
+
+`P₁ = P₀ × (j×J₁/J₀ + m×M₁/M₀ + cv×CV₁/CV₀ + d×D₁/D₀)`, con `j+m+cv+d=1`. Subíndice "0"=mes anterior a la oferta; "1"=mes anterior al del ajuste (siempre con 1 mes de desfasaje).
+
+| Índice | Qué mide | Fuente oficial |
+|---|---|---|
+| J | Mano de obra — Índice de traslado a precios, Grupo N°37 (Industria de la Construcción) | MTSS |
+| M | Canasta de materiales | Boletín mensual Cámara de la Construcción (CCU) o MTOP |
+| CV | Costo de vida / gastos generales | IPC — INE |
+| D | Variación cambiaria | Dólar interbancario vendedor, último día hábil del mes — BCU |
+
+**Canasta de Materiales (submodelo dentro de M, si se desagrega):** `M₁/M₀ = m₁×M₁₁/M₁₀ + m₂×M₂₁/M₂₀ + ... + mₙ×Mₙ₁/Mₙ₀`, con Σmᵢ=1 — misma lógica de ponderación que la fórmula general, aplicada a los materiales representativos del grupo/obra.
+
+**Variante de alta inflación (infrecuente en el país):** cuando el plazo entre certificación/facturación/pago es largo con muy alta inflación, se agrega un factor de costo financiero: `P₁ = P₀×(j×J₁/J₀+...+d×D₁/D₀)×[(1+i₁)ᵗ/(1+i₀)ᵗ]`, con i₁/i₀=tasas de interés promedio de plaza (moneda nacional no reajustable) de los 3 meses previos al ajuste/oferta, y t=plazo de pago en años (año comercial=360 días).
+
+---
+
+## 12. Estudio Comparativo de Ofertas (Clase 21 — complementa Clase 20)
+
+**Objetivo:** elegir la mejor oferta según los intereses del propietario, con procedimiento profesional (criterios alineados a los objetivos, etapas claras con o sin precalificación, criterios precisos, comparación coherente, profesionales con experiencia).
+
+**Documentación a entregar a los oferentes (antes de presentar ofertas):** carta de invitación (fecha/hora de entrega, plazo de consultas), plazo/importe de garantía de mantenimiento de oferta, pliego de condiciones comerciales y técnicas, alcance de los trabajos, formulario de propuesta con Rubros **Globales** y **Unitarios** (con cantidad fija o a definir por el oferente), definición de cada tarea, moneda(s) de cotización y fórmula de ajuste de precios, plazos requeridos, forma de pago, proyecto de contrato (penalidades, garantías), criterios de comparación, y causales de rechazo.
+
+**Qué debe incluir la oferta:** carta compromiso + garantía de mantenimiento de oferta, listado de apartamientos técnicos/comerciales respecto del pliego, apertura de precios (planilla de precios y cantidades), cronograma de ejecución, cronograma económico-financiero, especificación técnica y proveedores de suministros/materiales principales.
+
+**Procedimiento de comparación (4 pasos):** 1) filtrar ofertas que cumplen requisitos mínimos imprescindibles (antecedentes, apartamientos, plazos); 2) armar cuadro comparativo según los criterios preestablecidos; 3) solicitar aclaraciones a los oferentes (**en licitación pública nunca pueden usarse para que el oferente modifique/ajuste su oferta**); 4) informe de adjudicación con las ofertas ordenadas de más a menos conveniente.
+
+**Buenas prácticas al elegir criterios:** lo más cuantificables/objetivos posible, ponderación coherente con su importancia, no modificarlos después de presentadas las ofertas, mejor no considerar un criterio que considerarlo mal, usar un sistema de evaluación ya probado si existe.
+
+**Criterios usuales** (amplía Clase 20): precio, plazo de ejecución, flujo financiero (VNA de los pagos), proyecto (si está a cargo del oferente), personal y equipos disponibles, calidad de materiales/suministros, memoria descriptiva, **rendimientos** (ej. en equipos: central térmica), capacidad y antecedentes de la empresa (preferentemente ya evaluados en precalificación).
+
+---
+
+## 13. Valor Neto Actualizado — concepto formal (Clase 23)
+
+*(Formaliza la definición de VNA ya usada en la Guía de Ejercicios Tipo, sección 12 — ver ahí el desarrollo práctico con ejemplos numéricos.)*
+
+**Por qué hace falta:** el dinero de hoy vale más que el mismo monto en el futuro (puede invertirse y generar interés; hay riesgo e inflación de por medio). Para comparar costos y beneficios que ocurren en momentos distintos —decidir entre invertir dinero o ejecutar un proyecto— hace falta **actualizar** (traer a valor presente) cada monto futuro en vez de sumarlos nominalmente.
+
+**Definición:** criterio de evaluación económica que determina el valor presente de todos los flujos de caja futuros de una inversión, descontados a una tasa que refleja el **costo de oportunidad del capital**, menos la inversión inicial. Mide el incremento de valor que el proyecto genera para el inversor. `VNA = Σ Flujo_t / (1+i)^t`.
+
+**Regla de decisión formal:** **VNA>0** → el proyecto genera valor por encima del costo de oportunidad → conviene. **VNA=0** → recupera exactamente el costo de oportunidad → indiferente. **VNA<0** → destruye valor → no conviene. Es la base de todos los ejercicios de comparación de alternativas y evaluación de inversiones de la Guía sección 12 (incluidos los casos de TIR=0%/indefinida).
+
+---
+
 ## Clases ya resumidas
 - Clase 1 (Introducción/administrativa del curso — objetivos, metodología, cronograma del Trabajo Práctico; **sin contenido de examen**, solo logística del curso).
 - Clase 2 (Características históricas de la industria, obra pública/privada, TOCAF, tipos de contrato).
@@ -222,6 +304,12 @@ como pregunta suelta):
 - Clase 19 (Riesgos, Garantías, Seguros).
 - Clase 20 (Programa Económico y Financiero de obra, elaboración y comparación de ofertas).
 - Equipos.pdf (Costo horario de equipos, movimiento de suelos con camiones).
+- Clase 11 (Presentación del modelo de planillas Excel para la Entrega Intermedia del Trabajo Práctico — Listado de Insumos, Planilla de Consumos, Planilla Auxiliar de Hormigones (SUMAPRODUCTO), Planilla de Mano de Obra, Planilla de Dosificación; **administrativa/metodológica, confirma pero no agrega contenido de examen nuevo** más allá de lo ya cubierto en secciones 1-3 y en la Guía).
+- Clase 12 (Materiales, Suministros y Subcontratos — identificación/cuantificación/valoración, INCOTERMS, Ley de Tercerizaciones — ver sección 9).
+- Clase 17 (Consumo Unitario vs. Rendimiento, Consumos Estándar y coeficientes de desvío ic/ih/ie/ip, Costos Indirectos de obra con concepto de Afectación — ver sección 10; repite además la Planilla de Consumos y Planilla Auxiliar de hormigones ya vistas en Clase 11, sin contenido nuevo en esa parte).
+- Clase 18 (Ajuste de precios — fórmula paramétrica oficial con fuentes J/M/CV/D, canasta de materiales, variante de alta inflación — ver sección 11).
+- Clase 21 (Estudio Comparativo de Ofertas — documentación previa, contenido de la oferta, procedimiento de comparación en 4 pasos — ver sección 12; complementa Clase 20).
+- Clase 23 (Inversiones — concepto formal de VNA y regla de decisión — ver sección 13; parcial, son solo 10 diapositivas introductorias, probablemente continúa en una clase posterior no incluida en el repo).
 
 ## Clases pendientes (quedan para próximas corridas)
-Clase 11, Clase 12, Clase 17, Clase 18, Clase 21 (probablemente Estudio Comparativo de Ofertas ampliado o Elaboración de Contratos — verificar contenido real al leerla), Clase 23.
+Ninguna — **las 17 clases del repo (`CLASES TEORICAS/`) están todas resumidas** (Clase 1 a 9, 11, 12, 17, 18, 19, 20, 21, 23, más Equipos.pdf; Clase 1 y 5 son administrativas sin contenido de examen). Si en corridas futuras aparecen clases nuevas en la carpeta (ej. Clase 10, 13-16, 22, 24+), agregarlas aquí.
