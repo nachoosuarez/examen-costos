@@ -133,7 +133,7 @@ Aportes patronales de referencia: FSC/FOCAP 1,2691%, FOSVOC 0,025%, FOCER 5,00% 
 
 **Riesgo** = todo evento posible que, de ocurrir, es perjudicial; tiene una probabilidad y una valoración/costo asociados. `RIESGO = VALORACIÓN × PROBABILIDAD`. Gestión del riesgo: identificación preliminar → valoración y cuantificación → tratamiento y mitigación → valoración final o residual (Riesgo Máximo + Plan de Acción de Riesgos).
 
-**Garantías contractuales requeridas por el Contratante:** Mantenimiento de Oferta, Fiel Cumplimiento de Contrato, Fondo de Reparo (Buena Ejecución), Sustitución de Fondo de Reparo, Anticipo o Acopio, Ley de Tercerizaciones, otras. (Detalle de monto/plazo/objetivo de cada una en la Guía de Ejercicios Tipo, sección 7). Formas de constitución: garantía bancaria, carta de crédito irrevocable, póliza de seguro de fianza (BSE), bonos del tesoro en U$D, depósito.
+**Garantías contractuales requeridas por el Contratante:** Mantenimiento de Oferta, Fiel Cumplimiento de Contrato, Fondo de Reparo (Buena Ejecución), Sustitución de Fondo de Reparo, Anticipo o Acopio, otras. (Detalle de monto/plazo/objetivo de cada una en la Guía de Ejercicios Tipo, sección 7). La **Ley de Tercerizaciones** no es una garantía sino una norma de responsabilidad laboral solidaria (ver Licitaciones más abajo). Formas de constitución: garantía bancaria, carta de crédito irrevocable, póliza de seguro de fianza (BSE), bonos del tesoro en U$D, depósito.
 
 **Componentes de un Seguro:** objeto asegurado, valor del objeto, riesgos/eventos cubiertos, monto máximo de indemnización, prima (costo), deducible, plazo de vigencia, deberes del contratante, exclusiones.
 
