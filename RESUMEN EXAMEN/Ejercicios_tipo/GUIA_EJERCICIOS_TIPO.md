@@ -102,8 +102,13 @@ completo en `Soluciones/202402 Ex febrero/` y `Soluciones/202207 Ex Julio/`.
 (visto en Dic-2019): a diferencia del muro "por trincheras" (Marzo-2020, donde solo se encofra la cara
 vista porque la excavación genera taludes verticales continuos), acá el muro es un **panel de longitud
 finita** (ej. 6 m) — hay que encofrar **las 2 caras Y los 2 extremos** del panel, no solo 1 o 2 caras
-longitudinales. La fórmula es directamente **perímetro del corte transversal × longitud del panel**:
-`Encof = 2×(ancho+alto)×L`, tanto para la pata como para la pantalla por separado. **Cómo distinguir
+longitudinales. La fórmula, aplicada por separado a cada elemento (pata y pantalla), es
+`Encof_elemento = 2×(ancho_propio_del_elemento + L_panel) × altura_propia_del_elemento` — **ojo, NO es
+"perímetro del corte transversal (ancho+alto) × L"**: adentro del paréntesis va el ancho/espesor propio
+del elemento (su b de la tabla de volumen) sumado a L (la longitud del panel, la misma para pata y
+pantalla), y ese paréntesis se multiplica por la altura/espesor propio del elemento (su h de la tabla de
+volumen) — NO por L. Ejemplo Dic-2019 (pata 3,00×0,40, pantalla 0,40×3,95, L=6,00): Pata=2×(3,00+6,00)×0,40=**7,20 m²**;
+Pantalla=2×(6,00+0,40)×3,95=**50,56 m²** (Total 57,76 m²; Tenor=57,76/16,68=3,46 m²/m³). **Cómo distinguir
 cuál variante aplica:** leer si el enunciado/croquis indica una obra corrida (trinchera, muro perimetral
 largo) o un panel/tramo aislado (croquis con cotas de un tramo cerrado en sus 2 extremos, sin
 continuidad indicada) — el criterio de encofrado cambia sustancialmente el resultado. Ver desarrollo
