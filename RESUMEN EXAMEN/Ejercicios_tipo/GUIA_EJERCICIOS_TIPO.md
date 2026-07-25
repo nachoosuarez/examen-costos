@@ -216,6 +216,19 @@ completo en `Soluciones/201912 Ex diciembre/`.
 
 **Errores comunes:** no mezclar U$D y $ sin convertir explícitamente con el tipo de cambio dado; H bajo (equipo poco usado) dispara la amortización/seguro/patente por hora — es un resultado esperado, no un error (ilustra por qué conviene alquilar equipos de uso esporádico en vez de comprarlos).
 
+**Ejemplo numérico completo con los 9 componentes (Equipos.pdf, tabla "Costos de Equipos" — retroexcavadora combinada CASE 580, revisado en la corrida 34ª al chequear tablas en formato imagen que pypdf no había extraído en corridas previas):** VI=100.000 U$D, VR=25.000 U$D, VU=8.000 horas (dato directo, no VU=n×H), α (reparaciones)=40%, consumo combustible=6 lt/h, β/γ (lubricantes, misma columna que la tabla llama "Mantenimiento Rutinario")=25%, Tren de Rodado: VI_TR=2.500 U$D con VU_TR=4.000 horas. Uso: 130 h/mes × 11 meses/año=1.430 h/año. Precio combustible=75,30 $/litro, tipo de cambio 40,9 $/U$D. Salario maquinista=2.000 U$D/mes. Tasa anual activa=20%.
+1. Amortización = (100.000−25.000)/8.000 = **9,37 U$D/h**.
+2. Reparaciones = α×Amortización = 0,40×9,37 = **3,75 U$D/h**.
+3. Combustible = 6 lt/h × 75,30 $/lt ÷ 40,9 $/U$D = **11,05 U$D/h**.
+4. Lubricantes = β×Combustible = 0,25×11,05 = **2,76 U$D/h**.
+5. Tren de Rodado = 2.500/4.000 = **0,63 U$D/h**.
+6. Maquinista = 2.000 U$D/mes ÷ 130 h/mes = **15,38 U$D/h**.
+7. Seguro = 0,02×VI/(horas trabajadas por año) = 0,02×100.000/1.430 = **1,40 U$D/h**.
+8. Patente = equivalente al Seguro = **1,40 U$D/h**.
+9. Costo financiero = [(VI−VR)/2 × tasa]/horas anuales = (37.500×0,20)/1.430 = **5,25 U$D/h**.
+
+**Costo Total = 9,37+3,75+11,05+2,76+0,63+15,38+1,40+1,40+5,25 = 50,99 U$D/hora.** Quiz de la propia clase: si el equipo se usa 100 h/mes en vez de 130 h/mes (1.100 h/año), la Amortización/Combustible/Reparaciones/Lubricantes/Tren de Rodado **no cambian** (dependen de horas de uso reales, no del ritmo mensual), pero Maquinista sube a 2.000/100=20,00 U$D/h, Seguro=Patente suben a 0,02×100.000/1.100=1,82 U$D/h cada uno, y Costo financiero sube a (37.500×0,20)/1.100=6,81 U$D/h → **Costo Total pasa a 58,01 U$D/hora** — confirma que usar poco un equipo encarece su costo horario (mismo principio que "Errores comunes" arriba).
+
 **Variante "cantidad de camiones necesarios" (Equipos.pdf, sección Fletes):** para que una máquina que excava/carga a un ritmo dado nunca quede parada esperando camión: tiempo de ciclo del camión = ida cargado (obra→vertedero) + descarga + vuelta vacío (vertedero→obra); viajes posibles por jornada = (minutos de la jornada)/tiempo de ciclo; volumen transportado por camión y por jornada = viajes×capacidad del camión; producción de la máquina en el turno = rendimiento (m³/h)×horas de jornada; camiones necesarios = producción de la máquina / volumen transportado por camión. Mini-ejemplo de la clase: máquina a 1 m³/min (=60 m³/h), turno 8,8 h → produce 528 m³/día; camión de 10 m³ con ciclo=130 min (60 ida cargado+10 descarga+60 vuelta vacío) → 528min/130min≈4 viajes/jornada → transporta 40 m³/jornada → 528/40≈13 camiones necesarios. Valores de referencia de flete dados en clase: mudanza de equipo entre ciudades ≈USD 2.000 (depende de la distancia); movimiento de tierra a gran escala ≈$15/m³·km; alquiler de camión por tiempo en obras medianas ≈1.000-1.200 $/hora.
 
 **Mini-ejemplo (Ene-2026, retroexcavadora combinada):** VN=50.000 U$D, VR=15.000 U$D, n=5, H=180 h/año → VU=900h. Amortización=(50.000-15.000)/900=38,89 U$D/h. Con 1U$D=38,5$ → 1.497,2 $/h. Ver desarrollo completo en `Soluciones/202601 Examen Enero 2026/`.
