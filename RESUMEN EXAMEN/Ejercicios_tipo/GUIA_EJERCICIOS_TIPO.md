@@ -841,6 +841,11 @@ auto de inspección/camioneta del capataz = Indirecto+Fijo. Materiales/Suministr
 dicha = Directo+Variable; materiales de instalaciones provisorias = Indirecto+Fijo. Alquiler de oficina, UTE
 = Indirecto+Fijo.
 
+**Mano de Obra — Directa/Indirecta × Productiva/Improductiva (Clase 8, diap. 165):** dentro de Directa e
+Indirecta se distingue Productiva (asignada específicamente a la ejecución de tareas) de Improductiva
+(tiempos muertos, traslados). Directa productiva: oficiales, medio-oficiales, peones, oficiales
+especializados. Indirecta productiva: ingeniero, capataces, serenos, pañolero, gruista.
+
 ---
 
 ## 16. Consumo de mampostería y revoques (ticholos/bloques + morteros de toma/impermeable/grueso/fino)

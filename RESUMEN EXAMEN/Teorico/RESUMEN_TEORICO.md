@@ -216,6 +216,8 @@ como pregunta suelta):
 
 **Clasificación de Costos por Naturaleza, 8 grupos formales:** Mano de Obra, Equipos, Materiales, Suministros (+subcontratos), Varios (gastos generales de obra, garantías/seguros, fletes, proyectos), Gastos Generales (de oficina central), Imprevistos (análisis/valoración de riesgos, no siempre considerados en obras chicas), Costos Financieros. Ver el detalle completo con qué insumos integran cada grupo en la Guía sección 15.
 
+**Mano de Obra — Directa/Indirecta × Productiva/Improductiva (Clase 8):** dentro de cada una de las dos categorías (Directa e Indirecta) se distingue **Productiva** (asignada específicamente a la ejecución de las tareas) de **Improductiva** (tiempos muertos, traslados, etc.). Mano de Obra Directa productiva: oficiales, medio-oficiales, peones, oficiales especializados. Mano de Obra Indirecta productiva: ingeniero, capataces, serenos, pañolero, gruista (la improductiva de este grupo incluye tiempos muertos de gruistas/choferes).
+
 ---
 
 ## 9. Materiales, Suministros y Subcontratos — Costos por Naturaleza en detalle (Clase 12)
