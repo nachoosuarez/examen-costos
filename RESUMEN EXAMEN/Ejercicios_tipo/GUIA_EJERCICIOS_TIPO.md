@@ -43,6 +43,14 @@ Para piezas que no son losas/vigas/pilares (zapatas, muros, etc.) analizar a cu�
 
 **Armaduras — criterios generales:** se metra por diámetro; se agrupa por nivel y tipo de elemento; empalmes 50Φ como norma; no se descuentan recubrimientos; usar siempre la misma planilla tipo (columnas: Horm. m³ | Encof. m² | Hierro kg | kg por cada diámetro con su % desperdicio). Desperdicios típicos por diámetro (pueden variar según el enunciado, siempre usar la tabla que da el examen): Φ6-Φ8 → 5%; Φ10-Φ12 → 10%; Φ16-Φ20 → 15%; Φ25+ → 15-20%.
 
+**Peso por metro lineal (kg/m) según diámetro (Clase 4 — usado como "Densidad" en `kg=Cantidad×Longitud×Densidad×(1+%desp)`, ver mini-ejemplo del pilar abajo):**
+
+| Φ (mm) | 6 | 8 | 10 | 12 | 16 | 20 | 22 | 25 |
+|---|---|---|---|---|---|---|---|---|
+| kg/m | 0,22 | 0,39 | 0,62 | 0,89 | 1,58 | 2,47 | 2,98 | 4,9 |
+
+*(Coincide con el peso teórico estándar de barra conformada, densidad 7.850 kg/m³, salvo Φ25 que la diapositiva da como 4,9 kg/m — bastante más alto que el teórico ≈3,85 kg/m; parece un typo del propio material de clase, pero se transcribe tal cual. Si un examen usa Φ25 sin dar su peso, preferir 3,85 kg/m sobre el 4,9 de esta tabla.)*
+
 **Variante "muro de contención con bloque vibrado"** (visto en Dic-2025): el muro se separa en: hormigón de limpieza (bajo la zapata), zapata/pie de muro, bloques vibro-prensados (con % de sección hueca a rellenar con hormigón — ej. 45% de un bloque 19x19x39), viga de coronamiento. La cantidad de bloques = bloques/m² (dato) × área de muro sin vigas. El volumen de hormigón interior a bloques = cantidad de bloques × %hueco × volumen bruto del bloque. El tenor de encofrado solo se calcula sobre zapata+viga (los bloques no se encofran). Ver `Soluciones/202512 Ex Diciembre 2025/`.
 
 **Mini-ejemplo (pilar 0,6×0,6×0,15 con 1Φ16 por pilar, 4 pilares iguales):**

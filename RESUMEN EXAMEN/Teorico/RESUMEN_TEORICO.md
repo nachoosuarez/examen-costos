@@ -45,7 +45,14 @@
 - Tenor = área encofrado/volumen hormigón; Cuantía = kg hierro/volumen hormigón. Conocer rangos esperables por tipo de pieza para detectar errores — un valor fuera de rango no es automáticamente un error, puede haber una justificación (ej. losa apoyada en el suelo → tenor mucho menor).
 - Consumos por m³: no hace falta el total de material, con tenor/cuantía se llega directo. Mano de obra (hs/m³) = 1×(hs/m³ pasta) + tenor×(hs/m² encofrado) + cuantía×(hs/kg hierro). Hormigón (m³/m³)=1×(1+%desp). Hierro (kg/m³)=cuantía. Tabla de pino/chapón (unid/m³) = (tenor×(1+%desp))/(área_unitaria×reúsos).
 
-**Fórmula general de acero (Clase 4):** `kg = Cantidad×(Longitud+Empalmes+Ganchos)×Densidad×(1+%Desperdicio)`, con `Cantidad = redondear.hacia arriba(tramo/paso)+1`.
+**Fórmula general de acero (Clase 4):** `kg = Cantidad×(Longitud+Empalmes+Ganchos)×Densidad×(1+%Desperdicio)`, con `Cantidad = redondear.hacia arriba(tramo/paso)+1`. El factor "Densidad" de la fórmula es el **peso por metro lineal de barra (kg/m) según su diámetro**, tabulado en Clase 4 (tabla en formato imagen, no capturada por texto en corridas previas — revisada en la corrida 34ª):
+
+| Diámetro Φ (mm) | 6 | 8 | 10 | 12 | 16 | 20 | 22 | 25 |
+|---|---|---|---|---|---|---|---|---|
+| Peso (kg/m) | 0,22 | 0,39 | 0,62 | 0,89 | 1,58 | 2,47 | 2,98 | 4,9 |
+| % desperdicio | 5% | 5% | 10% | 10% | 15% | 15% | 15% | 15% |
+
+*(Los valores Φ6 a Φ22 coinciden con el peso teórico estándar de barra de acero conformado, densidad 7.850 kg/m³ (ej. Φ16: π/4×0,016²×7.850≈1,58 kg/m). El valor de Φ25 de la diapositiva, 4,9 kg/m, es notablemente más alto que el teórico (≈3,85 kg/m) — parece un error/typo del propio material de clase, pero se transcribe tal cual figura en la diapositiva; si un examen da Φ25 sin aclarar el peso a usar, el valor teórico 3,85 kg/m es más confiable que el 4,9 de esta tabla.)*
 
 **Valores de referencia de Tenor y Cuantía por tipo de elemento (Clase 4 — útiles para detectar un resultado fuera de rango):**
 
