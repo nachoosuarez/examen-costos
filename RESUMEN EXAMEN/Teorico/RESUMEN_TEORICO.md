@@ -29,11 +29,13 @@
 
 ## 1. Metrajes de hormigones y albañilería (Clase 3, Clase 4 y Clase 7)
 
-**Concepto:** cuantificar para cada estructura (clasificada por tipo — pilares, vigas, losas... — y por nivel — PB, 1er piso...) el volumen de hormigón (m³), el tenor de encofrado (m²/m³) y la cuantía de acero (kg/m³). Existen varios criterios válidos: lo importante es ser coherente.
+**Rubrado (Clase 3):** lista de tareas (subrubros) con la que se presenta el presupuesto; usualmente ya viene definido por el cliente — conviene que la empresa arme su listado de tareas/fases similar al del cliente, si no se le dificulta reestructurar la oferta al "formato" de rubros pedido. Cada rubro/subrubro debe estar claramente asociado a una **Unidad y Cantidad** (ojo: un mismo pavimento medido en m² o en m³ tiene un costo/precio muy distinto).
+
+**Concepto (metrajes):** cuantificar para cada estructura (clasificada por tipo — pilares, vigas, losas... — y por nivel — PB, 1er piso...) el volumen de hormigón (m³), el tenor de encofrado (m²/m³) y la cuantía de acero (kg/m³). Existen varios criterios válidos: lo importante es ser coherente.
 
 **Criterios de volumen** (ver tabla completa en la Guía de Ejercicios Tipo, sección 1): hormigón ciclópeo=volumen neto; zapatas=volumen neto+tronco de pirámide; pilares de fundación=sección×(zapata→viga); pilares=sección×(losa→losa); vigas=sección×longitud entre pilares; losas=espesor×superficie entre vigas; tanques=exterior−interior; escaleras=sección del escalón×longitud.
 
-**Armaduras:** se metra por diámetro, agrupado por nivel y elemento. Empalmes: 50Φ. No se descuentan recubrimientos. Desperdicios crecientes con el diámetro (Φ6-8: 5%; Φ10-12: 10%; Φ16-20: 15%; Φ25+: 15-20%, aprox. — usar siempre la tabla del examen).
+**Armaduras:** se metra por diámetro, agrupado por nivel y elemento. Ganchos: 10Φ. Empalmes: 50Φ. No se descuentan recubrimientos. Desperdicios crecientes con el diámetro (Φ6-8: 5%; Φ10-12: 10%; Φ16-20: 15%; Φ25+: 15-20%, aprox. — usar siempre la tabla del examen).
 
 **Errores comunes a evitar** (de "Aclaraciones sobre errores comunes de la parte práctica"):
 - En losas, el volumen es el contenido **entre vigas** (las vigas no son parte de la losa).
