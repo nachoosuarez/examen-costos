@@ -299,6 +299,11 @@ de la garantía: no siempre es 1,5% (visto en la mayoría de exámenes) — en D
 | Fondo de Reparo / Buena Ejecución | fraccionada, por certificado | ~5% de c/certificado | hasta Recepción Definitiva | retención directa |
 | Sustitución de Fondo de Reparo | previo al inicio de obra | equivalente a lo retenido | hasta Recepción Definitiva | evita costo financiero de la retención |
 | Anticipo/Acopio | previo a recibir el anticipo | 100% del anticipo | se devuelve gradualmente | aval/póliza (~3%/año) |
+| Ley de Tercerizaciones | fraccionada, por certificado | ~5% de c/certificado | hasta Recepción Definitiva | aval/póliza (~2%/año) |
+
+**⚠️ Ojo — "Ley de Tercerizaciones" es a la vez una garantía (Clase 19, misma ficha que las 5 de arriba: fraccionada por certificado, ~5% c/u, costo ~2% anual) Y una norma de responsabilidad laboral (da al contratante responsabilidad solidaria/subsidiaria por las deudas laborales de los subcontratistas del contratista — ver también sección 14, "Subcontratos"). Ambas cosas son ciertas y consistentes: la garantía existe precisamente para cubrir el riesgo económico que esa responsabilidad solidaria le genera al contratante. Si el examen pregunta "listar las garantías contractuales", incluirla; si pregunta "¿qué es la Ley de Tercerizaciones?", explicar la responsabilidad solidaria.**
+
+**Ejemplo numérico completo de la Clase 19 (obra U$D 1.000.000, plazo 12 meses, sin perfil temporal — todas constantes/puntuales, a diferencia de los ejemplos con rampa de arriba):** monto a garantizar = %garantía×precio; costo de la póliza = %costo×monto a garantizar. Mantenimiento de Oferta: monto=1%×1.000.000=U$D 10.000, costo=U$D 400 (⚠️ tasa implícita 4%, no los 0,3%-0,4% que da la diapositiva de esa garantía como rango típico — inconsistencia propia del material de clase, usar el monto U$D 400 tal cual da el ejemplo, no recalcular con 0,4%). Fiel Cumplimiento: monto=5%×1.000.000=U$D 50.000, costo=3%×50.000=U$D 1.500 (consistente con el ~3% anual dado). Sustitución de Fondo de Reparo: monto=2%×1.000.000=U$D 20.000 (reparo=2% de la obra), costo=3%×20.000=U$D 600 (consistente). Todo Riesgo de Construcción (obra de arquitectura normal): 0,4%×1.000.000=U$D 4.000 (dentro del rango 0,3%-0,5% dado). Total=400+1.500+600+4.000=U$D 6.500, el **0,65% del precio de la obra** (la diapositiva original redondea a "0,6%") — coherente con el rango de referencia 0,5%-1,5% del punto 5 de arriba.
 
 ---
 
@@ -375,7 +380,7 @@ Excepciones a Licitación Pública (sin importar monto): compras entre organismo
 
 ## 10. Garantías y Seguros (teórico general, sin perfil temporal)
 
-Ver Clase 19 ("Riesgos"): 9 componentes de un seguro (objeto, valor, riesgos, monto, prima, deducible, plazo, deberes, exclusiones). 5 seguros de obra: Accidentes de Trabajo (Ley 16.074, monopolio BSE; incluido en aporte unificado para obreros Ley 14.411), Vehículos y maquinaria (~2%/año del valor del equipo), Todo Riesgo de Construcción -TRC- (0,3%-0,5% obras comunes), Responsabilidad Civil -RC- (~0,3% anual sobre el contrato, a veces ya incluido en el TRC), Otros (diseño, plazos, demanda).
+Ver Clase 19 ("Riesgos"): **7 garantías contractuales** (Mantenimiento de Oferta, Fiel Cumplimiento, Fondo de Reparo/Buena Ejecución, Sustitución de Fondo de Reparo, Anticipo/Acopio, Ley de Tercerizaciones, Otras — detalle en sección 7 de esta Guía). 9 componentes de un seguro (objeto, valor, riesgos, monto, prima, deducible, plazo, deberes, exclusiones). 5 seguros de obra: Accidentes de Trabajo (Ley 16.074, monopolio BSE; incluido en aporte unificado para obreros Ley 14.411), Vehículos y maquinaria (~2%/año del valor del equipo), Todo Riesgo de Construcción -TRC- (0,3%-0,5% obras comunes), Responsabilidad Civil -RC- (~0,3% anual sobre el contrato, a veces ya incluido en el TRC), Otros (diseño, plazos, demanda).
 
 ---
 
