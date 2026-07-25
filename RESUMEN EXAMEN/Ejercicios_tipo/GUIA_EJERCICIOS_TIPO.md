@@ -227,14 +227,14 @@ a 5 años) en `Soluciones/202502 Ex Febrero/`.
 1. Hora común (dato de tabla, según categoría).
 2. Ropa (5% de Cat. V), transporte (4,374% de Cat. V), herramientas (2% de Cat. V).
 3. Presentismo semanal (10,42% de la hora común de la categoría propia) y presentismo mensual (5% ídem) — **si aplica** (asistencia perfecta; en un ejercicio "normal" se asume que sí corresponde salvo que se diga lo contrario).
-4. Media hora de descanso: 0,5 × hora común.
-5. Feriados no laborables: 7 al año → prorratear (ej. 7/8 si se expresa como fracción de jornada, o directamente como partida anual/horas trabajadas).
+4. Media hora de descanso: **0,5/8 × hora común** (se paga media hora de descanso dentro de una jornada de 8 horas — es una pérdida de productividad que se reparte como recargo sobre cada hora trabajada; **ojo, NO es 0,5×hora común directo**, eso da un valor ~8 veces más grande que el real).
+5. Feriados no laborables: 7 al año → **7/247 × hora común** (7 días pagos repartidos sobre ≈247 días laborables al año — **ojo, no es 7/8**: esa fracción da un valor ~30 veces más grande que el real; 7/8 sería la fórmula si se prorrateara sobre una sola semana, no sobre el año).
 6. Tickets de alimentación: $/ticket ÷ horas por ticket (actualmente cada 8 horas).
 7. Sumar solo lo que aplica según la hipótesis de la obra: horas extra, nocturnidad, trabajo en altura, plataformas voladas, lluvia/barro/crecidas **NO corresponden** si es una obra interior/sin esas condiciones (leer bien la hipótesis, p.ej. "reforma de un baño, sin horas extra" excluye varias partidas).
 
 **Monto Imponible (para LLSS):** integran siempre el MI: hora común, presentismo semanal y mensual, horas extra, feriados no laborables, nocturnidad, horas en altura. NO integran: ropa, herramientas, transporte, media hora de descanso, pasajes, horas de lluvia, tickets de alimentación. Parcialmente gravadas (sobre-laudo, viático, incentivo por producción): si <30% de la Remuneración Total no se gravan; si superan el 30%, se grava el 50% del excedente.
 
-**Mini-ejemplo:** Cat. VI (Medio Of. Carpintero) hora común $279,92; obra interior sin horas extra → costo horario ≈ hora común + ropa/transporte/herramientas (sobre Cat.V $258,65) + presentismos + media hora + feriados + tickets ≈ **$402,9/hora** (ver detalle en `Soluciones/202512 Ex Diciembre 2025/`).
+**Mini-ejemplo (verificado dígito a dígito contra la planilla oficial):** Cat. VI (Medio Of. Carpintero) hora común $279,92; Cat. V $258,65; obra interior sin horas extra. Ropa=5%×258,65=$12,93; Transporte=4,374%×258,65=$11,31; Herramientas=2%×258,65=$5,17; Presentismo semanal=10,42%×279,92=$29,17; Presentismo mensual=5%×279,92=$14,00; Media hora descanso=(0,5/8)×279,92=$17,50; Feriados=(7/247)×279,92=$7,93; Tickets=$200/8=$25,00. Suma: 279,92+12,93+11,31+5,17+29,17+14,00+17,50+7,93+25,00 = **$402,9/hora** (ver detalle en `Soluciones/202512 Ex Diciembre 2025/`).
 
 ---
 
