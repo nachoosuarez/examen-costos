@@ -78,7 +78,7 @@
 - **Lubricantes** = β (tabulado) × costo de Combustible, o bien directamente por consumo×precio si se dan los insumos (aceite, grasa, filtro) por separado.
 - **Tren de Rodado (TR)** = VI_TR / VU_TR (mismo criterio que amortización pero para orugas/neumáticos, que tienen vida útil propia mucho más corta).
 - **Maquinista (mano de obra)** = Salario mensual / horas trabajadas por mes del equipo. Se paga el mes completo aunque el equipo no trabaje todas las horas (viajes, lluvia, sin obra) — por eso se prorratea sobre las horas de uso reales, no sobre las teóricas.
-- **Seguro** = 2% anual del valor inicial (VN) / horas trabajadas por año.
+- **Seguro** = s% anual del valor inicial (VN) / horas trabajadas por año (la clase da 2% como valor típico de referencia, pero cada examen aporta su propio % de seguro como dato, que ha variado entre 1% y 2,5% según el examen).
 - **Patente** = equivalente al seguro (solo pagan patente los equipos que se trasladan por vía pública por sus propios medios; los de orugas se transportan en chatas y no pagan).
 - **Costo Financiero** = [(VN−VR)/2 × tasa anual activa] / horas trabajadas por año (interés sobre el capital medio inmovilizado en el equipo).
 - **Costo Total** = suma de todos los anteriores. A **menor cantidad de horas de uso al mes/año, mayor el costo horario** (los costos fijos se reparten entre menos horas) — de ahí que para usos esporádicos convenga alquilar en vez de comprar el equipo.

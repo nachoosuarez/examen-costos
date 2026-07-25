@@ -195,13 +195,15 @@ completo en `Soluciones/201912 Ex diciembre/`.
 4. **Patente** = p×VN/H → costo fijo (similar al seguro).
 5. **Costo financiero** = [(VN−VR)/2 × i] / H → costo fijo (interés sobre el capital medio invertido en el equipo).
 6. **Combustible** = consumo (lt/h) × precio ($/lt) → costo operativo/variable.
-7. **Lubricantes** (aceite + grasa + filtro) = consumo × precio de cada uno (si el filtro viene como "% s/lub", tratarlo con la misma lógica cantidad×precio, explicitando el supuesto) → costo de mantenimiento.
+7. **Lubricantes**: si el enunciado da un coeficiente β tabulado por equipo (Equipos.pdf, β entre 0,15 y 0,30 según el equipo), Lubricantes = β × Costo de Combustible ($/h). Si en cambio da los insumos por separado (aceite + grasa + filtro) = consumo × precio de cada uno (si el filtro viene como "% s/lub", tratarlo con la misma lógica cantidad×precio, explicitando el supuesto) → costo de mantenimiento.
 8. **Tren de rodado / neumáticos** = (1 juego / horas de vida útil del juego) × costo del juego → costo de mantenimiento.
 9. **Mano de obra (ayudante + maquinista)** = horas-hombre/hora-máquina × jornal $/hh → costo operativo. Si hay % de reparaciones (alfa) dado directamente sobre la amortización, sumarlo también como costo de mantenimiento: Reparaciones = alfa × Amortización.
 10. **Leyes Sociales (LLSS), aparte:** Monto imponible = u × jornal. LLSS = K × Monto imponible. Aplicar a cada categoría de mano de obra y sumar.
 11. **Costo total (sin LLSS)** = suma de 2 a 9. **LLSS aparte**. Costo total con LLSS = suma de ambos.
 
 **Errores comunes:** no mezclar U$D y $ sin convertir explícitamente con el tipo de cambio dado; H bajo (equipo poco usado) dispara la amortización/seguro/patente por hora — es un resultado esperado, no un error (ilustra por qué conviene alquilar equipos de uso esporádico en vez de comprarlos).
+
+**Variante "cantidad de camiones necesarios" (Equipos.pdf, sección Fletes):** para que una máquina que excava/carga a un ritmo dado nunca quede parada esperando camión: tiempo de ciclo del camión = ida cargado (obra→vertedero) + descarga + vuelta vacío (vertedero→obra); viajes posibles por jornada = (minutos de la jornada)/tiempo de ciclo; volumen transportado por camión y por jornada = viajes×capacidad del camión; producción de la máquina en el turno = rendimiento (m³/h)×horas de jornada; camiones necesarios = producción de la máquina / volumen transportado por camión. Mini-ejemplo de la clase: máquina a 1 m³/min (=60 m³/h), turno 8,8 h → produce 528 m³/día; camión de 10 m³ con ciclo=130 min (60 ida cargado+10 descarga+60 vuelta vacío) → 528min/130min≈4 viajes/jornada → transporta 40 m³/jornada → 528/40≈13 camiones necesarios. Valores de referencia de flete dados en clase: mudanza de equipo entre ciudades ≈USD 2.000 (depende de la distancia); movimiento de tierra a gran escala ≈$15/m³·km; alquiler de camión por tiempo en obras medianas ≈1.000-1.200 $/hora.
 
 **Mini-ejemplo (Ene-2026, retroexcavadora combinada):** VN=50.000 U$D, VR=15.000 U$D, n=5, H=180 h/año → VU=900h. Amortización=(50.000-15.000)/900=38,89 U$D/h. Con 1U$D=38,5$ → 1.497,2 $/h. Ver desarrollo completo en `Soluciones/202601 Examen Enero 2026/`.
 
