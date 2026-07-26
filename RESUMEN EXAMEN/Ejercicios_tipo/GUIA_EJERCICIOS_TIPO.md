@@ -264,7 +264,7 @@ a 5 años) en `Soluciones/202502 Ex Febrero/`.
 
 **Mini-ejemplo (verificado dígito a dígito contra la planilla oficial):** Cat. VI (Medio Of. Carpintero) hora común $279,92; Cat. V $258,65; obra interior sin horas extra. Ropa=5%×258,65=$12,93; Transporte=4,374%×258,65=$11,31; Herramientas=2%×258,65=$5,17; Presentismo semanal=10,42%×279,92=$29,17; Presentismo mensual=5%×279,92=$14,00; Media hora descanso=(0,5/8)×279,92=$17,50; Feriados=(7/247)×279,92=$7,93; Tickets=$200/8=$25,00. Suma: 279,92+12,93+11,31+5,17+29,17+14,00+17,50+7,93+25,00 = **$402,9/hora** (ver detalle en `Soluciones/202512 Ex Diciembre 2025/`).
 
-**Tabla oficial de laudo (Jornaleros, vigente desde 1/4/25 — tabla en formato imagen de Clase 9, `CLASES TEORICAS/Clase 9 v2.pdf` diapositivas 179/177, rescatada en la corrida 35ª; confirma exactos los valores del mini-ejemplo de arriba):**
+**Tabla oficial de laudo (Jornaleros, vigente desde 1/4/25 — Clase 9, `CLASES TEORICAS/Clase 9 v2.pdf`, rescatada en la corrida 35ª):**
 
 | Categoría | Descripción | Hora común ($/hora) |
 |---|---|---|
@@ -273,7 +273,7 @@ a 5 años) en `Soluciones/202502 Ex Febrero/`.
 | III | — | 219,34 |
 | IV | Peón Práctico | 238,98 |
 | V | ½ Oficial Albañil/Herrero | 258,65 |
-| VI | ½ Oficial Carpintero | 279,90 |
+| VI | ½ Oficial Carpintero | 279,92 |
 | VII | — | 301,60 |
 | VIII | Oficial Albañil/Herrero | 345,98 |
 | IX | Oficial Carpintero/finalista | 368,68 |
@@ -281,7 +281,7 @@ a 5 años) en `Soluciones/202502 Ex Febrero/`.
 | XI | Maquinista | 391,05 |
 | XII | — | 413,79 |
 
-No varía por zona (Zona 1/2/3 idénticas en la planilla). **Compensaciones adicionales vistas en Clase 9 (valores por jornal de 8hs, no solo los % de la sección 5 de arriba):** Desgaste de Ropa $103,44; Transporte Jornalero $90,50; Transporte Mensual $2.261,47 (partida distinta, para quien no cobra el jornalero diario); Suplemento por Balancín o similar $206,92 (10% de la Cat. V, para trabajo en andamios colgantes); Suplemento por Balancín Peón Práctico $62,08; Desgaste de Herramientas $41,36; Partida de Alimentación $184,16; factor de Traslado a Precios 1,0595. **Suplemento por trabajo en altura** (>6m, andamios colgantes): 10% del jornal de Cat. V cada 8hs trabajadas ($189 al momento de la clase) — Cat. VII en vez de Cat. V si es montaje electromecánico.
+No varía por zona (Zona 1/2/3 idénticas en la planilla). **⚠️ Corrección (corrida 36ª): la Clase 9 trae DOS versiones de esta misma tabla** — una escaneada/firmada (diapositiva 177) y una tipeada (diapositiva 179), ambas rotuladas "vigente desde el 1/4/25". Difieren en 4 categorías: V (177 da 258,66 vs. 179 da 258,65), VI (177 da 279,90 vs. 179 da 279,92), VIII (177 da 345,97 vs. 179 da 345,98) e IX (177 da 368,70 vs. 179 da 368,68) — probablemente dos impresiones/versiones del mismo ajuste con redondeos ligeramente distintos, no un error de transcripción. La corrida 35ª había transcrito la versión escaneada (177) para V/VI/VIII/IX y afirmó por error que coincidía dígito a dígito con el mini-ejemplo de abajo (verificado contra la planilla oficial de Dic-2025, que usa 258,65/279,92) — en realidad solo la versión **tipeada (179)** coincide exacta con esos valores. La tabla de arriba ya usa la versión 179 en las categorías donde está disponible (IV, V, VI, VIII, IX, XI); I/II/III/VII/X/XII solo aparecen en la versión 177 (sin conflicto, ambas idénticas para VII/X y no repetidas en 179). **Diferencia máxima entre versiones: $0,02/hora — irrelevante para el resultado final de cualquier ejercicio**, pero usar siempre la tipeada (179) si hay que elegir una para no contradecir el mini-ejemplo. **Compensaciones adicionales vistas en Clase 9 (valores por jornal de 8hs, no solo los % de la sección 5 de arriba):** Desgaste de Ropa $103,44; Transporte Jornalero $90,50; Transporte Mensual $2.261,47 (partida distinta, para quien no cobra el jornalero diario); Suplemento por Balancín o similar $206,92 (10% de la Cat. V, para trabajo en andamios colgantes); Suplemento por Balancín Peón Práctico $62,08; Desgaste de Herramientas $41,36; Partida de Alimentación $184,16; factor de Traslado a Precios 1,0595. **Suplemento por trabajo en altura** (>6m, andamios colgantes): 10% del jornal de Cat. V cada 8hs trabajadas ($189 al momento de la clase) — Cat. VII en vez de Cat. V si es montaje electromecánico.
 
 **Trabajo remunerado por destajo (por producción, en vez de por tiempo) — visto en Clase 9, no tenía desarrollo propio en la Guía:** los obreros destajistas **NO cobran** horas extra ni las compensaciones de viático, ropa, transporte, herramientas, pasaje, incentivo por asistencia, incentivo por producción, ni el descanso al mediodía (cobran únicamente por unidad de obra ejecutada, ej. $/m² de revoque o muro). Si trabajan un feriado no laborable, cobran la producción del día **más** una compensación de 8 horas comunes de su categoría; si no trabajan ese feriado, cobran solo esa compensación de 8 horas comunes (no cobran nada si no es feriado y no trabajan). Es una forma de pago poco usual en Montevideo (más común en obras de Maldonado) — no descartar si el enunciado la menciona explícitamente.
 
