@@ -102,7 +102,7 @@
 
 **Formas de retribuir:**
 - **Por tiempo trabajado**: mensuales (encargados/capataces) o jornaleros (44hs/semana: lunes-jueves 9hs, viernes 8hs), según Laudo vigente (valor de "hora común" por categoría).
-- **Por producción ("destajo")**: valor por unidad de obra ejecutada; poco usado en presupuestación convencional, requiere control exhaustivo.
+- **Por producción ("destajo")**: valor por unidad de obra ejecutada (ej. $/m² de revoque o muro); poco usado en presupuestación convencional (más común en obras de Maldonado), requiere control exhaustivo. **No cobran** horas extra, viático, ropa, transporte, herramientas, pasaje, incentivo por asistencia, incentivo por producción ni descanso al mediodía. Si trabajan un feriado no laborable cobran la producción + una compensación de 8 horas comunes de su categoría; si no trabajan ese feriado cobran solo esa compensación (tabla imagen de Clase 9, rescatada en la corrida 35ª — ver detalle en Guía sección 5).
 
 **Ítems que se pagan al jornalero** (ver detalle y %/fórmulas en la Guía de Ejercicios Tipo, sección 5): hora común; ropa/transporte/herramientas (sobre Cat. V); presentismo semanal (10,42%) y mensual (5%); media hora de descanso; incentivos por producción; horas extra (+100%); feriados (7 no laborables/año); horas de lluvia/barro/crecidas (topeadas por cuatrimestre, con reglas de traspaso entre cuatrimestres); tickets de alimentación ($200 cada 8hs); vestimenta (ropa de invierno 1/abril, verano 1/octubre, campera bianual); suplemento por altura (10% jornal Cat. V c/8hs, >6m; Cat. VII en montaje electromecánico); suplemento por acarreo en plataformas voladas (30%); horas nocturnas (20 a 6hs, +30% esporádico / +50% permanente).
 
@@ -111,7 +111,7 @@
 **Aporte Unificado de la Construcción (Ley 14.411):**
 `TOTAL A PAGAR = [Precio Obra + IVA] + [Monto Imponible de M.O.] × Coeficiente de Aporte Unificado según tipo de obra`.
 - Monto Imponible ≈ 80% del salario del operario.
-- Leyes Sociales ≈ 71,8% del MI (obra pública/ingeniería) o 75,8% (obra de arquitectura) — la diferencia es el CJPPU (2% ingeniería, 4% arquitectura, Ley 17.738).
+- Leyes Sociales ≈ 71,8% del MI (obra pública/ingeniería) o 75,8% (obra de arquitectura) — la diferencia es el CJPPU (2% ingeniería, 4% arquitectura, Ley 17.738). Composición del 71,8% base (tabla imagen de Clase 9, rescatada corrida 35ª): Contribuciones SS Patronales 9% + Personales 17,9% + Cargas salariales 29,9% + Seguro Nacional de Salud 9% + BSE 6% = 71,8% (Decreto 341/2018). **Matiz de la propia Clase 9, no usado hasta ahora en ningún examen del repo:** en rigor son 3 niveles, no 2: Obra Pública 71,8% (CJPPU 0%), Obra privada de Ingeniería 73,8% (CJPPU 2%), Obra privada de Arquitectura 75,8% (CJPPU 4%) — ver nota completa en Guía sección 6.
 - Partidas gravadas totalmente: hora común, presentismo semanal/mensual, horas extra, feriados no laborables, nocturnidad, horas en altura. No gravadas: ropa, herramientas, transporte, media hora descanso, pasajes, horas de lluvia, tickets. Parcialmente gravadas (sobre-laudo, viático, incentivo por producción): si b<30% de RT no se grava; si b>30% de RT se grava el 50% del excedente.
 
 **4 Fondos Sociales de la Construcción:**

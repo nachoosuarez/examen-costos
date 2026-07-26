@@ -264,6 +264,27 @@ a 5 años) en `Soluciones/202502 Ex Febrero/`.
 
 **Mini-ejemplo (verificado dígito a dígito contra la planilla oficial):** Cat. VI (Medio Of. Carpintero) hora común $279,92; Cat. V $258,65; obra interior sin horas extra. Ropa=5%×258,65=$12,93; Transporte=4,374%×258,65=$11,31; Herramientas=2%×258,65=$5,17; Presentismo semanal=10,42%×279,92=$29,17; Presentismo mensual=5%×279,92=$14,00; Media hora descanso=(0,5/8)×279,92=$17,50; Feriados=(7/247)×279,92=$7,93; Tickets=$200/8=$25,00. Suma: 279,92+12,93+11,31+5,17+29,17+14,00+17,50+7,93+25,00 = **$402,9/hora** (ver detalle en `Soluciones/202512 Ex Diciembre 2025/`).
 
+**Tabla oficial de laudo (Jornaleros, vigente desde 1/4/25 — tabla en formato imagen de Clase 9, `CLASES TEORICAS/Clase 9 v2.pdf` diapositivas 179/177, rescatada en la corrida 35ª; confirma exactos los valores del mini-ejemplo de arriba):**
+
+| Categoría | Descripción | Hora común ($/hora) |
+|---|---|---|
+| I | — | 194,27 |
+| II | — | 206,62 |
+| III | — | 219,34 |
+| IV | Peón Práctico | 238,98 |
+| V | ½ Oficial Albañil/Herrero | 258,65 |
+| VI | ½ Oficial Carpintero | 279,90 |
+| VII | — | 301,60 |
+| VIII | Oficial Albañil/Herrero | 345,98 |
+| IX | Oficial Carpintero/finalista | 368,68 |
+| X | — | 391,05 |
+| XI | Maquinista | 391,05 |
+| XII | — | 413,79 |
+
+No varía por zona (Zona 1/2/3 idénticas en la planilla). **Compensaciones adicionales vistas en Clase 9 (valores por jornal de 8hs, no solo los % de la sección 5 de arriba):** Desgaste de Ropa $103,44; Transporte Jornalero $90,50; Transporte Mensual $2.261,47 (partida distinta, para quien no cobra el jornalero diario); Suplemento por Balancín o similar $206,92 (10% de la Cat. V, para trabajo en andamios colgantes); Suplemento por Balancín Peón Práctico $62,08; Desgaste de Herramientas $41,36; Partida de Alimentación $184,16; factor de Traslado a Precios 1,0595. **Suplemento por trabajo en altura** (>6m, andamios colgantes): 10% del jornal de Cat. V cada 8hs trabajadas ($189 al momento de la clase) — Cat. VII en vez de Cat. V si es montaje electromecánico.
+
+**Trabajo remunerado por destajo (por producción, en vez de por tiempo) — visto en Clase 9, no tenía desarrollo propio en la Guía:** los obreros destajistas **NO cobran** horas extra ni las compensaciones de viático, ropa, transporte, herramientas, pasaje, incentivo por asistencia, incentivo por producción, ni el descanso al mediodía (cobran únicamente por unidad de obra ejecutada, ej. $/m² de revoque o muro). Si trabajan un feriado no laborable, cobran la producción del día **más** una compensación de 8 horas comunes de su categoría; si no trabajan ese feriado, cobran solo esa compensación de 8 horas comunes (no cobran nada si no es feriado y no trabajan). Es una forma de pago poco usual en Montevideo (más común en obras de Maldonado) — no descartar si el enunciado la menciona explícitamente.
+
 ---
 
 ## 6. Leyes sociales y Ley 14.411 (Aporte Unificado de la Construcción)
@@ -272,7 +293,7 @@ a 5 años) en `Soluciones/202502 Ex Febrero/`.
 
 - El personal con tareas directas en obra tributa el **Aporte Unificado de la Construcción** en vez de Industria y Comercio.
 - `TOTAL A PAGAR = [Precio Obra + IVA] + [Monto Imponible de M.O.] × Coeficiente de Aporte Unificado`.
-- **Monto Imponible ≈ 80% del salario**. **Leyes Sociales ≈ 71,8% del MI en obra pública/ingeniería o 75,8% en obra de arquitectura** (la diferencia es el CJPPU: 2% obras de ingeniería, 4% obras de arquitectura, Ley 17.738).
+- **Monto Imponible ≈ 80% del salario**. **Leyes Sociales ≈ 71,8% del MI en obra pública/ingeniería o 75,8% en obra de arquitectura** (la diferencia es el CJPPU: 2% obras de ingeniería, 4% obras de arquitectura, Ley 17.738). **Composición del 71,8% base** (tabla imagen de Clase 9, rescatada en la corrida 35ª): Contribuciones especiales a la Seguridad Social Patronales 9% + Personales 17,9% + Cargas salariales (licencia/salario vacacional/aguinaldo) 29,9% + Seguro Nacional de Salud 9% + BSE 6% = **71,8%** (Decreto 341/2018). **Matiz importante (Ley 17.738), no usado hasta ahora en ningún examen del repo:** la propia Clase 9 distingue en realidad **3 niveles**, no 2: Obra Pública 71,8% (CJPPU 0%), Obra privada de Ingeniería **73,8%** (CJPPU 2%), Obra privada de Arquitectura 75,8% (CJPPU 4%) — los 24 exámenes del repo siempre usaron el esquema binario 71,8%/75,8% (público vs. privado-arquitectura), nunca el 73,8% intermedio; si un examen futuro pide explícitamente "obra privada de ingeniería" (no pública), el valor teóricamente correcto por este desglose de Clase 9 sería 73,8%, no 71,8%.
 - **Convenio Colectivo**: tripartito entre Empresas, Trabajadores (SUNCA) y MTSS/Poder Ejecutivo (homologa); se renueva cada 3 años; fija laudos y su ajuste (ligado a metas de inflación BCU), categorías, licencias, etc.
 - **4 Fondos Sociales de la Construcción:** FOSVOC (vivienda del obrero), Fondo Social de la Construcción -FSC- (canastas, útiles escolares, odontología, capacitación), FOCAP (cursos de capacitación técnica), FOCER (cuentas individuales de cesantía y retiro, aportes patronales+personales).
 - **Incentivo por Asistencia** (visto en Dic-2019): partida adicional al jornal básico por presentismo/asistencia perfecta del trabajador en el período — integra el monto imponible igual que el resto de la remuneración, junto con FOCER (arriba) como las 2 partidas puntuales que suele pedir el examen "exponer y cuantificar".
