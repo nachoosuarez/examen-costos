@@ -98,6 +98,8 @@ Verificado contra solución oficial (planilla de cálculo incluida en `Examen Co
 
 ## IV – Seguros para las Obras (12 pts) *(teórico, sin solución oficial en el repo)*
 
+Ver Guía sección 10 — mismo criterio y mismos 4 seguros usuales que en `Soluciones/202207 Ex Julio/` (parte E), `Soluciones/202303 Ex Marzo/` (parte IV) y `Soluciones/202002 Ex Febrero/` (parte C): validación cruzada indirecta entre 4 exámenes distintos que responden la misma pregunta teórica de forma mutuamente consistente.
+
 **a) Finalidad general:** transferir a un tercero (la aseguradora) el riesgo económico de siniestros que puedan afectar la obra durante su ejecución, a cambio del pago de una prima — protege el patrimonio de las partes (contratista/propietario) ante daños materiales, responsabilidad civil frente a terceros y accidentes del personal, evitando que un evento imprevisto comprometa la viabilidad económica del contrato.
 
 **b) Componentes principales de una póliza** (ver Clase 19 — "Riesgos"): Objeto asegurado, Valor asegurado, Riesgos cubiertos, Monto asegurado, Prima, Deducible/franquicia, Plazo de vigencia, Deberes y exclusiones del asegurado.
